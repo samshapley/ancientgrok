@@ -1,0 +1,12 @@
+# Core dependencies
+xai-sdk>=1.5.0
+httpx>=0.27.0
+rich>=13.0.0
+typer>=0.9.0
+prompt-toolkit>=3.0.0
+
+# Open Context API dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+python-slugify>=8.0.0
+requests>=2.31.0

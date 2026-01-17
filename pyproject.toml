@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ancientgrok"
+version = "0.1.0"
+description = "Interactive CLI agent for ancient world knowledge using Grok AI"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "AncientGrok Contributors" }
+]
+keywords = ["ancient-history", "grok", "cli", "agent", "assyriology", "sumerology"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+]
+dependencies = [
+    "xai-sdk>=1.5.0",
+    "httpx>=0.27.0",
+    "rich>=13.0.0",
+    "typer>=0.9.0",
+    "prompt-toolkit>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+ancientgrok = "ancientgrok.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/clayvoices/clayvoices"
+Repository = "https://github.com/clayvoices/clayvoices"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ancientgrok"]
