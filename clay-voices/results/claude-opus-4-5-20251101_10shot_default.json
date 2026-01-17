@@ -1,0 +1,123 @@
+{
+  "experiment": {
+    "model": "claude-opus-4-5-20251101",
+    "n_shot": 10,
+    "test_size": 5,
+    "few_shot_seed": 42,
+    "test_seed": 99,
+    "system_prompt_variant": "default",
+    "monolingual_base_size": 0
+  },
+  "cost": {
+    "input_tokens": 5583,
+    "output_tokens": 717,
+    "total_tokens": 6300,
+    "cost_usd": 0.022920000000000003,
+    "cost_per_example": 0.004584,
+    "batch_mode": true
+  },
+  "metrics": {
+    "bleu": {
+      "score": 6.004918543526666,
+      "precision": [
+        25.0,
+        10.256410256410257,
+        2.9411764705882355,
+        1.7241379310344827
+      ],
+      "bp": 1.0,
+      "sys_len": 44,
+      "ref_len": 30
+    },
+    "chrf": {
+      "score": 30.80879038713016
+    },
+    "num_examples": 5,
+    "confidence_distribution": {
+      "medium": 3,
+      "high": 2
+    }
+  },
+  "predictions": [
+    {
+      "sumerian": "awj .sn nxt .w",
+      "reference": "and their arms grew strong",
+      "prediction": "their voices are strong",
+      "metadata": {
+        "custom_id": "trans_0",
+        "translation": "their voices are strong",
+        "confidence": "medium",
+        "notes": "Based on the pattern examples provided, this appears to be Middle Egyptian rather than Sumerian. 'awj' relates to voice/cry, '.sn' is the 3rd person plural suffix pronoun (their), and 'nxt.w' means strong/mighty (plural).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 1115,
+          "output_tokens": 131
+        }
+      }
+    },
+    {
+      "sumerian": "jr wxA jwty sDm .f",
+      "reference": "as for the fool unable to hear",
+      "prediction": "as for one who seeks what does not obey him",
+      "metadata": {
+        "custom_id": "trans_1",
+        "translation": "as for one who seeks what does not obey him",
+        "confidence": "medium",
+        "notes": "This appears to be Middle Egyptian rather than Sumerian. 'jr' is a conditional/topicalizer particle, 'wxA' means 'to seek', 'jwty' is a negative relative adjective 'one who does not/that which does not', and 'sDm.f' is the standard verb form 'he hears/obeys'. The construction describes someone pursuing what will not heed or obey them.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 1116,
+          "output_tokens": 172
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .f jmj rA pr wr nb .j",
+      "reference": "and said high steward my lord",
+      "prediction": "he says: \"O great chief steward, my lord\"",
+      "metadata": {
+        "custom_id": "trans_2",
+        "translation": "he says: \"O great chief steward, my lord\"",
+        "confidence": "high",
+        "notes": "This appears to be Middle Egyptian rather than Sumerian. \"Dd .f\" = \"he says\", \"jmj rA pr wr\" = \"great chief steward\" (literally \"overseer of the great house/estate\"), \"nb .j\" = \"my lord\". This is a common form of address in Egyptian administrative and literary texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 1121,
+          "output_tokens": 153
+        }
+      }
+    },
+    {
+      "sumerian": "waH ps 1/4",
+      "reference": "1/4 cooked earth almonds",
+      "prediction": "one quarter loaf of bread placed (as offering)",
+      "metadata": {
+        "custom_id": "trans_3",
+        "translation": "one quarter loaf of bread placed (as offering)",
+        "confidence": "medium",
+        "notes": "waH means \"to place, set down\" often in offering contexts; ps refers to bread/loaf; 1/4 indicates a quarter portion. This appears to be an administrative or offering text recording a fractional bread allocation.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 1113,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "psDt jmjw Hwt aAt",
+      "reference": "the ennead in the great temple",
+      "prediction": "the Ennead who are in the great mansion",
+      "metadata": {
+        "custom_id": "trans_4",
+        "translation": "the Ennead who are in the great mansion",
+        "confidence": "high",
+        "notes": "This text refers to the psDt (Ennead/Nine Gods), a group of nine deities in Egyptian mythology, described as being located in the Hwt aAt (great mansion/temple). The term jmjw indicates \"those who are in\" - a common relative construction.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 1118,
+          "output_tokens": 138
+        }
+      }
+    }
+  ]
+}

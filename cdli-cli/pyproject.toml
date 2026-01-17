@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cdli-cli"
+version = "0.1.0"
+description = "Command-line interface for the Cuneiform Digital Library Initiative (CDLI) API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "CDLI CLI Contributors" }
+]
+keywords = ["cuneiform", "cdli", "assyriology", "sumerian", "akkadian", "ancient-languages", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "typer[all]>=0.9.0",
+    "httpx>=0.25.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-httpx>=0.22.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+cdli = "cdli_cli.main:app"
+
+[project.urls]
+Homepage = "https://github.com/cdli-cli/cdli-cli"
+Documentation = "https://cdli.earth/docs/api"
+Repository = "https://github.com/cdli-cli/cdli-cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cdli_cli"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.9"
+strict = true

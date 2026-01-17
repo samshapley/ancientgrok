@@ -1,0 +1,794 @@
+{
+  "experiment": {
+    "model": "grok-4-1-fast-non-reasoning",
+    "n_shot": 10,
+    "test_size": 50,
+    "few_shot_seed": 42,
+    "test_seed": 99,
+    "system_prompt_variant": "default",
+    "monolingual_base_size": 0
+  },
+  "cost": {
+    "input_tokens": 37162,
+    "output_tokens": 5360,
+    "total_tokens": 42522,
+    "cost_usd": 0.191886,
+    "cost_per_example": 0.00383772,
+    "batch_mode": false
+  },
+  "metrics": {
+    "bleu": {
+      "score": 3.6169417833397497,
+      "precision": [
+        29.545454545454547,
+        9.813084112149532,
+        3.5714285714285716,
+        0.7751937984496124
+      ],
+      "bp": 0.6795233813363141,
+      "sys_len": 264,
+      "ref_len": 366
+    },
+    "chrf": {
+      "score": 22.408945074628353
+    },
+    "num_examples": 50,
+    "confidence_distribution": {
+      "high": 38,
+      "medium": 11,
+      "low": 1
+    }
+  },
+  "predictions": [
+    {
+      "sumerian": "X i ukim",
+      "reference": "… ukim ;",
+      "prediction": "X days of worknorm",
+      "metadata": {
+        "translation": "X days of worknorm",
+        "confidence": "high",
+        "notes": "Standard Ur III administrative terminology: 'i' = day; 'ukim' = worknorm or work assignment (corvée labor unit). 'X' is a placeholder for a numeral.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 85
+        }
+      }
+    },
+    {
+      "sumerian": "kicib urnigar",
+      "reference": "under seal of Ur-nigar ;",
+      "prediction": "seal of Ur-nigar",
+      "metadata": {
+        "translation": "seal of Ur-nigar",
+        "confidence": "high",
+        "notes": "kicib = seal (of a document or transaction); urnigar = personal name (Ur-niĝar, common in Ur III texts, lit. 'servant of Niĝar'). Typical administrative notation indicating the sealing authority.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 95
+        }
+      }
+    },
+    {
+      "sumerian": "kinbi NUMB sar",
+      "reference": "work involved : NUMB ( volume ) sar ;",
+      "prediction": "this time NUMB sar",
+      "metadata": {
+        "translation": "this time NUMB sar",
+        "confidence": "high",
+        "notes": "\"kinbi\" means \"its totality/this time/altogether\"; \"sar\" is a surface measure (1 sar = 1 iku = 3600 m², often \"field-plot\" in admin. contexts); typical Ur III land measurement formula",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "sumerian": "u sagnigura",
+      "reference": "and debits",
+      "prediction": "workdays of the chief brewer",
+      "metadata": {
+        "translation": "workdays of the chief brewer",
+        "confidence": "high",
+        "notes": "u = 'workdays' or 'man-days'; sagnigura = 'chief brewer' or 'head of the brewery', common administrative title in Ur III texts for overseer of beer production",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "sumerian": "mu ku guza enlila badim",
+      "reference": "year : “ The silver-chair of Enlil was fashioned . ”",
+      "prediction": "the year in which the throne of Enlil was destroyed",
+      "metadata": {
+        "translation": "the year in which the throne of Enlil was destroyed",
+        "confidence": "high",
+        "notes": "Standard Sumerian year formula (mu ... bad3?im): \"mu ku3-gu za3 enlil2-la2 bad3-im\" or similar, with ku3-gu \"pure silver\" often rendered as \"ku\" in abbreviated transliterations, guza \"throne,\" enlila \"of Enlil,\" badim likely bad3-im \"was built/destroyed.\" Matches Ur III administrative date formula style, e.g., destruction or construction events.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 745,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "ki ahunita bazi",
+      "reference": "booked out of ( the account of ) Ahuni ,",
+      "prediction": "from Ahuni-ta, Bazi",
+      "metadata": {
+        "translation": "from Ahuni-ta, Bazi",
+        "confidence": "high",
+        "notes": "Follows standard Ur III administrative phrasing \"ki PN1 PN2\" meaning \"from PN1, PN2\" where PN indicates personal names. \"Ahunita\" and \"bazi\" are proper names, with \"ki\" as the locative preposition \"from\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 743,
+          "output_tokens": 105
+        }
+      }
+    },
+    {
+      "sumerian": "u mucbian",
+      "reference": "and Mušbiana",
+      "prediction": "workdays under him",
+      "metadata": {
+        "translation": "workdays under him",
+        "confidence": "high",
+        "notes": "Common Ur III administrative phrase: 'u' = worknorm/day-labor; 'mu-us2-bi-a' = 'under him/them/it' (referring to supervision or responsibility in corvée labor contexts). Matches patterns in examples like Ex. 8.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "sumerian": "ki buduta",
+      "reference": "from Budu ;",
+      "prediction": "from Budu-ta",
+      "metadata": {
+        "translation": "from Budu-ta",
+        "confidence": "high",
+        "notes": "Follows standard Ur III administrative phrase structure \"ki PN-ta\" meaning \"from PN(-ta)\", where Budu-ta is a personal name in the terminative case, comparable to examples like \"ki naramilita\" = \"from Naram-ilī\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 99
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB GAN guruc ugula",
+      "reference": "total : NUMB aš-c- ( workers ) , ‘field’ corporate slaves , foremen ;",
+      "prediction": "NUMB fields of barley, measured by the overseer",
+      "metadata": {
+        "translation": "NUMB fields of barley, measured by the overseer",
+        "confidence": "high",
+        "notes": "cunigin = 'barley field'; NUMB = placeholder for numeral; GAN = 'field'; guruc = likely variant or form related to measurement/calculation of fields (cf. gurusz 'man-day' but contextual to field measurement); ugula = 'overseer'. Fits Ur III administrative context of land measurement records.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 746,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB kikken adabar saga",
+      "reference": "NUMB millstone of high-quality black basalt ( ? )",
+      "prediction": "NUMB kikken of clean white flour",
+      "metadata": {
+        "translation": "NUMB kikken of clean white flour",
+        "confidence": "high",
+        "notes": "kikken: type of fine flour (common in Ur III administrative texts); adabar: white flour or refined flour; saga: clean, pure, or fine (adjective often modifying food commodities)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 90
+        }
+      }
+    },
+    {
+      "sumerian": "gilgamese",
+      "reference": "May Gilgameš",
+      "prediction": "Gilgamesh",
+      "metadata": {
+        "translation": "Gilgamesh",
+        "confidence": "high",
+        "notes": "Proper name of the legendary Sumerian king and hero of the Epic of Gilgamesh; appears in administrative and literary texts.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 70
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB GAN ug urgigir",
+      "reference": "NUMB aš-c- ( worker ) , ‘field’ , porter : Ur-gigir ,",
+      "prediction": "NUMB fields of ug urgigir",
+      "metadata": {
+        "translation": "NUMB fields of ug urgigir",
+        "confidence": "medium",
+        "notes": "GAN commonly means 'field' or 'acre' in Sumerian administrative texts. ug may refer to a type of grain or plant (e.g., 'emmer wheat'); urgigir is likely a place name, personal name, or specific field designation, possibly 'canal of Gigir' or similar, common in Ur III field allocation records.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB sila ce ziz gur",
+      "reference": "total : NUMB sila3 barley and emmer",
+      "prediction": "NUMB sila3 of esparto grass flour",
+      "metadata": {
+        "translation": "NUMB sila3 of esparto grass flour",
+        "confidence": "high",
+        "notes": "cunigin = zíz.šu.gig = esparto grass flour (common in Ur III administrative texts); ce ziz = variant or compound for flour type; sila = sila3 volume measure; gur = large capacity measure (c. 300 sila3), often omitted in translation if contextual; follows pattern of Example 3.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 747,
+          "output_tokens": 124
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB tug cagadu sumun",
+      "reference": "NUMB old šagadu garments ,",
+      "prediction": "NUMB tug2 sag-dub sumun",
+      "metadata": {
+        "translation": "NUMB tug2 sag-dub sumun",
+        "confidence": "medium",
+        "notes": "tug2 = garment/cloth; sag-dub = possibly 'head-wool' or a type of garment detail; sumun = old/worn-out. Likely refers to a quantity of old or worn sag-dub garments, common in Ur III textile/administrative contexts.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 108
+        }
+      }
+    },
+    {
+      "sumerian": "tir ula idab",
+      "reference": "the Ula-woods took in charge ;",
+      "prediction": "border of Ula, the Idab canal",
+      "metadata": {
+        "translation": "border of Ula, the Idab canal",
+        "confidence": "medium",
+        "notes": "tir = border/irrigation district; ula = likely toponym 'Ula'; idab = Idab canal (known Mesopotamian waterway, variant of Idigna/Diyala)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 88
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB carazida",
+      "reference": "NUMB aš- ( worker ) : Šara-zida ,",
+      "prediction": "NUMB battlefields",
+      "metadata": {
+        "translation": "NUMB battlefields",
+        "confidence": "high",
+        "notes": "From kar 'to settle, pacify' + za 'to go out (in battle)' + -da locative suffix; common in Ur III military/administrative contexts referring to fields or areas of battle or pacification campaigns.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 93
+        }
+      }
+    },
+    {
+      "sumerian": "X",
+      "reference": "for Ur-…-du",
+      "prediction": "X",
+      "metadata": {
+        "translation": "X",
+        "confidence": "low",
+        "notes": "X likely represents a placeholder for a numeral in Sumerian administrative texts, such as a quantity of goods, animals, or measures.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 738,
+          "output_tokens": 69
+        }
+      }
+    },
+    {
+      "sumerian": "akala acgab",
+      "reference": "( for ) Akalla , the leatherworker ;",
+      "prediction": "akala acgab",
+      "metadata": {
+        "translation": "akala acgab",
+        "confidence": "medium",
+        "notes": "Uncertain; possibly 'eaters of acgab' or administrative term for 'rations/consumers of acgab' (acgab may refer to a garment, textile, or foodstuff in Ur III context).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 90
+        }
+      }
+    },
+    {
+      "sumerian": "eta izi la",
+      "reference": "( and ? ) the NUMB who bears fire from the temple",
+      "prediction": "house fire not",
+      "metadata": {
+        "translation": "house fire not",
+        "confidence": "medium",
+        "notes": "Possible interpretation as \"no house fire\" or \"house without fire,\" reflecting a negative construction typical in Sumerian administrative contexts for absences or lacks; eta = house, izi = fire, la = not.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 87
+        }
+      }
+    },
+    {
+      "sumerian": "giri cuecdar sagi",
+      "reference": "via Šu-Ešdar , the cupbearer ,",
+      "prediction": "foot of the butler",
+      "metadata": {
+        "translation": "foot of the butler",
+        "confidence": "high",
+        "notes": "giri3: foot (often \"on account of\" or \"responsibility of\"); cue-cdhar (or cu-e2-dar): the butler/cupbearer (sagi: standard term for chief cupbearer or butler, a palace official)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 97
+        }
+      }
+    },
+    {
+      "sumerian": "lu e nanna",
+      "reference": "the man who the temple of Nanna",
+      "prediction": "man of the house(hold) of Nanna",
+      "metadata": {
+        "translation": "man of the house(hold) of Nanna",
+        "confidence": "high",
+        "notes": "lu = man/person; e = house(hold); nanna = Nanna (the moon god). Common phrasing for a temple servant or dependent of Nanna's temple.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 87
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB celu gaz",
+      "reference": "… crushed coriander ,",
+      "prediction": "NUMB flour ground",
+      "metadata": {
+        "translation": "NUMB flour ground",
+        "confidence": "high",
+        "notes": "celu = flour (common term for ground grain/flour in administrative texts); gaz = to grind/release (verbal element indicating processed or ground flour, typical in Ur III economic records for rations or allocations)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 87
+        }
+      }
+    },
+    {
+      "sumerian": "tir balatimdurun idab",
+      "reference": "the Bala’atimdurun-woods took in charge ;",
+      "prediction": "forest of Balātim-dūr-un",
+      "metadata": {
+        "translation": "forest of Balātim-dūr-un",
+        "confidence": "medium",
+        "notes": "tir = forest/grove; balatimdurun likely a personal or place name (Balātim-dūr-un, with 'durun' possibly genitive/dur-un 'of your dwelling'); idab uncertain, possibly damaged or a verb/form like i-dab 'it was apportioned' or name Idab, but context suggests modifier or location; cf. Ur III administrative terms for lands/resources",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 132
+        }
+      }
+    },
+    {
+      "sumerian": "e aca lugalmusa gaba agectinaka",
+      "reference": "The levee of the Lugal-mussa field that is in front of A-geštin field",
+      "prediction": "house of Aša, Lugal-muša having received (it) back",
+      "metadata": {
+        "translation": "house of Aša, Lugal-muša having received (it) back",
+        "confidence": "medium",
+        "notes": "e = house/estate; aca = personal name Aša; lugalmusa = personal name Lugal-muša; gaba = chest/forepart, here \"received back\" or \"returned\"; agectinaka = ablative of ag \"to make\" + ĝeštin \"wine/vineyard\", likely \"from the receiving of the vineyard(-produce)\". Common in Ur III administrative texts for receipts or returns of goods/property. Structure suggests \"from the house of Aša, (by) Lugal-muša, having received back (from) the vineyard receiving\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 748,
+          "output_tokens": 180
+        }
+      }
+    },
+    {
+      "sumerian": "igi dumu ursuen",
+      "reference": "before the son of Ur-Suen ,",
+      "prediction": "account of the son of Ur-Su'en",
+      "metadata": {
+        "translation": "account of the son of Ur-Su'en",
+        "confidence": "high",
+        "notes": "In Ur III administrative texts, \"igi PN\" commonly means \"account of PN\" or \"PN's due/obligations.\" \"Dumu\" means \"son of\" or \"child of.\" Ur-Su'en (Ur-Su'en) is a frequent personal name in these contexts.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 743,
+          "output_tokens": 107
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB udu ce NUMB sila ga",
+      "reference": "NUMB barley-fed sheep , a milk-fed lamb",
+      "prediction": "NUMB sheep, NUMB sila of milk",
+      "metadata": {
+        "translation": "NUMB sheep, NUMB sila of milk",
+        "confidence": "high",
+        "notes": "Follows Ur III administrative patterns where 'udu ce' denotes sheep (often in contexts of milk production), 'NUMB sila' is a volume measure (sila3), and 'ga' means milk. Literal structure preserved as quantity-sheep quantity-sila milk.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 747,
+          "output_tokens": 107
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB ninda NUMB kuc gid NUMB kuc dagal NUMB kuc bur",
+      "reference": "NUMB ninda NUMB cubit the length , NUMB cubits the width , NUMB cubits the depth ,",
+      "prediction": "NUMB bread, NUMB thin beer, NUMB wide beer, NUMB thick beer",
+      "metadata": {
+        "translation": "NUMB bread, NUMB thin beer, NUMB wide beer, NUMB thick beer",
+        "confidence": "high",
+        "notes": "Standard Ur III administrative terminology for rations: ninda = bread; kuc = beer (with qualifiers gid 'thin/long', dagal 'wide', bur 'thick/hole') often listed in sequence with quantified units.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 757,
+          "output_tokens": 104
+        }
+      }
+    },
+    {
+      "sumerian": "ekibagara picahdingir",
+      "reference": "( for ) the replacement house of Pišah-ilim ,",
+      "prediction": "House of the Ibex Pen, by Piṣaḥ-ilum",
+      "metadata": {
+        "translation": "House of the Ibex Pen, by Piṣaḥ-ilum",
+        "confidence": "high",
+        "notes": "ekibagara = \"House of the Ibex Pen\" (é-ki-ba-ga-ra, temple or institution name); picahdingir = Piṣaḥ-dingir \"Mouth of God\" with dingir-terminative, personal name in genitive \"by Piṣaḥ-ilum\". Matches Ur III administrative naming patterns (e.g., institution + agent).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB ninda NUMB kuc gid NUMB kuc dagal NUMB kuc bur",
+      "reference": "NUMB ninda NUMB cubits the length , NUMB cubits the width , NUMB cubits the depth ,",
+      "prediction": "NUMB bread, NUMB thin beer, NUMB normal beer, NUMB thick beer",
+      "metadata": {
+        "translation": "NUMB bread, NUMB thin beer, NUMB normal beer, NUMB thick beer",
+        "confidence": "high",
+        "notes": "Standard Ur III ration terminology: ninda = bread; kuc = beer (with qualifiers gid 'thin/long', dagal 'broad/normal', bur 'thick/hole'). Quantities in unspecified units (likely sila).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 757,
+          "output_tokens": 105
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB sila dabin gur",
+      "reference": "NUMB sila3 dabin-flour ,",
+      "prediction": "NUMB sila3 of flour (ground grain) (in) the gur(-measure)",
+      "metadata": {
+        "translation": "NUMB sila3 of flour (ground grain) (in) the gur(-measure)",
+        "confidence": "high",
+        "notes": "dabin = roasted or ground grain/flour; sila = sila3 volume unit (1/60 gur); gur = large capacity measure (~300 liters); standard Ur III administrative phrasing for quantified commodities, cf. example 3 \"cebi NUMB sila gur\". Literal: \"NUMB sila3 flour gur\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 128
+        }
+      }
+    },
+    {
+      "sumerian": "ceba gu i nigindu",
+      "reference": "barley rations of the bank of the waterway Nigin-du ,",
+      "prediction": "barley exchange for reed mats",
+      "metadata": {
+        "translation": "barley exchange for reed mats",
+        "confidence": "medium",
+        "notes": "ceba likely variant of ce 'barley'; gu 'neck, exchange, to trade'; i 'reed'; nigindu 'reed mat, basket'. Following pattern of Example 2 (nigsa gu udu = exchange good for sheep).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 743,
+          "output_tokens": 98
+        }
+      }
+    },
+    {
+      "sumerian": "mu usa e puzuricdagan badu",
+      "reference": "year after : “ The house Puzris-Dagan was erected . ”",
+      "prediction": "in the year Usa built the E-puzur-riš-dagan",
+      "metadata": {
+        "translation": "in the year Usa built the E-puzur-riš-dagan",
+        "confidence": "high",
+        "notes": "Standard Ur III year formula structure: 'mu' = 'year' (temporal marker); 'PN1' (Usa) + 'e ... bad' = 'PN built temple of PN2'; 'puzuricdagan' parsed as 'puzur-riš-dagan', a divine name (Puzur-riš-Dagan, deified vizier under Šulgi).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 747,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "cenumun",
+      "reference": "seed grain",
+      "prediction": "common people",
+      "metadata": {
+        "translation": "common people",
+        "confidence": "high",
+        "notes": "čenumun (often transliterated as ĉe-numun or cenun) refers to \"commoners\" or \"the common people\" in Sumerian administrative texts, typically denoting ordinary folk as opposed to elites or officials.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB luenkidu",
+      "reference": "NUMB diš- ( worker ) : Lu-Enkidu ,",
+      "prediction": "NUMB Enkidu men",
+      "metadata": {
+        "translation": "NUMB Enkidu men",
+        "confidence": "high",
+        "notes": "Follows pattern of Example 1 \"ludaba\" = \"daba men\". \"luenkidu\" parsed as \"lu-enkidu\" meaning \"Enkidu-men\" or \"men of/about Enkidu\", a personal or divine name common in Sumerian texts (cf. Epic of Gilgamesh). NUMB is placeholder for numeral.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "u lugalbaba dumu urlamma",
+      "reference": "and Lugal-baba son of Ur-Lamma ;",
+      "prediction": "worknorm of Lugal-baba, son of Ur-Lamma",
+      "metadata": {
+        "translation": "worknorm of Lugal-baba, son of Ur-Lamma",
+        "confidence": "high",
+        "notes": "Follows Ur III administrative naming conventions: \"u\" = worknorm or corvée labor (gurush workdays); \"lugalbaba\" = personal name Lugal-baba (\"king's gate\" or similar); \"dumu\" = son; \"urlamma\" = personal name Ur-Lamma (\"servant of Lamma\"). Structure mirrors common patronymic phrases like \"PN1 dumu PN2\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 745,
+          "output_tokens": 140
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB mana NUMB gin ku",
+      "reference": "NUMB mana NUMB shekels silver",
+      "prediction": "NUMB mina, NUMB shekels of silver",
+      "metadata": {
+        "translation": "NUMB mina, NUMB shekels of silver",
+        "confidence": "high",
+        "notes": "Standard Ur III economic notation: 'mana' = mina (weight unit, 60 shekels); 'gin' = shekel; 'ku3' (often abbreviated 'ku') = silver (ku₃, 'pure (metal)'). Follows pattern of quantified weights in administrative texts like Example 9 (NUMB gin suhe).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB gamun",
+      "reference": "total : NUMB cumin ;",
+      "prediction": "NUMB shekels of gamun",
+      "metadata": {
+        "translation": "NUMB shekels of gamun",
+        "confidence": "high",
+        "notes": "cunigin = total (common administrative term); NUMB = placeholder numeral; gamun = a type of commodity or metal alloy (contextually fits economic terminology like suhe in examples)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 743,
+          "output_tokens": 87
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB GAN eurbidu ugula",
+      "reference": "NUMB aš-c- ( worker ) , ‘field’ : E-urbidu , a foreman ,",
+      "prediction": "NUMB iku of fields of overseer",
+      "metadata": {
+        "translation": "NUMB iku of fields of overseer",
+        "confidence": "high",
+        "notes": "GAN = iku (standard Sumerian unit of area for fields, equivalent to ~3,500 m²); eurbidu likely a proper name or toponym (cf. similar Ur III field designations like e2-ur3-bi-du3); ugula = 'overseer' or 'foreman', common administrative title in Ur III texts for field supervisors. Structure indicates quantity of fields belonging to or under the authority of the overseer Eurbidu.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 745,
+          "output_tokens": 144
+        }
+      }
+    },
+    {
+      "sumerian": "mu en enki bahun",
+      "reference": "year : “ the lord of Enki was hired . ”",
+      "prediction": "year (in which) En, the lord of Enki, was chosen",
+      "metadata": {
+        "translation": "year (in which) En, the lord of Enki, was chosen",
+        "confidence": "high",
+        "notes": "Standard Ur III year formula. \"mu ... ba-hun\" = \"year (when) ... was installed/chosen/settled\". Enki = god of Eridu and fresh waters. \"en\" = high priest(ess). Likely refers to the en-priest(ess) of Enki being appointed.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 743,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "kar magur nuzu",
+      "reference": "the harbor which knew ( ? ) no deep-going boats ,",
+      "prediction": "quay of the reed-boat",
+      "metadata": {
+        "translation": "quay of the reed-boat",
+        "confidence": "high",
+        "notes": "kar = quay, harbor; magur = boat (often reed-boat); nuzu = (made of) reeds. Common in Ur III administrative texts referring to a dock or landing place for reed-boats.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 92
+        }
+      }
+    },
+    {
+      "sumerian": "lugalniglagare",
+      "reference": "Lugal-nig-lagare ,",
+      "prediction": "Lugal-nig-lagar-e",
+      "metadata": {
+        "translation": "Lugal-nig-lagar-e",
+        "confidence": "high",
+        "notes": "Proper name, likely 'Lugalniglagare', a personal name common in Ur III administrative texts referring to an individual (e.g., official or worker). Interpreted as a genitive or dative form (ending -e), translated literally as '(belonging) to/for Lugal-nig-lagar'. 'lugal' = king/prince; 'nig-lagar' may relate to 'nig' (thing) and 'lagar' (possibly a term for auxiliary worker or specific role). Matches pattern of names like 'ludaba' in examples.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 742,
+          "output_tokens": 165
+        }
+      }
+    },
+    {
+      "sumerian": "caga",
+      "reference": "into captivity",
+      "prediction": "threshing sledges",
+      "metadata": {
+        "translation": "threshing sledges",
+        "confidence": "high",
+        "notes": "Common Sumerian term *ša-ga* (cuneiform ša-ga) refers to threshing sledges, agricultural tools used in grain processing, frequent in Ur III administrative texts for allocations or inventories.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 739,
+          "output_tokens": 87
+        }
+      }
+    },
+    {
+      "sumerian": "ma niginbarce deabi",
+      "reference": "for when the boat is taken to the outer district ,",
+      "prediction": "ma niginbarce deabi",
+      "metadata": {
+        "translation": "ma niginbarce deabi",
+        "confidence": "medium",
+        "notes": "Uncertain; possibly 'to the turn-around boat of the crossing place' or similar, based on Ur III nautical terminology. 'ma' = boat/ship, 'nigin' = to turn/circle, 'barce' = crossing/ferry, 'dea' = to cross/punt, 'bi' = its/there. Await metadata for refinement.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 744,
+          "output_tokens": 124
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB lunanna dumuni",
+      "reference": "NUMB diš- ( worker ) : Lu-Nanna , his son ,",
+      "prediction": "NUMB by Lunanna, Dumuni",
+      "metadata": {
+        "translation": "NUMB by Lunanna, Dumuni",
+        "confidence": "medium",
+        "notes": "Follows pattern of personal names with 'ki PN PN' or similar genitive constructions like example 4 (NUMB abumdingir = NUMB by Abum-ilum). 'Lunanna' and 'Dumuni' appear to be proper names, possibly indicating origin, agency, or possession in an administrative context.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 743,
+          "output_tokens": 116
+        }
+      }
+    },
+    {
+      "sumerian": "culgihazir",
+      "reference": "to Šulgi-ḫazir ,",
+      "prediction": "threshing sledges",
+      "metadata": {
+        "translation": "threshing sledges",
+        "confidence": "high",
+        "notes": "Common Ur III term *šul-ḫi-a-zir for 'threshing sledges', agricultural implements used in grain processing. Transliteration variant of šulḫiazir or similar compounds.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 88
+        }
+      }
+    },
+    {
+      "sumerian": "uc lucara",
+      "reference": "dead : Lu-Šara ,",
+      "prediction": "ten donkeys",
+      "metadata": {
+        "translation": "ten donkeys",
+        "confidence": "high",
+        "notes": "uc = numeral 10; lucara = type of donkey (common in Ur III administrative texts, often referring to full-grown or standard donkeys)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 75
+        }
+      }
+    },
+    {
+      "sumerian": "ugILme",
+      "reference": "—they are porters— ;",
+      "prediction": "shepherds",
+      "metadata": {
+        "translation": "shepherds",
+        "confidence": "high",
+        "notes": "ugula + me: 'shepherds' (plural of ugula = foreman/overseer, here in context likely referring to shepherds as a group or profession, common in Ur III administrative texts for livestock managers)",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 88
+        }
+      }
+    },
+    {
+      "sumerian": "lugalitida",
+      "reference": "( for ) Lugal-itida",
+      "prediction": "of the king",
+      "metadata": {
+        "translation": "of the king",
+        "confidence": "high",
+        "notes": "Standard Sumerian genitive form lugal-it-da, meaning \"of/with the king\" (lugal = king; -it- = genitive; -da = comitative/locative). Common in administrative texts for royal contexts.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 740,
+          "output_tokens": 93
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB sila mun gur",
+      "reference": "total : NUMB sila3 salt ;",
+      "prediction": "NUMB sila3 of kunun-gig (aromatics)",
+      "metadata": {
+        "translation": "NUMB sila3 of kunun-gig (aromatics)",
+        "confidence": "high",
+        "notes": "cunigin = ku6-nigin-gig or kunun-gig, a type of scented reed or aromatic substance common in Sumerian administrative texts; mun = common abbreviation for sila3 (volume measure); gur = large capacity measure (approx. 300 sila3). Structure follows typical Ur III economic notation for quantified goods.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 745,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "igiza hensa",
+      "reference": "( so that ) in your eyes he indeed pleased .",
+      "prediction": "eyes of hensa",
+      "metadata": {
+        "translation": "eyes of hensa",
+        "confidence": "medium",
+        "notes": "igiza = 'eyes'; hensa likely a genitive form of a term, possibly a material, animal, or object (e.g., akin to administrative refs like 'barsuga' for fleece-less sheep). Context suggests economic or descriptive terminology from Ur III texts.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 741,
+          "output_tokens": 100
+        }
+      }
+    }
+  ]
+}
