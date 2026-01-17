@@ -1,0 +1,363 @@
+{
+  "experiment": {
+    "model": "claude-opus-4-5-20251101",
+    "n_shot": 100,
+    "test_size": 20,
+    "few_shot_seed": 42,
+    "test_seed": 99,
+    "system_prompt_variant": "default",
+    "monolingual_base_size": 0
+  },
+  "cost": {
+    "input_tokens": 84449,
+    "output_tokens": 2849,
+    "total_tokens": 87298,
+    "cost_usd": 0.24673499999999998,
+    "cost_per_example": 0.012336749999999999,
+    "batch_mode": true
+  },
+  "metrics": {
+    "bleu": {
+      "score": 24.01479437003873,
+      "precision": [
+        52.75590551181102,
+        29.906542056074766,
+        18.181818181818183,
+        11.594202898550725
+      ],
+      "bp": 1.0,
+      "sys_len": 127,
+      "ref_len": 120
+    },
+    "chrf": {
+      "score": 45.36936750991006
+    },
+    "num_examples": 20,
+    "confidence_distribution": {
+      "high": 13,
+      "medium": 7
+    }
+  },
+  "predictions": [
+    {
+      "sumerian": "awj .sn nxt .w",
+      "reference": "and their arms grew strong",
+      "prediction": "their arms are strong",
+      "metadata": {
+        "custom_id": "trans_0",
+        "translation": "their arms are strong",
+        "confidence": "high",
+        "notes": "awj is the dual form of 'arm' (a), .sn is the possessive suffix 'their', and nxt.w is the adjective 'strong' in plural form agreeing with the dual noun. This is a common phrase describing physical prowess.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4221,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "sumerian": "jr wxA jwty sDm .f",
+      "reference": "as for the fool unable to hear",
+      "prediction": "as for him who seeks one who does not listen to him",
+      "metadata": {
+        "custom_id": "trans_1",
+        "translation": "as for him who seeks one who does not listen to him",
+        "confidence": "medium",
+        "notes": "The text uses the conditional marker 'jr' (as for/if), followed by 'wxA' (to seek), 'jwty' (one who is not/without), and 'sDm.f' (he listens/hears). The construction 'jwty sDm.f' indicates negation - 'one who does not listen to him'. This appears to be a wisdom text or proverbial statement about seeking someone who is unresponsive.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4222,
+          "output_tokens": 181
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .f jmj rA pr wr nb .j",
+      "reference": "and said high steward my lord",
+      "prediction": "he says: high steward, my lord",
+      "metadata": {
+        "custom_id": "trans_2",
+        "translation": "he says: high steward, my lord",
+        "confidence": "high",
+        "notes": "Dd .f = \"he says\" (verb + suffix pronoun); jmj rA pr wr = \"high steward\" (lit. \"overseer of the great house\", a common title); nb .j = \"my lord\" (nb \"lord\" + .j possessive suffix \"my\"). This appears to be direct speech addressing or referring to the high steward.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4227,
+          "output_tokens": 155
+        }
+      }
+    },
+    {
+      "sumerian": "waH ps 1/4",
+      "reference": "1/4 cooked earth almonds",
+      "prediction": "add 1/4 portion",
+      "metadata": {
+        "custom_id": "trans_3",
+        "translation": "add 1/4 portion",
+        "confidence": "medium",
+        "notes": "This appears to be a recipe or medical instruction. \"waH\" means \"to add/place\" and \"ps\" refers to a portion or part. The fraction 1/4 indicates a quarter measure. Common in Egyptian medical and culinary texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4219,
+          "output_tokens": 124
+        }
+      }
+    },
+    {
+      "sumerian": "psDt jmjw Hwt aAt",
+      "reference": "the ennead in the great temple",
+      "prediction": "the ennead who are in the great temple",
+      "metadata": {
+        "custom_id": "trans_4",
+        "translation": "the ennead who are in the great temple",
+        "confidence": "high",
+        "notes": "psDt refers to the Ennead (the group of nine gods); jmjw is the plural participle \"who are in\"; Hwt aAt means \"great temple/mansion\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4224,
+          "output_tokens": 118
+        }
+      }
+    },
+    {
+      "sumerian": "Hr jxt wart tn",
+      "reference": "concerning this flight",
+      "prediction": "upon this leg of meat",
+      "metadata": {
+        "custom_id": "trans_5",
+        "translation": "upon this leg of meat",
+        "confidence": "medium",
+        "notes": "Hr is the preposition \"upon/on\". jxt means \"thing\" but can also refer to offerings or provisions. wart refers to a leg (of meat), often seen in offering contexts. tn is the demonstrative \"this\" (feminine). The phrase likely appears in a ritual or offering context.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4219,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "jwf wrj snTr pAD 1",
+      "reference": "a large portion of meat and one ball of incense",
+      "prediction": "fresh meat, incense, and one pAD-cake",
+      "metadata": {
+        "custom_id": "trans_6",
+        "translation": "fresh meat, incense, and one pAD-cake",
+        "confidence": "medium",
+        "notes": "This appears to be a list of offerings or ingredients. 'jwf' = meat/flesh, 'wrj' = fresh, 'snTr' = incense, 'pAD' = a type of cake or bread offering, '1' = the numeral one. This type of enumeration is common in Egyptian offering lists and medical/ritual texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4224,
+          "output_tokens": 157
+        }
+      }
+    },
+    {
+      "sumerian": "xnd .k ntjw m ww nw tA nTr",
+      "reference": "and trample those in the districts of the gods land",
+      "prediction": "you tread upon those who are in the districts of the god's land",
+      "metadata": {
+        "custom_id": "trans_7",
+        "translation": "you tread upon those who are in the districts of the god's land",
+        "confidence": "high",
+        "notes": "xnd = to tread/step upon; .k = your/you (2nd person masculine suffix); ntjw = those who are (relative plural); m = in; ww = districts/regions; nw = of (genitive); tA nTr = god's land (a term often referring to Punt or sacred foreign lands). The sentence follows typical Egyptian VSO structure with the verb xnd followed by the subject suffix .k, then the object.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4229,
+          "output_tokens": 179
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .jn sxtj pn",
+      "reference": "this peasant then said",
+      "prediction": "then this peasant said",
+      "metadata": {
+        "custom_id": "trans_8",
+        "translation": "then this peasant said",
+        "confidence": "high",
+        "notes": "The construction \"Dd .jn\" is a narrative past tense formula meaning \"then said\" or \"and said.\" \"sxtj\" means \"peasant\" or \"field-worker,\" and \"pn\" is the demonstrative \"this.\" This phrase is common in narrative texts, particularly in \"The Eloquent Peasant\" tale. Similar constructions appear in examples 6, 45, 56, and 60.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4222,
+          "output_tokens": 163
+        }
+      }
+    },
+    {
+      "sumerian": "jmj rA njwt",
+      "reference": "leader of the city",
+      "prediction": "overseer of the city",
+      "metadata": {
+        "custom_id": "trans_9",
+        "translation": "overseer of the city",
+        "confidence": "high",
+        "notes": "jmj rA is a common title meaning \"overseer\" or \"leader of\" (literally \"one who is in the mouth/command of\"). njwt means \"city/town\". This is a well-attested administrative title in ancient Egypt.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4220,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "xp .n .j s aHa .w m rA wAt",
+      "reference": "i met a man standing on the road",
+      "prediction": "I came upon a man standing on the road",
+      "metadata": {
+        "custom_id": "trans_10",
+        "translation": "I came upon a man standing on the road",
+        "confidence": "high",
+        "notes": "xp.n.j = \"I came upon/encountered\" (perfective with 1st person suffix); s = \"a man\"; aHa.w = \"standing\" (participle from aHa \"to stand\"); m rA wAt = \"on the road/way\" (literally \"at the mouth of the way\")",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4229,
+          "output_tokens": 147
+        }
+      }
+    },
+    {
+      "sumerian": "anx .tj",
+      "reference": "may she live",
+      "prediction": "may you live",
+      "metadata": {
+        "custom_id": "trans_11",
+        "translation": "may you live",
+        "confidence": "high",
+        "notes": "The form anx.tj uses the verb anx (to live) with the suffix .tj which is the 2nd person feminine singular suffix pronoun, forming an optative/wish construction. This is a common blessing formula in Ancient Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4216,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "qdw m jnr n mAT",
+      "reference": "those who built in granite",
+      "prediction": "built of granite stone",
+      "metadata": {
+        "custom_id": "trans_12",
+        "translation": "built of granite stone",
+        "confidence": "high",
+        "notes": "qdw = \"built/constructed\" (passive participle or verbal form from qd \"to build\"); m = preposition \"of/with/in\"; jnr = \"stone\"; n = genitive preposition \"of\"; mAT = \"granite\". This phrase describes construction material, common in architectural and building inscriptions.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4223,
+          "output_tokens": 139
+        }
+      }
+    },
+    {
+      "sumerian": "n wfA .tw .j",
+      "reference": "although i was not talked about",
+      "prediction": "I cannot be bent",
+      "metadata": {
+        "custom_id": "trans_13",
+        "translation": "I cannot be bent",
+        "confidence": "medium",
+        "notes": "The text uses the passive construction with .tw and the negation n. The verb wfA means \"to bend\" or \"to be crooked/false.\" With the 1st person singular suffix .j, this reads as a statement of personal integrity or steadfastness - \"I cannot be bent\" or \"I am unbendable.\" This type of expression is common in autobiographical texts where officials assert their moral character.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4220,
+          "output_tokens": 158
+        }
+      }
+    },
+    {
+      "sumerian": "dwA .sn nfrw Hm .f",
+      "reference": "and praised the goodness of his majesty",
+      "prediction": "they praise the perfection of his majesty",
+      "metadata": {
+        "custom_id": "trans_14",
+        "translation": "they praise the perfection of his majesty",
+        "confidence": "high",
+        "notes": "dwA = to praise/worship; .sn = they (3rd person plural suffix); nfrw = perfection/beauty; Hm = majesty; .f = his (possessive suffix). Standard praise formula common in royal texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4225,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "sumerian": "r rDjt rx .k ntt pXr .n .k xAswt",
+      "reference": "to let you know that your roving through lands",
+      "prediction": "to let you know that you have traversed the foreign lands",
+      "metadata": {
+        "custom_id": "trans_15",
+        "translation": "to let you know that you have traversed the foreign lands",
+        "confidence": "high",
+        "notes": "Breaking down the phrase: \"r rDjt\" (to cause/let), \"rx .k\" (you know), \"ntt\" (that), \"pXr .n .k\" (you have gone around/traversed), \"xAswt\" (foreign lands/hill countries). The construction uses the infinitive with r + causative rDjt followed by a subjunctive clause.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4233,
+          "output_tokens": 164
+        }
+      }
+    },
+    {
+      "sumerian": "sm twr Dbaw",
+      "reference": "sem priest with clean fingers",
+      "prediction": "sem-priest who purifies fingers",
+      "metadata": {
+        "custom_id": "trans_16",
+        "translation": "sem-priest who purifies fingers",
+        "confidence": "medium",
+        "notes": "sm refers to the sem-priest (a high-ranking funerary priest), twr means \"to purify/cleanse\", and Dbaw means \"fingers\". This likely describes a priestly title or ritual function involving the purification of hands/fingers, possibly in a funerary or temple context.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4218,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "DbA nfr n jr sw",
+      "reference": "a good reward belongs to him who does it",
+      "prediction": "a good reward for him who made it",
+      "metadata": {
+        "custom_id": "trans_17",
+        "translation": "a good reward for him who made it",
+        "confidence": "high",
+        "notes": "DbA (reward/recompense) + nfr (good) + n (for/of) + jr (who made/did) + sw (it/him). This is a common formula expressing reciprocity - a good reward given to the one who created or performed something.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4220,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "jrr .k r .k jrf r m",
+      "reference": "why do you act against yourself",
+      "prediction": "what will you do then",
+      "metadata": {
+        "custom_id": "trans_18",
+        "translation": "what will you do then",
+        "confidence": "medium",
+        "notes": "The text contains: jrr (to do/make), .k (your/you), r (preposition, here functioning in an interrogative construction), jrf (particle indicating emphasis or future/consequence), r m (interrogative \"what/how\"). This appears to be a rhetorical question about future action.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4224,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "snt",
+      "reference": "ochre",
+      "prediction": "sister",
+      "metadata": {
+        "custom_id": "trans_19",
+        "translation": "sister",
+        "confidence": "high",
+        "notes": "The word \"snt\" is a common Egyptian noun meaning \"sister.\" It is the feminine form derived from the root \"sn\" (brother/sibling), with the feminine \"t\" ending. In Egyptian love poetry, \"snt\" was also used as a term of endearment for a beloved woman.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4214,
+          "output_tokens": 131
+        }
+      }
+    }
+  ]
+}

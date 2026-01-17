@@ -1,0 +1,3244 @@
+{
+  "experiment": {
+    "model": "claude-opus-4-5-20251101",
+    "n_shot": 750,
+    "test_size": 200,
+    "few_shot_seed": 42,
+    "test_seed": 99,
+    "system_prompt_variant": "minimal",
+    "monolingual_base_size": 0
+  },
+  "cost": {
+    "input_tokens": 4869213,
+    "output_tokens": 25344,
+    "total_tokens": 4894557,
+    "cost_usd": 12.489832500000002,
+    "cost_per_example": 0.06244916250000001,
+    "batch_mode": true
+  },
+  "metrics": {
+    "bleu": {
+      "score": 43.76121371032709,
+      "precision": [
+        65.6470588235294,
+        47.53488372093023,
+        37.54266211604096,
+        31.304347826086957
+      ],
+      "bp": 1.0,
+      "sys_len": 1275,
+      "ref_len": 1275
+    },
+    "chrf": {
+      "score": 58.804148858295505
+    },
+    "num_examples": 200,
+    "confidence_distribution": {
+      "high": 122,
+      "medium": 77,
+      "low": 1
+    }
+  },
+  "predictions": [
+    {
+      "sumerian": "awj .sn nxt .w",
+      "reference": "and their arms grew strong",
+      "prediction": "their arms are strong",
+      "metadata": {
+        "custom_id": "trans_0",
+        "translation": "their arms are strong",
+        "confidence": "high",
+        "notes": "awj = arms (dual), .sn = their (suffix pronoun), nxt.w = strong/mighty (stative/adjective)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "sumerian": "jr wxA jwty sDm .f",
+      "reference": "as for the fool unable to hear",
+      "prediction": "as for one who seeks he who does not listen to him",
+      "metadata": {
+        "custom_id": "trans_1",
+        "translation": "as for one who seeks he who does not listen to him",
+        "confidence": "medium",
+        "notes": "The text contains \"jr\" (as for), \"wxA\" (to seek), \"jwty\" (he who does not/without), and \"sDm.f\" (he listens/hears). The construction suggests a conditional or relative clause about seeking someone who does not listen.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .f jmj rA pr wr nb .j",
+      "reference": "and said high steward my lord",
+      "prediction": "he says my lord the high steward",
+      "metadata": {
+        "custom_id": "trans_2",
+        "translation": "he says my lord the high steward",
+        "confidence": "high",
+        "notes": "Based on similar patterns in the examples: \"Dd .f\" = \"he says\", \"jmj rA pr wr\" = \"high steward\" (seen in examples 60, 139, 293, 294, 522), and \"nb .j\" = \"my lord\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "waH ps 1/4",
+      "reference": "1/4 cooked earth almonds",
+      "prediction": "cook 1/4",
+      "metadata": {
+        "custom_id": "trans_3",
+        "translation": "cook 1/4",
+        "confidence": "medium",
+        "notes": "waH can mean \"to place\" or \"to cook/boil\", and ps is a fraction marker. Based on similar medical/recipe contexts in the examples (like \"ps n .j jrTt\" = \"boiled milk for me\"), this appears to be a cooking instruction with a fractional measurement.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "psDt jmjw Hwt aAt",
+      "reference": "the ennead in the great temple",
+      "prediction": "the ennead who are in the great temple",
+      "metadata": {
+        "custom_id": "trans_4",
+        "translation": "the ennead who are in the great temple",
+        "confidence": "high",
+        "notes": "psDt = ennead (the nine gods); jmjw = who are in; Hwt aAt = great temple/mansion",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 106
+        }
+      }
+    },
+    {
+      "sumerian": "Hr jxt wart tn",
+      "reference": "concerning this flight",
+      "prediction": "on this fugitive matter",
+      "metadata": {
+        "custom_id": "trans_5",
+        "translation": "on this fugitive matter",
+        "confidence": "medium",
+        "notes": "The phrase contains \"Hr\" (on/upon), \"jxt\" (thing/matter), and \"wart\" (fugitive/fleeing). The demonstrative \"tn\" (this) modifies the noun phrase.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 117
+        }
+      }
+    },
+    {
+      "sumerian": "jwf wrj snTr pAD 1",
+      "reference": "a large portion of meat and one ball of incense",
+      "prediction": "fresh meat incense and pAD oil 1",
+      "metadata": {
+        "custom_id": "trans_6",
+        "translation": "fresh meat incense and pAD oil 1",
+        "confidence": "medium",
+        "notes": "This appears to be a list of offerings or ingredients. \"jwf wrj\" means fresh meat, \"snTr\" is incense/frankincense, and \"pAD\" is a type of oil or unguent. The \"1\" likely indicates a quantity of one unit.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 137
+        }
+      }
+    },
+    {
+      "sumerian": "xnd .k ntjw m ww nw tA nTr",
+      "reference": "and trample those in the districts of the gods land",
+      "prediction": "you tread upon those who are in the regions of the gods land",
+      "metadata": {
+        "custom_id": "trans_7",
+        "translation": "you tread upon those who are in the regions of the gods land",
+        "confidence": "high",
+        "notes": "xnd = tread/step upon; ntjw = those who are; ww = regions/districts; tA nTr = the gods land (referring to Punt or sacred foreign lands)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24352,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .jn sxtj pn",
+      "reference": "this peasant then said",
+      "prediction": "then this peasant said",
+      "metadata": {
+        "custom_id": "trans_8",
+        "translation": "then this peasant said",
+        "confidence": "high",
+        "notes": "This phrase appears multiple times in the examples (Example 412) with the same translation. It is a common narrative formula in Ancient Egyptian texts, particularly in \"The Tale of the Eloquent Peasant.\" The construction uses the past narrative form with .jn.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 124
+        }
+      }
+    },
+    {
+      "sumerian": "jmj rA njwt",
+      "reference": "leader of the city",
+      "prediction": "leader of the city",
+      "metadata": {
+        "custom_id": "trans_9",
+        "translation": "leader of the city",
+        "confidence": "high",
+        "notes": "This phrase appears exactly in Example 668 with the same translation. It is a common Ancient Egyptian title referring to a city administrator or mayor.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 97
+        }
+      }
+    },
+    {
+      "sumerian": "xp .n .j s aHa .w m rA wAt",
+      "reference": "i met a man standing on the road",
+      "prediction": "i came upon a man standing on the road",
+      "metadata": {
+        "custom_id": "trans_10",
+        "translation": "i came upon a man standing on the road",
+        "confidence": "high",
+        "notes": "Similar to example 267 \"jw pH .n .f wj aHa .kwj Hr wAt\" (he reached me as i was standing on the road). The verb xp means \"to come upon/encounter\", s means \"man\", aHa.w is the stative \"standing\", and rA wAt means \"road/path\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24352,
+          "output_tokens": 152
+        }
+      }
+    },
+    {
+      "sumerian": "anx .tj",
+      "reference": "may she live",
+      "prediction": "may you live",
+      "metadata": {
+        "custom_id": "trans_11",
+        "translation": "may you live",
+        "confidence": "high",
+        "notes": "The form anx.tj uses the subjunctive/optative ending .tj, expressing a wish or blessing. This is a common blessing formula in Ancient Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "sumerian": "qdw m jnr n mAT",
+      "reference": "those who built in granite",
+      "prediction": "built of granite stone",
+      "metadata": {
+        "custom_id": "trans_12",
+        "translation": "built of granite stone",
+        "confidence": "medium",
+        "notes": "qdw = built/constructed, m = of/from, jnr = stone, mAT = granite. This describes construction material, likely referring to a monument or building.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 107
+        }
+      }
+    },
+    {
+      "sumerian": "n wfA .tw .j",
+      "reference": "although i was not talked about",
+      "prediction": "i was not slack",
+      "metadata": {
+        "custom_id": "trans_13",
+        "translation": "i was not slack",
+        "confidence": "medium",
+        "notes": "The verb wfA means \"to be slack\" or \"to be negligent\". The construction with n...tw...j is a negated passive, indicating \"I was not made slack\" or more naturally \"I was not slack/negligent\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "dwA .sn nfrw Hm .f",
+      "reference": "and praised the goodness of his majesty",
+      "prediction": "they praise the beauty of his majesty",
+      "metadata": {
+        "custom_id": "trans_14",
+        "translation": "they praise the beauty of his majesty",
+        "confidence": "high",
+        "notes": "dwA = praise/worship; .sn = they (suffix pronoun); nfrw = beauty/perfection; Hm .f = his majesty. This is a common formula expressing adoration of the king.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "r rDjt rx .k ntt pXr .n .k xAswt",
+      "reference": "to let you know that your roving through lands",
+      "prediction": "to let you know that you have traversed the foreign lands",
+      "metadata": {
+        "custom_id": "trans_15",
+        "translation": "to let you know that you have traversed the foreign lands",
+        "confidence": "high",
+        "notes": "The phrase follows a common pattern seen in the examples: \"r rDjt rx\" (to let know/cause to know), \".k\" (you), \"ntt\" (that), \"pXr.n.k\" (you have traversed/gone around), \"xAswt\" (foreign lands). Similar constructions appear in examples like \"Dj .j rx .Tn sxr n nHH\" (i let you know eternal counsel).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24356,
+          "output_tokens": 180
+        }
+      }
+    },
+    {
+      "sumerian": "sm twr Dbaw",
+      "reference": "sem priest with clean fingers",
+      "prediction": "priest who purifies the fingers",
+      "metadata": {
+        "custom_id": "trans_16",
+        "translation": "priest who purifies the fingers",
+        "confidence": "medium",
+        "notes": "sm refers to a type of priest, twr means \"to purify/cleanse\", and Dbaw means \"fingers\". This likely refers to a priestly title involving ritual purification.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 110
+        }
+      }
+    },
+    {
+      "sumerian": "DbA nfr n jr sw",
+      "reference": "a good reward belongs to him who does it",
+      "prediction": "a good reward for the one who made it",
+      "metadata": {
+        "custom_id": "trans_17",
+        "translation": "a good reward for the one who made it",
+        "confidence": "high",
+        "notes": "DbA (reward/recompense) + nfr (good) + n (for) + jr sw (the one who made it). This is a common phrase expressing reward or recompense for work done.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "jrr .k r .k jrf r m",
+      "reference": "why do you act against yourself",
+      "prediction": "what will you do about it",
+      "metadata": {
+        "custom_id": "trans_18",
+        "translation": "what will you do about it",
+        "confidence": "medium",
+        "notes": "The phrase contains interrogative elements with \"jrf\" (what/why) and \"r m\" (about what). The construction \"jrr .k r .k\" suggests \"what you do concerning yourself/it\". This appears to be a rhetorical question common in Middle Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 132
+        }
+      }
+    },
+    {
+      "sumerian": "snt",
+      "reference": "ochre",
+      "prediction": "sister",
+      "metadata": {
+        "custom_id": "trans_19",
+        "translation": "sister",
+        "confidence": "high",
+        "notes": "Common Ancient Egyptian word for \"sister\" (snt). This is a well-attested and frequently occurring term in Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24337,
+          "output_tokens": 92
+        }
+      }
+    },
+    {
+      "sumerian": "m bjAw xAst pwnt",
+      "reference": "exotic goods from the land of punt",
+      "prediction": "with the marvels of the land of punt",
+      "metadata": {
+        "custom_id": "trans_20",
+        "translation": "with the marvels of the land of punt",
+        "confidence": "high",
+        "notes": "bjAw means \"marvels/wonders\", xAst means \"foreign land\", and pwnt refers to Punt, the famous trading destination for ancient Egyptians. The preposition m indicates \"with\" or \"from\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "sumerian": "jw awn jb Sw .f m sp",
+      "reference": "a greedy man is without achievement",
+      "prediction": "the greedy man is without success",
+      "metadata": {
+        "custom_id": "trans_21",
+        "translation": "the greedy man is without success",
+        "confidence": "high",
+        "notes": "This is a wisdom saying about greed. \"awn jb\" means \"greedy\" (literally \"greedy of heart\"), \"Sw\" means \"lacking/without\", and \"sp\" means \"success/fortune/luck\". The phrase follows a common pattern in Egyptian wisdom literature warning against greed.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "jmj rA pr wr pw sxAy .k",
+      "reference": "and it is the high steward whom you are referring to",
+      "prediction": "it is the high steward whom you remember",
+      "metadata": {
+        "custom_id": "trans_22",
+        "translation": "it is the high steward whom you remember",
+        "confidence": "high",
+        "notes": "jmj rA pr wr = \"high steward\" (a well-attested title); pw = \"it is\" (demonstrative); sxAy = \"remember/commemorate\"; .k = \"you\" (2nd person singular suffix)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 129
+        }
+      }
+    },
+    {
+      "sumerian": "jw .f Hr mn rA jb .f",
+      "reference": "while he has pain in his stomach",
+      "prediction": "he was suffering pain in his heart",
+      "metadata": {
+        "custom_id": "trans_23",
+        "translation": "he was suffering pain in his heart",
+        "confidence": "medium",
+        "notes": "The phrase \"mn rA jb\" refers to pain or suffering of the heart. \"Hr mn\" indicates a state of suffering or being in pain. The construction \"jw .f Hr\" indicates a continuous state.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 117
+        }
+      }
+    },
+    {
+      "sumerian": "jw xwsw n .j mr m jnr",
+      "reference": "a pyramid of stone was built for me",
+      "prediction": "a pyramid was built for me of stone",
+      "metadata": {
+        "custom_id": "trans_24",
+        "translation": "a pyramid was built for me of stone",
+        "confidence": "high",
+        "notes": "xwsw = built/constructed; mr = pyramid; jnr = stone. The construction \"n .j\" indicates \"for me\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 104
+        }
+      }
+    },
+    {
+      "sumerian": "nn xnn jm n aba",
+      "reference": "there is no boast",
+      "prediction": "there is no turmoil there from boasting",
+      "metadata": {
+        "custom_id": "trans_25",
+        "translation": "there is no turmoil there from boasting",
+        "confidence": "medium",
+        "notes": "The phrase contains \"nn\" (negation), \"xnn\" (turmoil/disturbance), \"jm\" (there), and \"aba\" (boasting). This appears to be a statement about the absence of chaos or disturbance caused by boasting or pride.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "sA jmn",
+      "reference": "son of amun",
+      "prediction": "son of amun",
+      "metadata": {
+        "custom_id": "trans_26",
+        "translation": "son of amun",
+        "confidence": "high",
+        "notes": "Common epithet meaning \"son of Amun\" - sA (son) + jmn (Amun). This follows the pattern seen in examples like \"sA ra\" (son of re) in examples 160, 300, 357, 376, and 311.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 130
+        }
+      }
+    },
+    {
+      "sumerian": "ja .n .j SAmw .j",
+      "reference": "and washed my dirty linen",
+      "prediction": "i washed my hair",
+      "metadata": {
+        "custom_id": "trans_27",
+        "translation": "i washed my hair",
+        "confidence": "medium",
+        "notes": "ja = to wash; SAmw = hair; .j = first person singular suffix pronoun \"my\". The .n suffix indicates completed action (past tense).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 105
+        }
+      }
+    },
+    {
+      "sumerian": "jm Sm wrrt .f r kmt",
+      "reference": "let his chariot go back to egypt",
+      "prediction": "let his chariot go to egypt",
+      "metadata": {
+        "custom_id": "trans_28",
+        "translation": "let his chariot go to egypt",
+        "confidence": "medium",
+        "notes": "jm = let/may (jussive particle), Sm = go, wrrt = chariot, .f = his (suffix pronoun), r = to, kmt = egypt. The construction follows a jussive pattern with the particle jm followed by the verb Sm (to go).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "psS .n .f jtr aA Hr jAt .f",
+      "reference": "he divided the great river along its middle",
+      "prediction": "he divided the great river along its middle",
+      "metadata": {
+        "custom_id": "trans_29",
+        "translation": "he divided the great river along its middle",
+        "confidence": "high",
+        "notes": "This translation matches example 27 exactly. The text describes dividing (psS) the great river (jtr aA) along its middle/center (Hr jAt .f).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 112
+        }
+      }
+    },
+    {
+      "sumerian": "n mA .n sj jrt nb",
+      "reference": "no eye had seen it",
+      "prediction": "no eye had seen it",
+      "metadata": {
+        "custom_id": "trans_30",
+        "translation": "no eye had seen it",
+        "confidence": "high",
+        "notes": "This is an exact match with Example 379 in the provided examples.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 84
+        }
+      }
+    },
+    {
+      "sumerian": "wn .jn jmj rA pr wr mrw sA rnsj Hr srxt",
+      "reference": "then the high steward rensi son of meru accused",
+      "prediction": "then the high steward rensi son of meru proceeded to complain",
+      "metadata": {
+        "custom_id": "trans_31",
+        "translation": "then the high steward rensi son of meru proceeded to complain",
+        "confidence": "high",
+        "notes": "Based on similar patterns in the examples, particularly Example 60 (Dd .jn jmj rA pr wr mrw sA rnsj = then the high steward rensi son of meru said), Example 139 (rDj .jn jmj rA pr wr mrw sA rnsj = and the high steward rensi son of meru had), and Example 413 (wn .jn sxtj pn Hr rmyt = then this peasant proceeded to wail). The construction \"wn .jn X Hr Y\" indicates \"then X proceeded to Y\" where srxt means \"to complain\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24358,
+          "output_tokens": 226
+        }
+      }
+    },
+    {
+      "sumerian": "1000 t",
+      "reference": "a thousand of bread",
+      "prediction": "a thousand loaves of bread",
+      "metadata": {
+        "custom_id": "trans_32",
+        "translation": "a thousand loaves of bread",
+        "confidence": "high",
+        "notes": "Based on example 272 \"1000 m t\" = \"a thousand of bread\", this follows the same pattern. The number 1000 followed by t (bread) is a common offering formula in Ancient Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 118
+        }
+      }
+    },
+    {
+      "sumerian": "sjp r ntt m jswt",
+      "reference": "investigating what was of old",
+      "prediction": "assigned to what is in the chambers",
+      "metadata": {
+        "custom_id": "trans_33",
+        "translation": "assigned to what is in the chambers",
+        "confidence": "medium",
+        "notes": "sjp means \"to assign/entrust\", r ntt means \"to what is\", and jswt refers to \"chambers\" or \"rooms\". This phrase likely refers to administrative assignment of goods or duties related to storage chambers.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "mk sw m jjt",
+      "reference": "look he is arriving",
+      "prediction": "behold he is coming",
+      "metadata": {
+        "custom_id": "trans_34",
+        "translation": "behold he is coming",
+        "confidence": "high",
+        "notes": "mk = behold/look; sw = he/him; m = in/as; jjt = coming/arrival. This is a common presentative construction in Ancient Egyptian.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 107
+        }
+      }
+    },
+    {
+      "sumerian": "wHm .f rA n bjtj n sAHw .f",
+      "reference": "as he reports the words of the king to his nobles",
+      "prediction": "he repeated the word of the king to his nobles",
+      "metadata": {
+        "custom_id": "trans_35",
+        "translation": "he repeated the word of the king to his nobles",
+        "confidence": "medium",
+        "notes": "wHm = repeat/report; rA = word/speech; bjtj = king (of Lower Egypt); sAHw = nobles/dignitaries. The construction suggests reporting or repeating royal speech to officials.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24353,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "pr .j m hrw",
+      "reference": "and i go out by day",
+      "prediction": "i go forth by day",
+      "metadata": {
+        "custom_id": "trans_36",
+        "translation": "i go forth by day",
+        "confidence": "high",
+        "notes": "This is a common phrase in Ancient Egyptian funerary texts, particularly associated with the \"Book of the Dead\" (also known as \"The Book of Going Forth by Day\"). The phrase \"pr .j m hrw\" literally means \"my going forth in/by day\" - expressing the deceased's ability to leave the tomb and move freely in the daylight.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 145
+        }
+      }
+    },
+    {
+      "sumerian": "n Hsb .n .j st",
+      "reference": "which i couldnt count",
+      "prediction": "i did not count them",
+      "metadata": {
+        "custom_id": "trans_37",
+        "translation": "i did not count them",
+        "confidence": "high",
+        "notes": "The phrase follows a common negation pattern with 'n' + verb + suffix pronoun. 'Hsb' means 'to count/reckon' and '.n .j' indicates first person singular past tense. Similar construction to example 39 'wHm Hswt .j' and other first person constructions in the examples.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "xft xa .k",
+      "reference": "when you appeared",
+      "prediction": "when you appear",
+      "metadata": {
+        "custom_id": "trans_38",
+        "translation": "when you appear",
+        "confidence": "high",
+        "notes": "xft is a preposition meaning \"when\" or \"at the time of\", xa is the verb \"to appear\" (often used for royal or divine appearances), and .k is the 2nd person masculine singular suffix pronoun \"you/your\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "mHy .k Hr anx",
+      "reference": "if you are concerned about life",
+      "prediction": "you neglect life",
+      "metadata": {
+        "custom_id": "trans_39",
+        "translation": "you neglect life",
+        "confidence": "medium",
+        "notes": "mHy is a verb meaning \"to neglect\" or \"to forget\", .k is the 2nd person singular suffix pronoun \"you\", Hr is a preposition \"concerning/about\", and anx means \"life\". The phrase appears to be an admonition or observation about someone being careless about living.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .j n m mjn",
+      "reference": "whom can i talk to today",
+      "prediction": "whom can i talk to today",
+      "metadata": {
+        "custom_id": "trans_40",
+        "translation": "whom can i talk to today",
+        "confidence": "high",
+        "notes": "This phrase appears multiple times in the examples (Examples 68, 170, 487, 500, 516, 666) with the same translation. It is a well-attested phrase from the \"Dialogue of a Man with his Ba\" text.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "sumerian": "nb nswt tAwj",
+      "reference": "lord of the thrones of the two lands",
+      "prediction": "lord of the thrones of the two lands",
+      "metadata": {
+        "custom_id": "trans_41",
+        "translation": "lord of the thrones of the two lands",
+        "confidence": "high",
+        "notes": "This is a common royal epithet in Ancient Egyptian texts. The phrase appears identically in example 628.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 95
+        }
+      }
+    },
+    {
+      "sumerian": "nn rx .f",
+      "reference": "without him knowing",
+      "prediction": "he does not know",
+      "metadata": {
+        "custom_id": "trans_42",
+        "translation": "he does not know",
+        "confidence": "high",
+        "notes": "nn is a negation particle, rx means \"to know\", and .f is the third person masculine singular suffix pronoun \"he/his\". This is a standard negated verb construction in Middle Egyptian.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 110
+        }
+      }
+    },
+    {
+      "sumerian": "HAt wr 6",
+      "reference": "chief of the six great ones",
+      "prediction": "six great chiefs",
+      "metadata": {
+        "custom_id": "trans_43",
+        "translation": "six great chiefs",
+        "confidence": "medium",
+        "notes": "HAt can mean \"chief\" or \"foremost one\", wr means \"great\", and 6 is the numeral. This follows the pattern of Egyptian noun-adjective-numeral construction.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 110
+        }
+      }
+    },
+    {
+      "sumerian": "HAtj a",
+      "reference": "count",
+      "prediction": "count",
+      "metadata": {
+        "custom_id": "trans_44",
+        "translation": "count",
+        "confidence": "high",
+        "notes": "HAtj a is a common Egyptian noble title, often translated as \"count\" or \"prince\". It appears frequently in the examples, such as in \"HAtj a jmj rA Hmw nTr n nxbt\" (count leader of priests of nekhbet) and \"rDjt .f sw jrj pat hAtj a\" (his placing him in the position of hereditary nobleman prince).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 159
+        }
+      }
+    },
+    {
+      "sumerian": "gm Ts",
+      "reference": "who finds the right words",
+      "prediction": "find the knot",
+      "metadata": {
+        "custom_id": "trans_45",
+        "translation": "find the knot",
+        "confidence": "medium",
+        "notes": "gm means \"find\" and Ts can mean \"knot\", \"bind\", or \"raise up\". In medical or magical contexts, this phrase could refer to finding/locating a binding or obstruction.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 112
+        }
+      }
+    },
+    {
+      "sumerian": "nsw swt n swhj n .f r DAwt awj .fj m rA DAyw",
+      "reference": "a king who is lauded for his arms in battle",
+      "prediction": "but a king is one who should not be slandered for the speech of his arms is among the orators",
+      "metadata": {
+        "custom_id": "trans_46",
+        "translation": "but a king is one who should not be slandered for the speech of his arms is among the orators",
+        "confidence": "medium",
+        "notes": "Complex sentence with nsw (king), swt (but/however), swhj (slander/revile), DAwt (speech/words), awj (arms/hands), and DAyw (orators/speakers). The construction suggests a contrast about kingly behavior and rhetorical power.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24360,
+          "output_tokens": 151
+        }
+      }
+    },
+    {
+      "sumerian": "jsT wj m tp n mSa .n",
+      "reference": "now i was in the van of our army",
+      "prediction": "now i was at the head of our army",
+      "metadata": {
+        "custom_id": "trans_47",
+        "translation": "now i was at the head of our army",
+        "confidence": "high",
+        "notes": "jsT (now/behold) + wj (I/me) + m tp n (at the head of) + mSa.n (our army). This is a common military narrative construction in Middle Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "ptpt xAswt nb bSTt",
+      "reference": "who tramples all rebellious foreign lands",
+      "prediction": "who tramples all rebellious foreign lands",
+      "metadata": {
+        "custom_id": "trans_48",
+        "translation": "who tramples all rebellious foreign lands",
+        "confidence": "high",
+        "notes": "ptpt = tramples/trampling; xAswt = foreign lands; nb = all/every; bSTt = rebellious/rebelling. This is a common royal epithet describing the king's military prowess.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "jtH .tw jnr m kAw jn aAmw",
+      "reference": "the stone was dragged by bulls that asiatics brought",
+      "prediction": "stone was dragged by oxen by the asiatics",
+      "metadata": {
+        "custom_id": "trans_49",
+        "translation": "stone was dragged by oxen by the asiatics",
+        "confidence": "medium",
+        "notes": "jtH = to drag/pull; jnr = stone; kAw = oxen/bulls; aAmw = Asiatics/foreigners from Asia. The passive construction .tw indicates the action was done to the stone.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24352,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "sumerian": "wtx .w m jfd r dmj .sn",
+      "reference": "and fled quickly to their town",
+      "prediction": "they fled in haste to their town",
+      "metadata": {
+        "custom_id": "trans_50",
+        "translation": "they fled in haste to their town",
+        "confidence": "medium",
+        "notes": "wtx = to flee/escape; jfd = quickly/in haste; dmj = town/settlement. The .w suffix indicates plural subject, .sn indicates \"their\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 112
+        }
+      }
+    },
+    {
+      "sumerian": "jr wdf .k m Dd n .j jn Tw r jw pn",
+      "reference": "if you delay telling me who brought you to this island",
+      "prediction": "if you delay in telling me who brought you to this island",
+      "metadata": {
+        "custom_id": "trans_51",
+        "translation": "if you delay in telling me who brought you to this island",
+        "confidence": "high",
+        "notes": "This is a conditional sentence with \"jr\" (if), \"wdf\" (delay), \"Dd\" (tell/say), and \"jn Tw r jw pn\" (who brought you to this island). The construction follows standard Middle Egyptian conditional syntax.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24355,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "jnD Hr .k jtn n hrw",
+      "reference": "hail to you celestial disk of the day",
+      "prediction": "hail to you sun disk of the day",
+      "metadata": {
+        "custom_id": "trans_52",
+        "translation": "hail to you sun disk of the day",
+        "confidence": "high",
+        "notes": "jnD Hr .k is a common greeting formula meaning \"hail to you\" or \"greetings to you\". jtn refers to the sun disk (Aten), and hrw means \"day\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "Ddt .n n .j bA .j",
+      "reference": "what my soul said to me",
+      "prediction": "what my soul said to me",
+      "metadata": {
+        "custom_id": "trans_53",
+        "translation": "what my soul said to me",
+        "confidence": "high",
+        "notes": "This phrase appears identically in Example 532, which provides the exact translation. The construction uses Ddt (what was said), .n (past tense marker), n .j (to me), and bA .j (my soul/ba).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 124
+        }
+      }
+    },
+    {
+      "sumerian": "rwD mdt r snmyt",
+      "reference": "the spoken word is more persistent than weed",
+      "prediction": "the spoken word is more persistent than weed",
+      "metadata": {
+        "custom_id": "trans_54",
+        "translation": "the spoken word is more persistent than weed",
+        "confidence": "high",
+        "notes": "This exact phrase appears in the training examples (Example 304). The translation refers to the enduring nature of spoken words compared to weeds.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "sumerian": "nfr sy r xt nbt m tA pn",
+      "reference": "it is finer than anything in this land",
+      "prediction": "it is more beautiful than anything in this land",
+      "metadata": {
+        "custom_id": "trans_55",
+        "translation": "it is more beautiful than anything in this land",
+        "confidence": "high",
+        "notes": "nfr = beautiful/good; sy = it (feminine pronoun); r = than/more than; xt nbt = everything/anything; m tA pn = in this land",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "DA .n .f jtrw pXr wr",
+      "reference": "he crossed the river euphrates",
+      "prediction": "he crossed the great river euphrates",
+      "metadata": {
+        "custom_id": "trans_56",
+        "translation": "he crossed the great river euphrates",
+        "confidence": "high",
+        "notes": "Based on similar examples: \"jtrw\" means \"river\", \"pXr wr\" refers to the Euphrates (literally \"great circuit/bend\"), and \"DA\" means \"to cross\". The construction \"DA .n .f\" indicates completed action \"he crossed\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 132
+        }
+      }
+    },
+    {
+      "sumerian": "pA jrf Dd",
+      "reference": "now what is said is that",
+      "prediction": "the one who indeed said",
+      "metadata": {
+        "custom_id": "trans_57",
+        "translation": "the one who indeed said",
+        "confidence": "medium",
+        "notes": "pA is the definite article \"the\", jrf is an emphatic particle often translated as \"indeed\" or \"then\", and Dd is the verb \"to say\". This phrase introduces or refers to someone who spoke.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 116
+        }
+      }
+    },
+    {
+      "sumerian": "n xpr .n rwDt .sn nb",
+      "reference": "no success of theirs came about at all",
+      "prediction": "none of their strength had yet come into being",
+      "metadata": {
+        "custom_id": "trans_58",
+        "translation": "none of their strength had yet come into being",
+        "confidence": "medium",
+        "notes": "The phrase uses the negated perfective construction \"n xpr.n\" (had not come into being/existed) with \"rwDt.sn nb\" (all their strength/firmness). This appears to be describing a primordial time before certain qualities or powers existed.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "jn Axt .f sxr n .f st",
+      "reference": "it is his serpent diadem that overthrows them for him",
+      "prediction": "it is his horizon that overthrows it for him",
+      "metadata": {
+        "custom_id": "trans_59",
+        "translation": "it is his horizon that overthrows it for him",
+        "confidence": "medium",
+        "notes": "The phrase contains \"Axt\" (horizon/useful thing), \"sxr\" (to overthrow/plan), and suffix pronouns. The construction \"jn...sxr n.f st\" suggests an emphatic construction with the agent \"Axt.f\" (his horizon/his useful thing) performing the action.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "jw ra m ky bw",
+      "reference": "ra is in another place",
+      "prediction": "re is in another place",
+      "metadata": {
+        "custom_id": "trans_60",
+        "translation": "re is in another place",
+        "confidence": "high",
+        "notes": "Standard sentence structure with jw + subject (ra/re) + preposition phrase (m ky bw = in another place). \"ky\" means \"another/other\" and \"bw\" means \"place\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 117
+        }
+      }
+    },
+    {
+      "sumerian": "jw jrt .k r wAyw jm .k",
+      "reference": "since your eye is on those who scheme against you",
+      "prediction": "your eye will look far from you",
+      "metadata": {
+        "custom_id": "trans_61",
+        "translation": "your eye will look far from you",
+        "confidence": "medium",
+        "notes": "The text contains jrt (eye), wAyw (far/distant), and jm.k (from you/in you). The construction suggests the eye looking or being directed far away from the person addressed.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "jnn .f Snyt .f Hna .f",
+      "reference": "and he shall bring his courtiers with him",
+      "prediction": "he brings his courtiers with him",
+      "metadata": {
+        "custom_id": "trans_62",
+        "translation": "he brings his courtiers with him",
+        "confidence": "high",
+        "notes": "jnn = \"he brings\", .f = \"his/him\", Snyt = \"courtiers/entourage\", Hna = \"with\". The construction follows standard Middle Egyptian syntax with the verb jnn (to bring) followed by the subject suffix .f and the object Snyt .f (his courtiers), with the prepositional phrase Hna .f (with him) at the end.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 160
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .j n m mjn",
+      "reference": "whom can i talk to today",
+      "prediction": "whom can i talk to today",
+      "metadata": {
+        "custom_id": "trans_63",
+        "translation": "whom can i talk to today",
+        "confidence": "high",
+        "notes": "This phrase appears multiple times in the examples (Examples 68, 170, 487, 500, 516, 666) with the same translation. It is a recurring refrain from the famous Middle Egyptian text \"The Dialogue of a Man with his Soul\" (also known as \"The Man Who Was Tired of Life\").",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 141
+        }
+      }
+    },
+    {
+      "sumerian": "wAH mAr .j",
+      "reference": "and cast aside my misery",
+      "prediction": "leave my misery",
+      "metadata": {
+        "custom_id": "trans_64",
+        "translation": "leave my misery",
+        "confidence": "medium",
+        "notes": "Based on example 188 \"jw .j ATp .kw Xr mAr\" meaning \"im laden with misery\" where mAr means misery/wretchedness, and wAH meaning \"leave/put down/set aside\". The phrase appears to be an imperative requesting relief from suffering.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "r mAa wsSt .f",
+      "reference": "until his urine comes out",
+      "prediction": "to make his hall spacious",
+      "metadata": {
+        "custom_id": "trans_65",
+        "translation": "to make his hall spacious",
+        "confidence": "medium",
+        "notes": "The phrase contains \"r mAa\" (to make/render) and \"wsSt\" (hall/broad hall), with the suffix pronoun \".f\" (his). The construction suggests a purpose clause indicating the widening or making spacious of a hall.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "sumerian": "xr Hm n",
+      "reference": "under the majesty of",
+      "prediction": "the majesty of",
+      "metadata": {
+        "custom_id": "trans_66",
+        "translation": "the majesty of",
+        "confidence": "high",
+        "notes": "Common phrase in Ancient Egyptian texts, typically followed by a royal name or title. Compare with Example 45 \"Dd .jn Hm n ra\" = \"the majesty of re then said\" and Example 588 \"Dd .jn Hm n ra nb sAXbw\" = \"then the majesty of re lord of sakhbu said\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 151
+        }
+      }
+    },
+    {
+      "sumerian": "TA pw nDm n qAb .Tn",
+      "reference": "but it is a sweet breath from your entrails",
+      "prediction": "but it is a sweet breath from your entrails",
+      "metadata": {
+        "custom_id": "trans_67",
+        "translation": "but it is a sweet breath from your entrails",
+        "confidence": "high",
+        "notes": "This exact phrase appears in the example translations (Example 699). The translation captures the meaning of TA (breath/wind), nDm (sweet/pleasant), and qAb (entrails/interior), with the possessive suffix .Tn (your, plural).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "mk sw jw .w r spr n .j Hr .s",
+      "reference": "and he has come to plead with me about it",
+      "prediction": "look he has come to plead to me about it",
+      "metadata": {
+        "custom_id": "trans_68",
+        "translation": "look he has come to plead to me about it",
+        "confidence": "high",
+        "notes": "mk sw = \"look he\"; jw.w = \"has come\"; r spr = \"to plead/appeal\"; n.j = \"to me\"; Hr.s = \"about it/concerning it\". This follows the pattern of similar constructions in the examples like \"jw.j r Smt spr.j Hr.k n jnpw\" (I will go and plead concerning you with anubis).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 170
+        }
+      }
+    },
+    {
+      "sumerian": "Hw kAw .sn",
+      "reference": "drove off their bulls",
+      "prediction": "smiting their bulls",
+      "metadata": {
+        "custom_id": "trans_69",
+        "translation": "smiting their bulls",
+        "confidence": "medium",
+        "notes": "Hw (smite/strike) + kAw (bulls/oxen) + .sn (their). This follows the pattern of similar constructions in the examples where Hw means \"to smite\" and kAw refers to cattle/bulls.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "Dd mdw",
+      "reference": "words to be spoken",
+      "prediction": "words to be spoken",
+      "metadata": {
+        "custom_id": "trans_70",
+        "translation": "words to be spoken",
+        "confidence": "high",
+        "notes": "This is a common formulaic phrase found in Egyptian religious and ritual texts, indicating the beginning of a recitation or spell. This exact phrase appears in Example 535.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "sumerian": "rn n mr pn",
+      "reference": "the name of this canal is",
+      "prediction": "the name of this pyramid",
+      "metadata": {
+        "custom_id": "trans_71",
+        "translation": "the name of this pyramid",
+        "confidence": "high",
+        "notes": "rn = name, n = of, mr = pyramid, pn = this (demonstrative). Common construction for naming pyramids in Ancient Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "sumerian": "Dd mAat jr mAat",
+      "reference": "speak justice and do justice",
+      "prediction": "speak truth and do truth",
+      "metadata": {
+        "custom_id": "trans_72",
+        "translation": "speak truth and do truth",
+        "confidence": "high",
+        "notes": "Common wisdom text phrase. \"Dd\" means \"speak/say\", \"mAat\" means \"truth/justice/righteousness\", \"jr\" means \"do/make\". The phrase emphasizes both speaking and acting in accordance with truth/maat.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "sS nb",
+      "reference": "every scribe",
+      "prediction": "every scribe",
+      "metadata": {
+        "custom_id": "trans_73",
+        "translation": "every scribe",
+        "confidence": "high",
+        "notes": "This phrase appears in Example 373 with the exact same translation. \"sS\" means \"scribe\" and \"nb\" means \"every/all/lord\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24338,
+          "output_tokens": 103
+        }
+      }
+    },
+    {
+      "sumerian": "pr .tj hAA .tj Hr gs .sj",
+      "reference": "and passed in ascending and descending",
+      "prediction": "and passed in ascending and descending",
+      "metadata": {
+        "custom_id": "trans_74",
+        "translation": "and passed in ascending and descending",
+        "confidence": "high",
+        "notes": "This is an exact match from the training examples (Example 320). The text describes movement up and down, likely referring to passage or transit.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "sumerian": "sT Hm .f xa .w Hr TnTAt",
+      "reference": "his majesty appeared on the dais",
+      "prediction": "his majesty appeared on a chariot",
+      "metadata": {
+        "custom_id": "trans_75",
+        "translation": "his majesty appeared on a chariot",
+        "confidence": "high",
+        "notes": "sT Hm .f = \"his majesty\"; xa .w = \"appeared/rising\" (often used for royal appearances); Hr TnTAt = \"on a chariot\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 114
+        }
+      }
+    },
+    {
+      "sumerian": "sAt nsw snt nsw jty",
+      "reference": "kings daughter kings sister sovereign",
+      "prediction": "kings daughter kings sister ity",
+      "metadata": {
+        "custom_id": "trans_76",
+        "translation": "kings daughter kings sister ity",
+        "confidence": "high",
+        "notes": "This is a titulary sequence commonly found in royal inscriptions. \"sAt nsw\" = king's daughter, \"snt nsw\" = king's sister, \"jty\" = a personal name (Ity)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "mAa xrw",
+      "reference": "justified",
+      "prediction": "justified",
+      "metadata": {
+        "custom_id": "trans_77",
+        "translation": "justified",
+        "confidence": "high",
+        "notes": "This is a very common Ancient Egyptian phrase meaning \"justified\" or \"true of voice,\" typically used as an epithet for the deceased. It appears multiple times in the examples (Examples 163, 367, 450, 674) with the same translation.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "Hna mwt Hwt Hr",
+      "reference": "with mut hathor",
+      "prediction": "together with the mother hathor",
+      "metadata": {
+        "custom_id": "trans_78",
+        "translation": "together with the mother hathor",
+        "confidence": "high",
+        "notes": "Hna = \"together with/and\"; mwt = \"mother\"; Hwt Hr = \"Hathor\" (literally \"House of Horus\"). This follows the pattern seen in Example 283 \"Hna nTrw jpn\" = \"together with these gods\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "Dj .tj m msTpt",
+      "reference": "you having been placed in a hearse",
+      "prediction": "to be placed in a bandage",
+      "metadata": {
+        "custom_id": "trans_79",
+        "translation": "to be placed in a bandage",
+        "confidence": "medium",
+        "notes": "The phrase contains Dj.tj (passive form of \"to give/place\") and msTpt (bandage). This appears to be a medical instruction commonly found in Egyptian medical papyri.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 113
+        }
+      }
+    },
+    {
+      "sumerian": "ntf mwt",
+      "reference": "such is death",
+      "prediction": "he is death",
+      "metadata": {
+        "custom_id": "trans_80",
+        "translation": "he is death",
+        "confidence": "high",
+        "notes": "ntf is the third person masculine singular independent pronoun \"he/it is\", and mwt means \"death\". This is a nominal sentence equating the subject with death.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 104
+        }
+      }
+    },
+    {
+      "sumerian": "xtmt nb nt pr HD",
+      "reference": "every treasure of the treasury",
+      "prediction": "every seal of the treasury",
+      "metadata": {
+        "custom_id": "trans_81",
+        "translation": "every seal of the treasury",
+        "confidence": "high",
+        "notes": "xtmt = seal, nb = every/all, nt = of, pr HD = treasury (literally \"house of silver\")",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 98
+        }
+      }
+    },
+    {
+      "sumerian": "tp mAa .f",
+      "reference": "next to it",
+      "prediction": "on his head",
+      "metadata": {
+        "custom_id": "trans_82",
+        "translation": "on his head",
+        "confidence": "medium",
+        "notes": "The phrase \"tp mAa .f\" contains \"tp\" (head/upon) and \"mAa\" (true/right) with the suffix pronoun \".f\" (his). This could mean \"on his head\" or \"according to his truth/right.\" Given the context of similar phrases in the examples, \"on his head\" or \"upon his true (head)\" is a reasonable interpretation.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 153
+        }
+      }
+    },
+    {
+      "sumerian": "nn SnTy .j",
+      "reference": "there was no enmity towards me",
+      "prediction": "there is no one who contends with me",
+      "metadata": {
+        "custom_id": "trans_83",
+        "translation": "there is no one who contends with me",
+        "confidence": "medium",
+        "notes": "The text \"nn SnTy .j\" uses the negation particle \"nn\" followed by \"SnTy\" (one who contends/disputes) with the first person suffix pronoun \".j\" (my/me). This follows the pattern of similar negative constructions in the examples.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "Hmt .f Hr sSA n .f",
+      "reference": "his wife pleads with him",
+      "prediction": "his wife prays for him",
+      "metadata": {
+        "custom_id": "trans_84",
+        "translation": "his wife prays for him",
+        "confidence": "medium",
+        "notes": "Hmt.f = his wife; Hr = progressive/continuous marker; sSA = to pray/make supplications; n.f = for him",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 104
+        }
+      }
+    },
+    {
+      "sumerian": "n aAt n bAw nTr pn Sps jmn ra",
+      "reference": "because of the greatness of the might of this noble god amun re",
+      "prediction": "because of the greatness of the might of this noble god amun re",
+      "metadata": {
+        "custom_id": "trans_85",
+        "translation": "because of the greatness of the might of this noble god amun re",
+        "confidence": "high",
+        "notes": "This follows the pattern seen in example 169 \"n aAt bAw jt .s jmn\" (because of the greatness of the might of her father amun), with the addition of \"nTr pn Sps\" (this noble god) and \"ra\" completing the divine name as \"amun re\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24354,
+          "output_tokens": 153
+        }
+      }
+    },
+    {
+      "sumerian": "Htp n .k ra nb tAwj",
+      "reference": "so may re lord of the two lands be gracious to you",
+      "prediction": "re lord of the two lands is gracious to you",
+      "metadata": {
+        "custom_id": "trans_86",
+        "translation": "re lord of the two lands is gracious to you",
+        "confidence": "medium",
+        "notes": "Htp = \"be gracious/satisfied\", n .k = \"to you\", ra = \"Re (sun god)\", nb tAwj = \"lord of the two lands\" (common royal epithet)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "Dj .sn jAw n nb tAwj",
+      "reference": "they gave praise to the lord of the two lands",
+      "prediction": "they give praise to the lord of the two lands",
+      "metadata": {
+        "custom_id": "trans_87",
+        "translation": "they give praise to the lord of the two lands",
+        "confidence": "high",
+        "notes": "Dj .sn = \"they give/cause\", jAw = \"praise/adoration\", n = \"to\", nb tAwj = \"lord of the two lands\" (a common royal epithet). This follows standard Egyptian verbal construction with the suffix pronoun .sn indicating third person plural subject.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 141
+        }
+      }
+    },
+    {
+      "sumerian": "mry antjw",
+      "reference": "loving myhrr",
+      "prediction": "beloved of myrrh",
+      "metadata": {
+        "custom_id": "trans_88",
+        "translation": "beloved of myrrh",
+        "confidence": "medium",
+        "notes": "The word \"mry\" means \"beloved\" and \"antjw\" means \"myrrh\" (a fragrant resin). This phrase could be an epithet or title, possibly referring to someone associated with myrrh trade or rituals involving myrrh.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "sumerian": "awj .sn nxt .w",
+      "reference": "and their arms grew strong",
+      "prediction": "their arms are strong",
+      "metadata": {
+        "custom_id": "trans_89",
+        "translation": "their arms are strong",
+        "confidence": "high",
+        "notes": "awj = arms/hands (dual), .sn = their (3rd person plural suffix pronoun), nxt.w = strong/mighty (stative/adjective)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 106
+        }
+      }
+    },
+    {
+      "sumerian": "nf n xftjw",
+      "reference": "those enemies",
+      "prediction": "those enemies",
+      "metadata": {
+        "custom_id": "trans_90",
+        "translation": "those enemies",
+        "confidence": "high",
+        "notes": "This phrase appears in the examples (Example 261) with the exact same translation. \"nf\" can refer to \"those/that\" and \"xftjw\" means \"enemies\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 107
+        }
+      }
+    },
+    {
+      "sumerian": "jb tm .w n sxA .n .f sf",
+      "reference": "the mind has stopped and cannot remember the day before",
+      "prediction": "a heart is complete when it recalls what it has forgotten",
+      "metadata": {
+        "custom_id": "trans_91",
+        "translation": "a heart is complete when it recalls what it has forgotten",
+        "confidence": "medium",
+        "notes": "The phrase contains jb (heart), tm.w (complete/perfect), sxA (to recall/remember), and sf (yesterday/past/what was forgotten). The construction suggests the heart becomes whole through remembering.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "jmj rA pr wr",
+      "reference": "high steward",
+      "prediction": "high steward",
+      "metadata": {
+        "custom_id": "trans_92",
+        "translation": "high steward",
+        "confidence": "high",
+        "notes": "This is a common Egyptian title. The term appears in several examples in the training data, such as \"jmj rA pr wr mrw sA rnsj\" translated as \"the high steward rensi son of meru\" and \"jmj rA pr wr n mwt nsw\" as \"high steward to the kings mother\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "nfrwj pr .k pn",
+      "reference": "how fine is this house of yours",
+      "prediction": "how beautiful is this house of yours",
+      "metadata": {
+        "custom_id": "trans_93",
+        "translation": "how beautiful is this house of yours",
+        "confidence": "high",
+        "notes": "The exclamatory particle \"nfrwj\" (how beautiful) combined with \"pr.k pn\" (this house of yours) forms an exclamatory sentence praising a house or temple.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 114
+        }
+      }
+    },
+    {
+      "sumerian": "m hbnj Hr Abw wab",
+      "reference": "of ebony and pure ivory",
+      "prediction": "of ebony and pure ivory",
+      "metadata": {
+        "custom_id": "trans_94",
+        "translation": "of ebony and pure ivory",
+        "confidence": "high",
+        "notes": "hbnj = ebony, Abw = ivory/elephantine, wab = pure/clean. This phrase describes materials, likely for construction or crafting objects.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 106
+        }
+      }
+    },
+    {
+      "sumerian": "nsw bjtj Dsr kA ra mAa xrw",
+      "reference": "the king of upper and lower egypt djeserkare justified",
+      "prediction": "the king of upper and lower egypt djeserkare justified",
+      "metadata": {
+        "custom_id": "trans_95",
+        "translation": "the king of upper and lower egypt djeserkare justified",
+        "confidence": "high",
+        "notes": "This is a royal titulary. \"nsw bjtj\" is the standard title for \"king of upper and lower egypt\", \"Dsr kA ra\" is the throne name Djeserkare, and \"mAa xrw\" means \"justified\" or \"true of voice\" (a common epithet for the deceased).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24352,
+          "output_tokens": 151
+        }
+      }
+    },
+    {
+      "sumerian": "r sxnwt nwt",
+      "reference": "to the supports of heaven",
+      "prediction": "to the resting place of nut",
+      "metadata": {
+        "custom_id": "trans_96",
+        "translation": "to the resting place of nut",
+        "confidence": "medium",
+        "notes": "sxnwt refers to a resting place or dwelling place, nwt is the sky goddess Nut. The preposition r indicates direction \"to\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 108
+        }
+      }
+    },
+    {
+      "sumerian": "jr r .T n .j swt tA jt HqAt 6",
+      "reference": "but prepare for me the six heqat of barley",
+      "prediction": "but make for me six gallons of barley",
+      "metadata": {
+        "custom_id": "trans_97",
+        "translation": "but make for me six gallons of barley",
+        "confidence": "medium",
+        "notes": "The text contains: jr r .T n .j swt - \"but make for me\" (imperative construction with swt as contrastive particle), tA jt - \"the barley\", HqAt 6 - \"six gallons\" (HqAt is a unit of dry measure). Similar pattern seen in example 738 with \"jt HqAt 3\" meaning \"three gallons of barley\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24353,
+          "output_tokens": 168
+        }
+      }
+    },
+    {
+      "sumerian": "jw .s m pr",
+      "reference": "she is in the house",
+      "prediction": "she is in the house",
+      "metadata": {
+        "custom_id": "trans_98",
+        "translation": "she is in the house",
+        "confidence": "high",
+        "notes": "Common sentence structure with feminine pronoun .s (she/it) + m (in) + pr (house). The pattern jw + pronoun + m + location is a standard Egyptian construction for expressing location/state.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "mjtt smjw n wD pn jr .n",
+      "reference": "copy of the reply to this decree written by",
+      "prediction": "likewise the reports of this stela which was made",
+      "metadata": {
+        "custom_id": "trans_99",
+        "translation": "likewise the reports of this stela which was made",
+        "confidence": "medium",
+        "notes": "The text contains: mjtt (likewise/similar), smjw (reports/accounts), n (of), wD (stela/decree), pn (this), jr.n (which was made/created). The construction follows standard Middle Egyptian relative form patterns.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 130
+        }
+      }
+    },
+    {
+      "sumerian": "rnpt sp 50 tpj Smw sw 22",
+      "reference": "year 50 first month of the season of harvest day 22",
+      "prediction": "year 50 first month of the season of harvest day 22",
+      "metadata": {
+        "custom_id": "trans_100",
+        "translation": "year 50 first month of the season of harvest day 22",
+        "confidence": "high",
+        "notes": "This is a date formula. \"rnpt sp 50\" = year 50, \"tpj Smw\" = first month of Smw (harvest/summer season), \"sw 22\" = day 22. This exact phrase appears in the examples.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "jw .w r THn Hna Hm .j",
+      "reference": "as they came to engage my majesty",
+      "prediction": "they will meet with my majesty",
+      "metadata": {
+        "custom_id": "trans_101",
+        "translation": "they will meet with my majesty",
+        "confidence": "high",
+        "notes": "THn means \"to meet/encounter\", Hm .j is \"my majesty\" - a common royal self-reference. The construction jw .w r + infinitive indicates future action.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 113
+        }
+      }
+    },
+    {
+      "sumerian": "wHA jt .sn",
+      "reference": "tore out their barley",
+      "prediction": "tore out their barley",
+      "metadata": {
+        "custom_id": "trans_102",
+        "translation": "tore out their barley",
+        "confidence": "high",
+        "notes": "Based on example 9 \"wHA .n .j jt .sn\" = \"tore out their barley\", this phrase without the \".n .j\" (which indicates \"I\" as the subject) translates similarly but without the first person reference. The verb wHA means \"to tear out/uproot\", jt means \"barley\", and .sn is the suffix pronoun \"their\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 160
+        }
+      }
+    },
+    {
+      "sumerian": "nbw awaw 2",
+      "reference": "of gold two rings",
+      "prediction": "two gold rings",
+      "metadata": {
+        "custom_id": "trans_103",
+        "translation": "two gold rings",
+        "confidence": "medium",
+        "notes": "nbw = gold; awaw = rings/bracelets; 2 = two. This appears to be an inventory or offering list item.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 98
+        }
+      }
+    },
+    {
+      "sumerian": "jw wp .n .f rA .f r .j",
+      "reference": "he opened his mouth to me",
+      "prediction": "he opened his mouth against me",
+      "metadata": {
+        "custom_id": "trans_104",
+        "translation": "he opened his mouth against me",
+        "confidence": "high",
+        "notes": "The phrase \"wp rA r\" is a common Egyptian idiom meaning \"to open one's mouth against/to\" someone, typically indicating speaking or making a statement. The construction uses the sDm.n.f past tense form.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "n Hwt Hr nbt pwnt",
+      "reference": "to hathor mistress of punt",
+      "prediction": "to hathor mistress of punt",
+      "metadata": {
+        "custom_id": "trans_105",
+        "translation": "to hathor mistress of punt",
+        "confidence": "high",
+        "notes": "This is a dedication formula. \"Hwt Hr\" is Hathor, \"nbt\" means \"mistress/lady of\", and \"pwnt\" is Punt (the land of Punt, a trading partner of ancient Egypt). Similar patterns appear in examples like \"sTt nbt Abw\" (satis mistress of elephantine) and references to Punt in examples 464 and 633.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 161
+        }
+      }
+    },
+    {
+      "sumerian": "aHa .w Hr Htrw .sn",
+      "reference": "standing on their chariots",
+      "prediction": "standing on their horses",
+      "metadata": {
+        "custom_id": "trans_106",
+        "translation": "standing on their horses",
+        "confidence": "high",
+        "notes": "The text uses the stative construction \"aHa .w\" (standing) with \"Hr Htrw .sn\" (on their horses). The suffix pronoun .sn indicates \"their\" referring to a plural possessor.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "jwdnb XsAyt snTr n gsw prw",
+      "reference": "terebinth balsam processed incense",
+      "prediction": "incense and resin for the sides of the temples",
+      "metadata": {
+        "custom_id": "trans_107",
+        "translation": "incense and resin for the sides of the temples",
+        "confidence": "medium",
+        "notes": "The text contains terms related to temple offerings. \"snTr\" is clearly \"incense\", \"gsw prw\" refers to \"sides of temples/houses\", and \"XsAyt\" appears to be a type of resin or aromatic substance. \"jwdnb\" may be a compound or variant spelling.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 144
+        }
+      }
+    },
+    {
+      "sumerian": "jw .j Hr Xt .j m bAH .f",
+      "reference": "while i was on my belly before him",
+      "prediction": "i was on my belly before him",
+      "metadata": {
+        "custom_id": "trans_108",
+        "translation": "i was on my belly before him",
+        "confidence": "high",
+        "notes": "This phrase describes prostration before someone, a common gesture of respect or submission in ancient Egypt. \"Hr Xt\" literally means \"on the belly\" and \"m bAH .f\" means \"before him/in his presence\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "wnn stt .f m Xt .f",
+      "reference": "his mucus is in his belly",
+      "prediction": "his mucus is in his belly",
+      "metadata": {
+        "custom_id": "trans_109",
+        "translation": "his mucus is in his belly",
+        "confidence": "high",
+        "notes": "This is an exact match with Example 207 in the provided translations.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 86
+        }
+      }
+    },
+    {
+      "sumerian": "anx .w Dt",
+      "reference": "may he live forever",
+      "prediction": "may he live forever",
+      "metadata": {
+        "custom_id": "trans_110",
+        "translation": "may he live forever",
+        "confidence": "high",
+        "notes": "Common Egyptian formula expressing wishes for eternal life, typically used in royal contexts. Similar to example 52 \"anx .w Dt pAy .n nb\" (may he live forever our lord) and example 301 \"Dj anx Dt\" (given life forever).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 131
+        }
+      }
+    },
+    {
+      "sumerian": "js Hm .f m nhrn mj nt a .f Tnw rnpt",
+      "reference": "when his majesty was in naharina according to his annual custom",
+      "prediction": "his majesty was in naharina according to his custom every year",
+      "metadata": {
+        "custom_id": "trans_111",
+        "translation": "his majesty was in naharina according to his custom every year",
+        "confidence": "high",
+        "notes": "nhrn refers to Naharina (Mitanni), a region in northern Mesopotamia. The phrase \"mj nt a .f Tnw rnpt\" indicates a customary annual practice.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24359,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "xr Snyt",
+      "reference": "with the courtiers",
+      "prediction": "before the courtiers",
+      "metadata": {
+        "custom_id": "trans_112",
+        "translation": "before the courtiers",
+        "confidence": "high",
+        "notes": "The term \"Snyt\" refers to the royal court or courtiers, and \"xr\" indicates \"before\" or \"in the presence of\". This phrase commonly appears in Egyptian texts describing someone's position or actions in relation to the royal court.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "Xqrt nsw",
+      "reference": "lady in waiting",
+      "prediction": "royal ornament",
+      "metadata": {
+        "custom_id": "trans_113",
+        "translation": "royal ornament",
+        "confidence": "high",
+        "notes": "Xqrt nsw is a title meaning \"royal ornament\" or \"king's ornament,\" typically used as an honorific title for royal women or female attendants in the Egyptian court.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 108
+        }
+      }
+    },
+    {
+      "sumerian": "Hna rDjt jn .tw n .j jAdt 20",
+      "reference": "and let me be brought twenty nets",
+      "prediction": "and let twenty nets be brought to me",
+      "metadata": {
+        "custom_id": "trans_114",
+        "translation": "and let twenty nets be brought to me",
+        "confidence": "high",
+        "notes": "Based on similar patterns in the examples, particularly Example 729 which shows \"rDjt nn jAdwt\" (let these nets be given). The structure \"Hna rDjt jn.tw n.j\" means \"and let be brought to me\" with \"jAdt 20\" being \"twenty nets\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24354,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "jw grt wn Hm n nTr pn Sps Xr HAt Hr nbA 11",
+      "reference": "whereas formerly the majesty of this noble god had been on eleven carrying poles",
+      "prediction": "now the majesty of this august god was facing eleven javelins",
+      "metadata": {
+        "custom_id": "trans_115",
+        "translation": "now the majesty of this august god was facing eleven javelins",
+        "confidence": "medium",
+        "notes": "The phrase \"jw grt wn\" indicates a circumstantial/narrative introduction (\"now...was\"). \"Hm n nTr pn Sps\" means \"the majesty of this august god\". \"Xr HAt Hr\" suggests facing or being before something. \"nbA 11\" refers to eleven javelins or spears.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24363,
+          "output_tokens": 156
+        }
+      }
+    },
+    {
+      "sumerian": "ja Hr pw tSA wpwt",
+      "reference": "he is vengeful one who smashes heads",
+      "prediction": "it is the face that washes errands",
+      "metadata": {
+        "custom_id": "trans_116",
+        "translation": "it is the face that washes errands",
+        "confidence": "low",
+        "notes": "This is a difficult phrase. \"ja\" means \"wash\", \"Hr\" means \"face\", \"pw\" is the copula \"it is\", \"tSA\" can mean \"errand/message\" or relate to errors, and \"wpwt\" means \"errands/commissions\". The phrase structure is unusual and may be idiomatic or proverbial in nature.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 154
+        }
+      }
+    },
+    {
+      "sumerian": "aHa .tj .fj Hr HAt hrw qrs",
+      "reference": "and stand at the tomb shaft on the day of burial",
+      "prediction": "he will stand at the head on the day of burial",
+      "metadata": {
+        "custom_id": "trans_117",
+        "translation": "he will stand at the head on the day of burial",
+        "confidence": "medium",
+        "notes": "The text contains: aHa (stand), .tj.fj (future/prospective form, \"he will\"), Hr HAt (at the head/front), hrw (day), qrs (burial). This appears to be a funerary context referring to someone who will be present at the burial ceremony.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 142
+        }
+      }
+    },
+    {
+      "sumerian": "jw .w r THn Hna Hm .j",
+      "reference": "as they came to engage my majesty",
+      "prediction": "they will meet with my majesty",
+      "metadata": {
+        "custom_id": "trans_118",
+        "translation": "they will meet with my majesty",
+        "confidence": "high",
+        "notes": "THn means \"to meet/encounter\", Hm .j is \"my majesty\" (royal self-reference), jw .w r indicates future tense \"they will\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 111
+        }
+      }
+    },
+    {
+      "sumerian": "Ddw n .f mdt HApt",
+      "reference": "to whom secret matters are told",
+      "prediction": "to whom secret matters are told",
+      "metadata": {
+        "custom_id": "trans_119",
+        "translation": "to whom secret matters are told",
+        "confidence": "high",
+        "notes": "Ddw is the passive participle \"that which is told/said\", n .f means \"to him\", mdt means \"words/matters\", and HApt means \"secret/hidden\". This is a common epithet referring to someone who is entrusted with confidential information.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 130
+        }
+      }
+    },
+    {
+      "sumerian": "jsT grt jn Hm n nTr pn Sps",
+      "reference": "now it was the majesty of this august god",
+      "prediction": "now this august god brought",
+      "metadata": {
+        "custom_id": "trans_120",
+        "translation": "now this august god brought",
+        "confidence": "medium",
+        "notes": "jsT grt is a discourse particle meaning \"now\" or \"moreover\"; Hm n nTr pn Sps translates to \"the majesty of this august god\" - common royal/divine epithet construction",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24353,
+          "output_tokens": 118
+        }
+      }
+    },
+    {
+      "sumerian": "wn .jn rmT Hr kAt mdwt r .f",
+      "reference": "mankind then conspired against him",
+      "prediction": "then the people began to speak against him",
+      "metadata": {
+        "custom_id": "trans_121",
+        "translation": "then the people began to speak against him",
+        "confidence": "high",
+        "notes": "The construction \"wn .jn\" indicates a sequential narrative past tense (\"then\"). \"rmT\" means \"people\", \"Hr kAt mdwt\" means \"speaking/making words\" (literally \"upon work of words\"), and \"r .f\" means \"against him\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "sumerian": "jw .j r Smt spr Hr .k n jnpw",
+      "reference": "i will go to petition on account of you to anubis",
+      "prediction": "i will go and plead concerning you with anubis",
+      "metadata": {
+        "custom_id": "trans_122",
+        "translation": "i will go and plead concerning you with anubis",
+        "confidence": "high",
+        "notes": "This exact phrase appears in example 255. The text contains: jw .j (I) r Smt (will go) spr (plead/appeal) Hr .k (concerning you) n jnpw (with/to Anubis).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24353,
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "sumerian": "jr .k sA n sjmA nTr",
+      "reference": "and produce a son in the favour of god",
+      "prediction": "you should act as a son who appeases the god",
+      "metadata": {
+        "custom_id": "trans_123",
+        "translation": "you should act as a son who appeases the god",
+        "confidence": "medium",
+        "notes": "The phrase contains jr .k (you should/if you) + sA n (son of/as a son) + sjmA nTr (appeasing/pacifying the god). This appears to be an admonition or instruction about proper conduct toward the divine.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "qmA tm",
+      "reference": "creator of all",
+      "prediction": "creator of all",
+      "metadata": {
+        "custom_id": "trans_124",
+        "translation": "creator of all",
+        "confidence": "high",
+        "notes": "qmA means \"to create\" or \"creator\" and tm (Atum) represents totality/completeness, often translated as \"all\" or referring to the creator god Atum who embodies completeness.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 114
+        }
+      }
+    },
+    {
+      "sumerian": "Xrdw m qAb .sn",
+      "reference": "including children",
+      "prediction": "children among them",
+      "metadata": {
+        "custom_id": "trans_125",
+        "translation": "children among them",
+        "confidence": "high",
+        "notes": "Xrdw = children, m = in/among, qAb = midst/entrails, .sn = their (suffix pronoun). The phrase \"m qAb\" commonly means \"among\" or \"in the midst of\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "nn wHm .n r bjn Hr mn xpr ra",
+      "reference": "we will not again do evil against menkheperre",
+      "prediction": "never again was evil repeated against menkheperre",
+      "metadata": {
+        "custom_id": "trans_126",
+        "translation": "never again was evil repeated against menkheperre",
+        "confidence": "high",
+        "notes": "The text contains: nn wHm (never repeated), r bjn (evil/bad), Hr (against/upon), mn xpr ra (Menkheperre - throne name of Thutmose III). The construction \"nn wHm\" followed by a noun indicates something that was not repeated or never happened again.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 144
+        }
+      }
+    },
+    {
+      "sumerian": "jw Xnwtj a.w.s. m sgr",
+      "reference": "the residence l.p.h. was in silence",
+      "prediction": "the residence life prosperity health is in silence",
+      "metadata": {
+        "custom_id": "trans_127",
+        "translation": "the residence life prosperity health is in silence",
+        "confidence": "medium",
+        "notes": "Xnwtj refers to the royal residence/palace, a.w.s. is the standard abbreviation for \"anx wDA snb\" (life, prosperity, health) - a formulaic expression used after references to royalty. sgr means silence/quiet.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 131
+        }
+      }
+    },
+    {
+      "sumerian": "jqr Dd Hr jb n nsw",
+      "reference": "excellent speaker in the opinion of the king",
+      "prediction": "excellent of speech in the heart of the king",
+      "metadata": {
+        "custom_id": "trans_128",
+        "translation": "excellent of speech in the heart of the king",
+        "confidence": "high",
+        "notes": "This is a common epithet describing someone who is trusted and favored by the king. \"jqr\" means excellent/skilled, \"Dd\" refers to speech/saying, \"Hr jb\" means \"in the heart of\" (indicating favor/trust), and \"nsw\" means king.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 137
+        }
+      }
+    },
+    {
+      "sumerian": "wnj",
+      "reference": "who hastens",
+      "prediction": "weni",
+      "metadata": {
+        "custom_id": "trans_129",
+        "translation": "weni",
+        "confidence": "high",
+        "notes": "This is a proper name - Weni (also transliterated as Uni or Weni), a famous Egyptian official from the 6th Dynasty who served under several pharaohs. His autobiography is one of the most important biographical texts from the Old Kingdom.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24338,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "psDt nbwt wAst",
+      "reference": "and of the ennead mistresses of thebes",
+      "prediction": "the golden ennead of thebes",
+      "metadata": {
+        "custom_id": "trans_130",
+        "translation": "the golden ennead of thebes",
+        "confidence": "high",
+        "notes": "psDt = ennead (group of nine gods), nbwt = golden (feminine plural), wAst = Thebes",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "sumerian": "TAw n rA Ax .w n saH",
+      "reference": "breath of the mouth is beneficial to the blessed",
+      "prediction": "breath of the mouth which is beneficial for the mummy",
+      "metadata": {
+        "custom_id": "trans_131",
+        "translation": "breath of the mouth which is beneficial for the mummy",
+        "confidence": "medium",
+        "notes": "TAw = breath/wind, rA = mouth, Ax.w = beneficial/effective (plural or abstract), saH = mummy/noble. The phrase describes breath from the mouth that is beneficial or effective for the mummy, likely a funerary context referring to the breath of life given to the deceased.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 142
+        }
+      }
+    },
+    {
+      "sumerian": "jw Ts .n .j DAm .sn Xrdw",
+      "reference": "i levied their troops of young men",
+      "prediction": "i raised their young troops as children",
+      "metadata": {
+        "custom_id": "trans_132",
+        "translation": "i raised their young troops as children",
+        "confidence": "medium",
+        "notes": "The text contains: jw (particle), Ts.n.j (I raised/tied up, 1st person singular past), DAm (young people/troops), .sn (their), Xrdw (children). The phrase suggests the speaker raised or trained their young soldiers from childhood.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24352,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "rwj s m tA .f n HAt",
+      "reference": "a man leaves his land because of nakedness",
+      "prediction": "a man is driven from his land because of his property",
+      "metadata": {
+        "custom_id": "trans_133",
+        "translation": "a man is driven from his land because of his property",
+        "confidence": "medium",
+        "notes": "rwj = to drive away/remove; s = man; m tA .f = from his land; n HAt = because of property/possessions. The phrase describes someone being expelled from their homeland due to their wealth or belongings.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "sumerian": "jw .k rx .tj Ts tp Hsq",
+      "reference": "that you know how to mend a severed head",
+      "prediction": "you know how to mend a severed head",
+      "metadata": {
+        "custom_id": "trans_134",
+        "translation": "you know how to mend a severed head",
+        "confidence": "high",
+        "notes": "Based on example 599 \"Tsw tp Hsq\" meaning \"people who mend a severed head\", this sentence uses the same phrase with the stative/prospective form \"rx.tj\" (you know) to indicate knowledge or ability to perform this action.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "jHw Hr sTA",
+      "reference": "pulled by oxen",
+      "prediction": "oxen dragging",
+      "metadata": {
+        "custom_id": "trans_135",
+        "translation": "oxen dragging",
+        "confidence": "high",
+        "notes": "jHw means \"oxen/cattle\" and sTA means \"to drag/pull\". The phrase describes oxen in the act of dragging or pulling something.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 103
+        }
+      }
+    },
+    {
+      "sumerian": "Tst .j jb .j sAq .j Haw .j",
+      "reference": "i lifted my heart and collected myself",
+      "prediction": "i collected my heart and gathered my body",
+      "metadata": {
+        "custom_id": "trans_136",
+        "translation": "i collected my heart and gathered my body",
+        "confidence": "medium",
+        "notes": "Tst = collect/gather; jb = heart; sAq = gather/collect; Haw = body/limbs. This appears to be a phrase describing composing oneself or regaining composure, with parallel construction using two verbs of gathering applied to heart and body.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24354,
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "sumerian": "dr sArr m wD jrt .f",
+      "reference": "he who should relieve distress is ordering its creation",
+      "prediction": "he who should relieve distress is ordering its creation",
+      "metadata": {
+        "custom_id": "trans_137",
+        "translation": "he who should relieve distress is ordering its creation",
+        "confidence": "high",
+        "notes": "This exact phrase appears in the training examples (Example 734). The text describes a paradoxical situation where someone who should alleviate suffering is instead commanding its creation.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 110
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .j n m mjn",
+      "reference": "whom can i talk to today",
+      "prediction": "whom can i talk to today",
+      "metadata": {
+        "custom_id": "trans_138",
+        "translation": "whom can i talk to today",
+        "confidence": "high",
+        "notes": "This phrase appears multiple times in the examples (Examples 68, 170, 487, 500, 516, 666) with the same translation. It is a recurring refrain from a well-known Middle Egyptian literary text known as \"The Dialogue of a Man with His Soul\" or \"The Dispute of a Man with His Ba\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 144
+        }
+      }
+    },
+    {
+      "sumerian": "ntj wn wr n wrw .f",
+      "reference": "whose great ones have one greater",
+      "prediction": "whose great ones have one greater",
+      "metadata": {
+        "custom_id": "trans_139",
+        "translation": "whose great ones have one greater",
+        "confidence": "high",
+        "notes": "This phrase is identical to Example 289 in the provided examples. It describes a hierarchical structure where even the great ones have someone greater above them.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "sumerian": "nn jj .n .f rsj",
+      "reference": "he wouldnt come at all",
+      "prediction": "he has not come from the south",
+      "metadata": {
+        "custom_id": "trans_140",
+        "translation": "he has not come from the south",
+        "confidence": "high",
+        "notes": "nn = negation particle; jj.n.f = \"he came\" (perfective sdm.n.f form); rsj = \"south/southern\". The construction nn + sdm.n.f negates a completed action.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 123
+        }
+      }
+    },
+    {
+      "sumerian": "wnn jrf tA pf mj m m xmt .f",
+      "reference": "how will that land be without him",
+      "prediction": "what will that land be like without him",
+      "metadata": {
+        "custom_id": "trans_141",
+        "translation": "what will that land be like without him",
+        "confidence": "medium",
+        "notes": "The phrase contains \"wnn\" (to be/exist), \"tA pf\" (that land), \"mj m\" (like what), and \"m xmt .f\" (without him). This appears to be a rhetorical question about the state of a land in someone's absence.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "r maHA .k Hr anx mj Dd .k",
+      "reference": "in order to reach for a life as you described",
+      "prediction": "so that you may fight for life as you say",
+      "metadata": {
+        "custom_id": "trans_142",
+        "translation": "so that you may fight for life as you say",
+        "confidence": "medium",
+        "notes": "The text contains: r (so that/in order to), maHA (fight/struggle), .k (you/your), Hr (for/upon), anx (life), mj (as/like), Dd (say), .k (you). The construction suggests a purpose clause about fighting for life in accordance with what one says.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "Sms twt n mH 13 m jnr",
+      "reference": "following a statue of 13 cubits of stone",
+      "prediction": "a statue of 13 cubits in stone",
+      "metadata": {
+        "custom_id": "trans_143",
+        "translation": "a statue of 13 cubits in stone",
+        "confidence": "high",
+        "notes": "Based on similar patterns in the examples: \"Sms twt\" relates to statue/following, \"n mH 13\" means \"of 13 cubits\" (compare to example 59 \"mH 10\" = \"10 cubits\" and example 749 \"mH 20\" = \"20 cubits\"), and \"m jnr\" means \"in/of stone\" (compare to example 593 \"jmjt Dw pn\" referring to stone/mountain material)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 188
+        }
+      }
+    },
+    {
+      "sumerian": "nTr aA sHr SmAy",
+      "reference": "great god who expels disease demons",
+      "prediction": "the great god who expels disease demons",
+      "metadata": {
+        "custom_id": "trans_144",
+        "translation": "the great god who expels disease demons",
+        "confidence": "high",
+        "notes": "This exact phrase appears multiple times in the examples (examples 208 and 684), with consistent translation.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 94
+        }
+      }
+    },
+    {
+      "sumerian": "dmj pw jmnt",
+      "reference": "the west is a harbour",
+      "prediction": "it is the western town",
+      "metadata": {
+        "custom_id": "trans_145",
+        "translation": "it is the western town",
+        "confidence": "medium",
+        "notes": "dmj = town/harbor, pw = it is (copula), jmnt = west/western. The construction follows the standard Egyptian nominal sentence pattern with pw.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 104
+        }
+      }
+    },
+    {
+      "sumerian": "n qmd .j sj",
+      "reference": "i did not devise it",
+      "prediction": "i did not plan it",
+      "metadata": {
+        "custom_id": "trans_146",
+        "translation": "i did not plan it",
+        "confidence": "medium",
+        "notes": "The verb qmd means \"to plan\" or \"to intend\". The negative particle n combined with the first person singular suffix .j indicates negation of a past action. The feminine suffix .s on sj refers to \"it\" (feminine referent).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 124
+        }
+      }
+    },
+    {
+      "sumerian": "Da .s pw jrt .s mAA .s",
+      "reference": "her eye is her storm when it sees",
+      "prediction": "it is her arm her eye and her sight",
+      "metadata": {
+        "custom_id": "trans_147",
+        "translation": "it is her arm her eye and her sight",
+        "confidence": "medium",
+        "notes": "The text contains body parts (Da = arm, jrt = eye, mAA = seeing/sight) with the feminine suffix .s indicating possession. The construction \"pw\" indicates an equational sentence.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 116
+        }
+      }
+    },
+    {
+      "sumerian": "m sAt aHwtj Hr bAkw",
+      "reference": "do not overwhelm the field labourer with work",
+      "prediction": "do not overwhelm the field labourer with work",
+      "metadata": {
+        "custom_id": "trans_148",
+        "translation": "do not overwhelm the field labourer with work",
+        "confidence": "high",
+        "notes": "This exact phrase appears in the examples (Example 198). It is an imperative construction with 'm' (negative imperative \"do not\"), 'sAt' (overwhelm/oppress), 'aHwtj' (field labourer/farmer), 'Hr' (preposition \"with\"), and 'bAkw' (work/labor).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 156
+        }
+      }
+    },
+    {
+      "sumerian": "nTr nfr jT m xpS .f",
+      "reference": "the good god who seizes with his arm",
+      "prediction": "the good god who seizes with his strong arm",
+      "metadata": {
+        "custom_id": "trans_149",
+        "translation": "the good god who seizes with his strong arm",
+        "confidence": "high",
+        "notes": "nTr nfr = \"the good god\" (common royal epithet); jT = \"to seize/take\"; m = \"with\"; xpS = \"strong arm/scimitar\" (often used metaphorically for military might); .f = \"his\" (suffix pronoun)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 140
+        }
+      }
+    },
+    {
+      "sumerian": "n xtxt Tst",
+      "reference": "not a soldier retreated",
+      "prediction": "without retreating from battle",
+      "metadata": {
+        "custom_id": "trans_150",
+        "translation": "without retreating from battle",
+        "confidence": "medium",
+        "notes": "The phrase contains \"xtxt\" (retreat/go back) and \"Tst\" (battle/fighting). The \"n\" at the beginning functions as a negation, giving the meaning \"without retreating from battle\" - a common military epithet in Ancient Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 128
+        }
+      }
+    },
+    {
+      "sumerian": "Hssw nTrw .s nbw",
+      "reference": "praised by all her gods",
+      "prediction": "praised by all her gods",
+      "metadata": {
+        "custom_id": "trans_151",
+        "translation": "praised by all her gods",
+        "confidence": "high",
+        "notes": "Hssw is the passive participle of Hsj (to praise), nTrw means \"gods\", .s is the feminine singular suffix pronoun \"her\", and nbw means \"all\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 114
+        }
+      }
+    },
+    {
+      "sumerian": "m wDAw r tA n DAhj",
+      "reference": "while proceeding to the land of djahi",
+      "prediction": "proceeding to the land of djahi",
+      "metadata": {
+        "custom_id": "trans_152",
+        "translation": "proceeding to the land of djahi",
+        "confidence": "high",
+        "notes": "The phrase contains \"wDAw\" (proceeding/going), \"r\" (to), \"tA\" (land), and \"DAhj\" (Djahi, a region in ancient Syria-Palestine). This is a common formulaic expression describing military or diplomatic journeys to the Levant.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 137
+        }
+      }
+    },
+    {
+      "sumerian": "mAA nHsw",
+      "reference": "beholding the nubians",
+      "prediction": "to see the nubians",
+      "metadata": {
+        "custom_id": "trans_153",
+        "translation": "to see the nubians",
+        "confidence": "high",
+        "notes": "mAA = to see; nHsw = Nubians (plural). This is an infinitive construction indicating purpose or action.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "sumerian": "nb .j",
+      "reference": "my lord",
+      "prediction": "my lord",
+      "metadata": {
+        "custom_id": "trans_154",
+        "translation": "my lord",
+        "confidence": "high",
+        "notes": "Common possessive construction with nb (lord/master) and the first person singular suffix pronoun .j (my). This phrase appears frequently in Ancient Egyptian texts, especially in contexts addressing or referring to one's superior, king, or deity.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24338,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "Dj .sn prt r xrw",
+      "reference": "may they give a mortuary offering",
+      "prediction": "they give an invocation offering",
+      "metadata": {
+        "custom_id": "trans_155",
+        "translation": "they give an invocation offering",
+        "confidence": "high",
+        "notes": "The phrase \"prt r xrw\" (literally \"going forth at the voice\") is a common Egyptian formula referring to mortuary offerings that are invoked/recited. The causative \"Dj\" with the suffix pronoun \".sn\" (they) indicates \"they cause/give.\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "pr .tj m qdj r rTnw",
+      "reference": "having gone from qedi to retjenu",
+      "prediction": "having set out in a march to retjenu",
+      "metadata": {
+        "custom_id": "trans_156",
+        "translation": "having set out in a march to retjenu",
+        "confidence": "high",
+        "notes": "pr.tj is a stative/pseudo-participle form of pr \"to go out/set out\", qdj refers to a march or expedition, and rTnw is Retjenu (ancient region in the Levant/Syria-Palestine area)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 131
+        }
+      }
+    },
+    {
+      "sumerian": "qAt rn Hr xAst nbt",
+      "reference": "with noble name in all foreign lands",
+      "prediction": "whose name is exalted in every foreign land",
+      "metadata": {
+        "custom_id": "trans_157",
+        "translation": "whose name is exalted in every foreign land",
+        "confidence": "high",
+        "notes": "qAt = exalted/high; rn = name; Hr = in/upon; xAst nbt = every foreign land. This is a common royal epithet describing the king's fame spreading to foreign lands.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "mj sT antjw",
+      "reference": "like the smell of myrrh",
+      "prediction": "like the smell of myrrh",
+      "metadata": {
+        "custom_id": "trans_158",
+        "translation": "like the smell of myrrh",
+        "confidence": "high",
+        "notes": "This is an exact match to Example 124 in the provided examples. The phrase \"mj sT antjw\" translates to \"like the smell of myrrh\" where \"mj\" means \"like\", \"sT\" means \"smell/scent\", and \"antjw\" means \"myrrh\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 142
+        }
+      }
+    },
+    {
+      "sumerian": "aHa .n rDj .n xrw pf Hna wrw ntjw Hna .f pr .tw",
+      "reference": "then that enemy and the princes who were with them had sent",
+      "prediction": "then that enemy together with the princes who were with him was brought out",
+      "metadata": {
+        "custom_id": "trans_159",
+        "translation": "then that enemy together with the princes who were with him was brought out",
+        "confidence": "high",
+        "notes": "Standard narrative construction with aHa.n indicating sequential action. \"xrw pf\" (that enemy) is a common term for foreign adversaries. The phrase \"wrw ntjw Hna.f\" means \"the princes/great ones who were with him.\" \"pr.tw\" is a passive form of \"to come out/be brought out.\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24366,
+          "output_tokens": 157
+        }
+      }
+    },
+    {
+      "sumerian": "nn jwt jyt m xt .k",
+      "reference": "no disaster will befall your rudder stock",
+      "prediction": "there is no evil that comes after you",
+      "metadata": {
+        "custom_id": "trans_160",
+        "translation": "there is no evil that comes after you",
+        "confidence": "medium",
+        "notes": "The phrase contains \"nn\" (negation), \"jwt/jyt\" (evil/coming), and \"m xt .k\" (after you). This appears to be a protective or blessing formula.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "aq Hr smjt",
+      "reference": "who enters to report",
+      "prediction": "entering upon the desert",
+      "metadata": {
+        "custom_id": "trans_161",
+        "translation": "entering upon the desert",
+        "confidence": "medium",
+        "notes": "The phrase \"aq Hr smjt\" combines aq (to enter) with Hr (upon/on) and smjt (desert/necropolis). This construction is common in Ancient Egyptian texts describing movement into desert regions.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 117
+        }
+      }
+    },
+    {
+      "sumerian": "jw Hswt .j mn .tj m aH",
+      "reference": "praise for me endured in the palace",
+      "prediction": "my favour endures in the palace",
+      "metadata": {
+        "custom_id": "trans_162",
+        "translation": "my favour endures in the palace",
+        "confidence": "high",
+        "notes": "The text follows a common pattern seen in Egyptian autobiographical inscriptions. \"Hswt\" means \"favour/praise\", \".j\" is the first person singular suffix \"my\", \"mn.tj\" is the stative form of \"mn\" meaning \"to endure/remain\", and \"aH\" means \"palace\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 141
+        }
+      }
+    },
+    {
+      "sumerian": "tjwn 5",
+      "reference": "5 tjwn trees",
+      "prediction": "five tjun",
+      "metadata": {
+        "custom_id": "trans_163",
+        "translation": "five tjun",
+        "confidence": "medium",
+        "notes": "Based on the pattern seen in examples like \"Drt 3\" (three hands), \"rnpt sp 2\" (year 2), and \"Hnqt ds 100\" (a hundred jars of beer), the number follows the noun in Ancient Egyptian. \"tjwn\" appears to be a unit of measurement or object, with \"5\" being the quantity.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 150
+        }
+      }
+    },
+    {
+      "sumerian": "Dd .jn .sn xft Hm .f",
+      "reference": "and they said to his majesty",
+      "prediction": "then they said to his majesty",
+      "metadata": {
+        "custom_id": "trans_164",
+        "translation": "then they said to his majesty",
+        "confidence": "high",
+        "notes": "This follows a common pattern in Middle Egyptian narrative texts. \"Dd .jn .sn\" is a standard construction meaning \"then they said\" (with .jn marking sequential narrative and .sn being the 3rd person plural suffix pronoun). \"xft Hm .f\" means \"to/before his majesty\" (xft = \"before/to\", Hm = \"majesty\", .f = \"his\").",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 167
+        }
+      }
+    },
+    {
+      "sumerian": "Haww apr .w mH .w m Spssw",
+      "reference": "ships were manned and laden with riches",
+      "prediction": "ships were manned and laden with riches",
+      "metadata": {
+        "custom_id": "trans_165",
+        "translation": "ships were manned and laden with riches",
+        "confidence": "high",
+        "notes": "This is an exact match with Example 152 in the provided examples.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24350,
+          "output_tokens": 88
+        }
+      }
+    },
+    {
+      "sumerian": "jmj .k jrw",
+      "reference": "you should not do",
+      "prediction": "do not make enemies",
+      "metadata": {
+        "custom_id": "trans_166",
+        "translation": "do not make enemies",
+        "confidence": "medium",
+        "notes": "The phrase \"jmj .k\" is a negative imperative construction meaning \"do not\" or \"let not\". \"jrw\" can mean \"enemies\" or \"those who act against\". This is likely a moral instruction or wisdom text phrase advising against creating adversaries.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "sumerian": "jw Xrt bw nb jm .k mj nwy",
+      "reference": "everyone has a need for you like water",
+      "prediction": "the condition of everyone is in you like water",
+      "metadata": {
+        "custom_id": "trans_167",
+        "translation": "the condition of everyone is in you like water",
+        "confidence": "medium",
+        "notes": "Xrt = condition/needs; bw nb = everyone; jm.k = in you; mj = like; nwy = water. The phrase suggests that everyone's state or needs depend on the addressee, comparing this dependence to water (essential for life).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 132
+        }
+      }
+    },
+    {
+      "sumerian": "jAwt jrj m Dam",
+      "reference": "the standards thereof were of electrum",
+      "prediction": "a palanquin made of electrum",
+      "metadata": {
+        "custom_id": "trans_168",
+        "translation": "a palanquin made of electrum",
+        "confidence": "high",
+        "notes": "jAwt = palanquin/litter, jrj = made, m = of/from, Dam = electrum. This follows similar construction patterns seen in the examples, such as \"SnDwt .f m Dam\" (its kilt with electrum).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "sumerian": "jsT wj aHa .kw sDm .n .j xrw .f",
+      "reference": "now i was standing by and heard his voice",
+      "prediction": "now i was standing and i heard his voice",
+      "metadata": {
+        "custom_id": "trans_169",
+        "translation": "now i was standing and i heard his voice",
+        "confidence": "high",
+        "notes": "jsT (now/behold) + wj (I) + aHa.kw (standing, stative) + sDm.n.j (I heard, perfective) + xrw.f (his voice). Common narrative construction in Middle Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24357,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "mAat mn .tj m st .s",
+      "reference": "and justice was established in its place",
+      "prediction": "maat is established in her place",
+      "metadata": {
+        "custom_id": "trans_170",
+        "translation": "maat is established in her place",
+        "confidence": "high",
+        "notes": "mAat = Maat (goddess of truth/justice); mn.tj = is established/enduring (stative); m st.s = in her place. This is a common phrase referring to the restoration or maintenance of cosmic order.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "Dj .f wn kmt m sxrw .s",
+      "reference": "while he let egypt be in its state",
+      "prediction": "he lets egypt be in its condition",
+      "metadata": {
+        "custom_id": "trans_171",
+        "translation": "he lets egypt be in its condition",
+        "confidence": "medium",
+        "notes": "The phrase \"Dj .f wn kmt m sxrw .s\" contains: Dj .f (he causes/lets), wn (to be/exist), kmt (Egypt), m (in), sxrw .s (its condition/state/plans). The construction follows a causative pattern seen in similar examples.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 147
+        }
+      }
+    },
+    {
+      "sumerian": "nHrj sA Xnm Htp sA Xnm Htp",
+      "reference": "khnumhotep son of khnumhotep son of nehri",
+      "prediction": "khnumhotep son of khnumhotep son of nehri",
+      "metadata": {
+        "custom_id": "trans_172",
+        "translation": "khnumhotep son of khnumhotep son of nehri",
+        "confidence": "high",
+        "notes": "This is a genealogical name formula. The text appears as an exact match in the examples (Example 596), showing a three-generation lineage with nHrj (Nehri) as the grandfather, and Xnm Htp (Khnumhotep) as both the father and the person being named.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24357,
+          "output_tokens": 151
+        }
+      }
+    },
+    {
+      "sumerian": "nn bs Tw aAmw",
+      "reference": "and asiatics will not bury you",
+      "prediction": "the asiatics will not attack you",
+      "metadata": {
+        "custom_id": "trans_173",
+        "translation": "the asiatics will not attack you",
+        "confidence": "medium",
+        "notes": "The phrase contains \"nn\" (negation), \"bs\" (to attack/introduce), \"Tw\" (you), and \"aAmw\" (Asiatics/foreigners from Asia). The construction indicates a negative statement about Asiatics not being able to attack or approach the addressee.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "sumerian": "mk Tw r jrt Abd Hr Abd",
+      "reference": "you will spend month upon month",
+      "prediction": "look you will spend month after month",
+      "metadata": {
+        "custom_id": "trans_174",
+        "translation": "look you will spend month after month",
+        "confidence": "medium",
+        "notes": "The phrase \"mk Tw\" means \"look you\" or \"behold you\". \"r jrt\" indicates future action or purpose. \"Abd Hr Abd\" literally means \"month upon month\" indicating a repeated duration of time.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 119
+        }
+      }
+    },
+    {
+      "sumerian": "jrj nfr HAt",
+      "reference": "the keeper of the diadem",
+      "prediction": "who makes the beginning good",
+      "metadata": {
+        "custom_id": "trans_175",
+        "translation": "who makes the beginning good",
+        "confidence": "medium",
+        "notes": "The phrase combines \"jrj\" (who makes/does), \"nfr\" (good/beautiful), and \"HAt\" (beginning/front). This appears to be an epithet or descriptive phrase.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24343,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "m janw gjfw Tsmw",
+      "reference": "of baboons vervet monkeys and greyhounds",
+      "prediction": "with baboons, monkeys, and hounds",
+      "metadata": {
+        "custom_id": "trans_176",
+        "translation": "with baboons, monkeys, and hounds",
+        "confidence": "medium",
+        "notes": "janw refers to baboons, gjfw to monkeys/long-tailed monkeys, and Tsmw to hounds/dogs. The m preposition indicates accompaniment or manner.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "Hr nbw nfr rnpwt sanx jbw",
+      "reference": "gold horus perfect of years who enlivens the hearts",
+      "prediction": "gold horus perfect of years who enlivens hearts",
+      "metadata": {
+        "custom_id": "trans_177",
+        "translation": "gold horus perfect of years who enlivens hearts",
+        "confidence": "high",
+        "notes": "This is a royal titulary phrase. \"Hr nbw\" = gold horus (one of the five royal names), \"nfr rnpwt\" = perfect of years (similar to example 83 \"bjk nbw Htp nTrw\" = gold horus who placates the gods), \"sanx jbw\" = who enlivens/vivifies hearts (causative s- + anx \"life\" + jbw \"hearts\")",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 180
+        }
+      }
+    },
+    {
+      "sumerian": "Abx .n .f pr .n .f jm .f",
+      "reference": "and joined him whom he had come from",
+      "prediction": "he joined and he came forth from it",
+      "metadata": {
+        "custom_id": "trans_178",
+        "translation": "he joined and he came forth from it",
+        "confidence": "medium",
+        "notes": "The text contains the verbs Abx (to join/unite) and pr (to come forth/go out) both with the suffix pronoun .f (he/it) and the perfective .n construction indicating completed action. The final jm.f means \"from it\" or \"therein\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24351,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "nfr sj Hr a",
+      "reference": "and she became well instantly",
+      "prediction": "it is good immediately",
+      "metadata": {
+        "custom_id": "trans_179",
+        "translation": "it is good immediately",
+        "confidence": "medium",
+        "notes": "The phrase \"nfr sj Hr a\" contains nfr (good/beautiful), sj (it), Hr (upon/on), and a (hand/arm, often used idiomatically to mean \"immediately\" or \"at once\"). This is a common medical/recipe instruction indicating immediate effectiveness or application.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "ssH tpw nbDw qd",
+      "reference": "who smashes the heads of the evil minded",
+      "prediction": "who lassoes the heads of those of evil character",
+      "metadata": {
+        "custom_id": "trans_180",
+        "translation": "who lassoes the heads of those of evil character",
+        "confidence": "medium",
+        "notes": "ssH means \"to lasso\" or \"to bind\", tpw means \"heads\", nbDw refers to \"evil ones\" or \"those of bad character\", and qd relates to \"character\" or \"nature\". This appears to be an epithet describing a deity or king who captures enemies.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 139
+        }
+      }
+    },
+    {
+      "sumerian": "m hrw pn",
+      "reference": "on the same day",
+      "prediction": "on this day",
+      "metadata": {
+        "custom_id": "trans_181",
+        "translation": "on this day",
+        "confidence": "high",
+        "notes": "Similar to example 465 \"m hrw pn nfr\" (on this good day), this phrase uses the same construction without the adjective \"nfr\" (good). The preposition \"m\" indicates \"on/in\", \"hrw\" means \"day\", and \"pn\" is the demonstrative \"this\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24340,
+          "output_tokens": 140
+        }
+      }
+    },
+    {
+      "sumerian": "Hr .f an .w",
+      "reference": "his head averted",
+      "prediction": "his face is beautiful",
+      "metadata": {
+        "custom_id": "trans_182",
+        "translation": "his face is beautiful",
+        "confidence": "medium",
+        "notes": "Hr.f = his face; an.w = beautiful/fair. This is a common descriptive phrase in Ancient Egyptian texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24341,
+          "output_tokens": 95
+        }
+      }
+    },
+    {
+      "sumerian": "aAt nbt Spst",
+      "reference": "and every kind of precious stone",
+      "prediction": "every precious noble stone",
+      "metadata": {
+        "custom_id": "trans_183",
+        "translation": "every precious noble stone",
+        "confidence": "high",
+        "notes": "aAt = stone/precious stone, nbt = every/all, Spst = noble/precious. This is a common phrase referring to valuable gemstones or precious materials.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 106
+        }
+      }
+    },
+    {
+      "sumerian": "saA .k jr sj tp tA",
+      "reference": "you advance one who does it on earth",
+      "prediction": "you advanced the one who did it on earth",
+      "metadata": {
+        "custom_id": "trans_184",
+        "translation": "you advanced the one who did it on earth",
+        "confidence": "medium",
+        "notes": "The phrase contains saA (to advance/promote), jr (one who does/did), sj (it), and tp tA (on earth). This appears to be a statement about rewarding or elevating someone for their deeds on earth.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "sumerian": "n sSAA .n .f",
+      "reference": "and it cannot row",
+      "prediction": "he did not neglect",
+      "metadata": {
+        "custom_id": "trans_185",
+        "translation": "he did not neglect",
+        "confidence": "medium",
+        "notes": "The verb sSAA means \"to neglect\" or \"to be careless.\" The negation n combined with the suffix pronoun .f indicates \"he did not neglect\" or \"without him neglecting.\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 116
+        }
+      }
+    },
+    {
+      "sumerian": "xr .tw nD .tw .s",
+      "reference": "then it is ground",
+      "prediction": "then it is ground up",
+      "metadata": {
+        "custom_id": "trans_186",
+        "translation": "then it is ground up",
+        "confidence": "medium",
+        "notes": "Based on the pattern seen in example 595 \"xr .tw ja .tw .s\" meaning \"then it is washed\", this follows a similar passive construction with nD (to grind) instead of ja (to wash). The structure xr .tw + verb .tw .s indicates a passive action being performed on something (the .s suffix referring back to a previously mentioned substance).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24345,
+          "output_tokens": 153
+        }
+      }
+    },
+    {
+      "sumerian": "jr .tn nn wDA Haw .tn",
+      "reference": "as you do this your bodies will be well",
+      "prediction": "if you do this your bodies will be well",
+      "metadata": {
+        "custom_id": "trans_187",
+        "translation": "if you do this your bodies will be well",
+        "confidence": "high",
+        "notes": "Based on similar patterns in the examples: \"jr\" introduces a conditional clause (\"if\"), \".tn\" is the second person plural suffix (\"you\"), \"nn\" means \"this\", \"wDA Haw\" means \"bodies will be well\" (as seen in example 653: \"wDA Haw .Tn\" = \"your bodies will be well\")",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 153
+        }
+      }
+    },
+    {
+      "sumerian": "nfr mTnw .j",
+      "reference": "my ways are good",
+      "prediction": "my path is good",
+      "metadata": {
+        "custom_id": "trans_188",
+        "translation": "my path is good",
+        "confidence": "high",
+        "notes": "nfr = good/beautiful, mTnw = path/road, .j = first person singular suffix pronoun (my)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 97
+        }
+      }
+    },
+    {
+      "sumerian": "n jn .tw Htpt r dmj",
+      "reference": "food cannot be brought to town",
+      "prediction": "offerings are not brought to the town",
+      "metadata": {
+        "custom_id": "trans_189",
+        "translation": "offerings are not brought to the town",
+        "confidence": "medium",
+        "notes": "The text contains: n (negation), jn.tw (passive \"to bring\"), Htpt (offerings), r (to), dmj (town/settlement). The construction suggests a negative statement about offerings not being brought to the town.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24346,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "jw n mrt jrt .f",
+      "reference": "his eye had not yet been afflicted",
+      "prediction": "in order to do it",
+      "metadata": {
+        "custom_id": "trans_190",
+        "translation": "in order to do it",
+        "confidence": "medium",
+        "notes": "The phrase \"jw n mrt jrt .f\" contains \"n mrt\" which typically expresses purpose (\"in order to\", \"for the sake of\") and \"jrt .f\" meaning \"to do it\" or \"his doing\". This is a common purposive construction in Middle Egyptian.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24344,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "wr mnw .k r nsw nb xpr",
+      "reference": "your monuments are greater than those of any king who has been",
+      "prediction": "your monuments are greater than those of any king who had been",
+      "metadata": {
+        "custom_id": "trans_191",
+        "translation": "your monuments are greater than those of any king who had been",
+        "confidence": "high",
+        "notes": "This translation follows the pattern seen in example 36 \"r nsw nb xpr\" (than those of any king who had been). The phrase \"wr mnw .k\" means \"your monuments are great/greater\" with the comparative expressed by the following \"r\" preposition.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24347,
+          "output_tokens": 137
+        }
+      }
+    },
+    {
+      "sumerian": "rDj .n .s xsf .tw n .s m Hwt",
+      "reference": "and had her punished with a beating",
+      "prediction": "she caused that she be repelled from the temple",
+      "metadata": {
+        "custom_id": "trans_192",
+        "translation": "she caused that she be repelled from the temple",
+        "confidence": "medium",
+        "notes": "The text contains a causative construction with rDj (to cause/let) followed by xsf (to repel/oppose) with the reflexive/passive .tw construction. The phrase \"m Hwt\" indicates \"from the temple.\" The feminine suffix pronoun .s appears twice, suggesting \"she caused that she be repelled.\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24354,
+          "output_tokens": 148
+        }
+      }
+    },
+    {
+      "sumerian": "sg wjA",
+      "reference": "stop the barque",
+      "prediction": "tow the barque",
+      "metadata": {
+        "custom_id": "trans_193",
+        "translation": "tow the barque",
+        "confidence": "medium",
+        "notes": "sg means \"to tow\" or \"to drag\" and wjA refers to a barque or sacred boat. This appears to be an imperative or infinitive construction related to the ritual towing of a divine barque.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24339,
+          "output_tokens": 117
+        }
+      }
+    },
+    {
+      "sumerian": "n nw .tw .f",
+      "reference": "but it is not gathered in",
+      "prediction": "he cannot be seen",
+      "metadata": {
+        "custom_id": "trans_194",
+        "translation": "he cannot be seen",
+        "confidence": "medium",
+        "notes": "The phrase appears to be a negative construction with nw (to see/look) in a passive or impersonal form, indicating invisibility or inability to be perceived.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 103
+        }
+      }
+    },
+    {
+      "sumerian": "sbj Hm .j r jTt tAw xAstjw nbt dmD",
+      "reference": "who sent my majesty to seize the lands and all foreigners together",
+      "prediction": "my majesty proceeded to seize all foreign lands together",
+      "metadata": {
+        "custom_id": "trans_195",
+        "translation": "my majesty proceeded to seize all foreign lands together",
+        "confidence": "high",
+        "notes": "sbj = proceeded/went; Hm .j = my majesty; r jTt = to seize/capture; tAw = lands; xAstjw = foreign lands/foreigners; nbt = all; dmD = together/united",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24358,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "m jwf .j pn",
+      "reference": "in this flesh of mine",
+      "prediction": "in this flesh of mine",
+      "metadata": {
+        "custom_id": "trans_196",
+        "translation": "in this flesh of mine",
+        "confidence": "high",
+        "notes": "Similar to example 641 \"m Haw .j pn\" (in this body of mine). The construction uses the preposition \"m\" (in), followed by \"jwf\" (flesh/body), the first person singular suffix \".j\" (my), and the demonstrative \"pn\" (this).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24342,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "jw .s m Xrd jmj mnDj",
+      "reference": "when she was a child being breast fed",
+      "prediction": "she was a child at the breast",
+      "metadata": {
+        "custom_id": "trans_197",
+        "translation": "she was a child at the breast",
+        "confidence": "high",
+        "notes": "The phrase \"jmj mnDj\" literally means \"at the breast\" referring to a nursing infant. This is a common Egyptian expression for describing a very young child still being breastfed.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24349,
+          "output_tokens": 113
+        }
+      }
+    },
+    {
+      "sumerian": "HAq .n .j Hmwt .sn",
+      "reference": "i captured their women",
+      "prediction": "and seized their women",
+      "metadata": {
+        "custom_id": "trans_198",
+        "translation": "and seized their women",
+        "confidence": "high",
+        "notes": "Based on similar patterns in the examples, particularly Example 418 \"HAq .n .j mnmnt .f\" = \"and seized his cattle\". The structure HAq .n .j means \"I seized/captured\", Hmwt means \"women\", and .sn is the suffix pronoun \"their\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 137
+        }
+      }
+    },
+    {
+      "sumerian": "r Sdw mHtj n Xnw",
+      "reference": "to a plot of land north of the residence",
+      "prediction": "to the northern lake of the residence",
+      "metadata": {
+        "custom_id": "trans_199",
+        "translation": "to the northern lake of the residence",
+        "confidence": "medium",
+        "notes": "Sdw refers to a lake or pool, mHtj means northern, and Xnw refers to the royal residence or capital",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 24348,
+          "output_tokens": 101
+        }
+      }
+    }
+  ]
+}

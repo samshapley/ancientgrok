@@ -6,8 +6,8 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 import hashlib
 
-# Add cdli-cli to Python path
-cdli_path = Path(__file__).parent.parent.parent.parent / "clayvoices" / "cdli-cli" / "src"
+# Add cdli-cli to Python path (bundled in ancientgrok/cdli-cli/)
+cdli_path = Path(__file__).parent.parent.parent / "cdli-cli" / "src"
 if str(cdli_path) not in sys.path:
     sys.path.insert(0, str(cdli_path))
 

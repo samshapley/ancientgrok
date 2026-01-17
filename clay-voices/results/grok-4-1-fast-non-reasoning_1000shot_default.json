@@ -1,0 +1,203 @@
+{
+  "experiment": {
+    "model": "grok-4-1-fast-non-reasoning",
+    "n_shot": 1000,
+    "test_size": 10,
+    "few_shot_seed": 42,
+    "test_seed": 99,
+    "system_prompt_variant": "default",
+    "monolingual_base_size": 0
+  },
+  "cost": {
+    "input_tokens": 258905,
+    "output_tokens": 1190,
+    "total_tokens": 260095,
+    "cost_usd": 0.39728250000000004,
+    "cost_per_example": 0.03972825000000001,
+    "batch_mode": true
+  },
+  "metrics": {
+    "bleu": {
+      "score": 18.644824083076927,
+      "precision": [
+        48.275862068965516,
+        27.083333333333332,
+        18.42105263157895,
+        10.0
+      ],
+      "bp": 0.8416308400672835,
+      "sys_len": 58,
+      "ref_len": 68
+    },
+    "chrf": {
+      "score": 34.025477995302396
+    },
+    "num_examples": 10,
+    "confidence_distribution": {
+      "medium": 2,
+      "high": 8
+    }
+  },
+  "predictions": [
+    {
+      "sumerian": "X i ukim",
+      "reference": "… ukim ;",
+      "prediction": "X, oil, measured out",
+      "metadata": {
+        "custom_id": "trans_0",
+        "translation": "X, oil, measured out",
+        "confidence": "medium",
+        "notes": "Pattern based on administrative ration texts; \"i\" = oil, \"ukim\" = to measure out/ration; \"X\" likely a numeral placeholder.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25889,
+          "output_tokens": 80
+        }
+      }
+    },
+    {
+      "sumerian": "kicib urnigar",
+      "reference": "under seal of Ur-nigar ;",
+      "prediction": "under seal of Ur-nigar",
+      "metadata": {
+        "custom_id": "trans_1",
+        "translation": "under seal of Ur-nigar",
+        "confidence": "high",
+        "notes": "Matches example 104 exactly: \"kicib urnigar\" = \"under seal of Ur-nigar\". Common Ur III administrative phrase indicating a sealed document or transaction by the named individual, Ur-nigār.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25890,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "sumerian": "kinbi NUMB sar",
+      "reference": "work involved : NUMB ( volume ) sar ;",
+      "prediction": "its surface: NUMB sar",
+      "metadata": {
+        "custom_id": "trans_2",
+        "translation": "its surface: NUMB sar",
+        "confidence": "high",
+        "notes": "kin = surface/area (common in field measurements); bi = its (possessive); NUMB sar = quantified surface area in sar (standard Mesopotamian unit ~36m²). Matches patterns in examples like \"NUMB sar GAN gecimmar\" (Ex. 192), \"NUMB sar al NUMB sarta\" (Ex. 627).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25890,
+          "output_tokens": 120
+        }
+      }
+    },
+    {
+      "sumerian": "u sagnigura",
+      "reference": "and debits",
+      "prediction": "u sagnigura",
+      "metadata": {
+        "custom_id": "trans_3",
+        "translation": "u sagnigura",
+        "confidence": "high",
+        "notes": "Pattern-matched to administrative terminology: 'u' = \"and\"; 'sagnigura' = \"debit account\" or \"credit entry\" (cf. 'sagnigurakam' = \"it is the debit\"; 'nigkak' contexts). Literal: \"and debit account\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25890,
+          "output_tokens": 108
+        }
+      }
+    },
+    {
+      "sumerian": "mu ku guza enlila badim",
+      "reference": "year : “ The silver-chair of Enlil was fashioned . ”",
+      "prediction": "year : “ The kù-guza of Enlil was fashioned ; ”",
+      "metadata": {
+        "custom_id": "trans_4",
+        "translation": "year : “ The kù-guza of Enlil was fashioned ; ”",
+        "confidence": "high",
+        "notes": "Follows standard Ur III year formula \"mu [event]\". Parallels example 427 \"mu guza enlila badim\" = \"year : “ The throne of Enlil was fashioned ; ”\". Here \"ku guza\" likely specifies a type of precious (kù = pure/silver/gold) throne or stool (guza) of Enlil, fashioned (badim).",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25893,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "ki ahunita bazi",
+      "reference": "booked out of ( the account of ) Ahuni ,",
+      "prediction": "from Aḫuni , Bazi",
+      "metadata": {
+        "custom_id": "trans_5",
+        "translation": "from Aḫuni , Bazi",
+        "confidence": "high",
+        "notes": "Pattern matches examples like \"ki abasagata\" = \"from Abbasaga\" (Ex. 39), \"ki amarcubata\" = \"from Amar-šuba\" (Ex. 26), \"ki naramilita\" = \"from Naram-ilī\" (Ex. 10), and many others where \"ki PN1 PN2\" indicates origin or account \"from PN1, PN2\". Aḫuni and Bazi are attested personal names in Ur III texts.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25891,
+          "output_tokens": 152
+        }
+      }
+    },
+    {
+      "sumerian": "u mucbian",
+      "reference": "and Mušbiana",
+      "prediction": "and the serpent of the sky",
+      "metadata": {
+        "custom_id": "trans_6",
+        "translation": "and the serpent of the sky",
+        "confidence": "medium",
+        "notes": "Possible reference to a celestial or mythological serpent, akin to \"muc nanna\" (serpent of Nanna) in example 150; \"mucbian\" may parse as muc-bi-an (\"its serpent - sky\"). Common in Sumerian curses or blessings.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25888,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "sumerian": "ki buduta",
+      "reference": "from Budu ;",
+      "prediction": "from Budu",
+      "metadata": {
+        "custom_id": "trans_7",
+        "translation": "from Budu",
+        "confidence": "high",
+        "notes": "Pattern matches examples like \"ki buduta\" → \"from Budu\", where \"ki\" indicates source/origin (\"from\") and \"budu\" is a personal name (cf. Example 604: budu unu → Budu, cowherd; common in Ur III administrative contexts for names following \"ki\"). \"Ta\" is a locative/directional ending.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25888,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB GAN guruc ugula",
+      "reference": "total : NUMB aš-c- ( workers ) , ‘field’ corporate slaves , foremen ;",
+      "prediction": "total : NUMB field , male laborers , foreman",
+      "metadata": {
+        "custom_id": "trans_8",
+        "translation": "total : NUMB field , male laborers , foreman",
+        "confidence": "high",
+        "notes": "Pattern-matched to administrative texts: \"cunigin\" = total; \"NUMB GAN\" = NUMB field(s)/surface area; \"guruc\" = male laborer(s); \"ugula\" = foreman. Cf. examples like 106 \"cunigin NUMB geme u NUMB\", 456 \"NUMB gur ugula carakam\", 656 \"NUMB guruc ugula lugalmagure\".",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25894,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB kikken adabar saga",
+      "reference": "NUMB millstone of high-quality black basalt ( ? )",
+      "prediction": "NUMB (gur) fine emmer-flour from the Old-mill",
+      "metadata": {
+        "custom_id": "trans_9",
+        "translation": "NUMB (gur) fine emmer-flour from the Old-mill",
+        "confidence": "high",
+        "notes": "Follows patterns in examples like \"ekikken sumunta\" (From Old-mill), \"NUMB ziz\" (NUMB emmer), and \"NUMB zi sig\" (NUMB fine flour). \"Kikken\" = old-mill (ekik); \"adabar\" = emmer-flour (zíz); \"saga\" = fine/good quality. Typical Ur III ration/administrative phrasing.",
+        "model": "grok-4-1-fast-non-reasoning",
+        "usage": {
+          "input_tokens": 25892,
+          "output_tokens": 141
+        }
+      }
+    }
+  ]
+}

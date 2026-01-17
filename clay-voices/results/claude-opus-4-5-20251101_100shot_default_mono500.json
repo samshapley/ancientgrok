@@ -1,0 +1,836 @@
+{
+  "experiment": {
+    "model": "claude-opus-4-5-20251101",
+    "n_shot": 100,
+    "test_size": 50,
+    "few_shot_seed": 42,
+    "test_seed": 99,
+    "system_prompt_variant": "default",
+    "monolingual_base_size": 500
+  },
+  "metrics": {
+    "bleu": {
+      "score": 14.564626213292879,
+      "precision": [
+        47.57575757575758,
+        21.785714285714285,
+        10.970464135021096,
+        6.122448979591836
+      ],
+      "bp": 0.8966489002565754,
+      "sys_len": 330,
+      "ref_len": 366
+    },
+    "chrf": {
+      "score": 39.24218407204151
+    },
+    "num_examples": 50,
+    "confidence_distribution": {
+      "low": 4,
+      "high": 26,
+      "medium": 20
+    }
+  },
+  "predictions": [
+    {
+      "sumerian": "X i ukim",
+      "reference": "… ukim ;",
+      "prediction": "… oil for binding",
+      "metadata": {
+        "custom_id": "trans_0",
+        "translation": "… oil for binding",
+        "confidence": "low",
+        "notes": "The text is fragmentary (X indicates damaged/missing signs). \"i\" likely refers to \"i3\" (oil) which is common in Ur III administrative texts. \"ukim\" may relate to binding or fastening. Due to the missing initial sign(s), the full context is unclear.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 131
+        }
+      }
+    },
+    {
+      "sumerian": "kicib urnigar",
+      "reference": "under seal of Ur-nigar ;",
+      "prediction": "under seal of Ur-nigar",
+      "metadata": {
+        "custom_id": "trans_1",
+        "translation": "under seal of Ur-nigar",
+        "confidence": "high",
+        "notes": "This is a standard administrative formula from Ur III period texts. \"kišib\" (kicib) means \"seal\" or \"sealed document,\" and \"Ur-nigar\" is a personal name. The phrase indicates that this document was sealed by or under the authority of a person named Ur-nigar.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4246,
+          "output_tokens": 140
+        }
+      }
+    },
+    {
+      "sumerian": "kinbi NUMB sar",
+      "reference": "work involved : NUMB ( volume ) sar ;",
+      "prediction": "its work: NUMB sar",
+      "metadata": {
+        "custom_id": "trans_2",
+        "translation": "its work: NUMB sar",
+        "confidence": "high",
+        "notes": "kin = work/labor, -bi = its (possessive suffix), sar = a unit of area measurement. This is a typical administrative notation recording the amount of work done, measured in sar units.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4247,
+          "output_tokens": 116
+        }
+      }
+    },
+    {
+      "sumerian": "u sagnigura",
+      "reference": "and debits",
+      "prediction": "workdays at the Sag-nigura (storehouse)",
+      "metadata": {
+        "custom_id": "trans_3",
+        "translation": "workdays at the Sag-nigura (storehouse)",
+        "confidence": "medium",
+        "notes": "The term \"u\" typically refers to workdays in Ur III administrative texts. \"Sag-nigura\" appears to be a location name, likely referring to a storehouse or administrative building. The compound \"sag-nig2-gur11-ra\" literally means \"head of the storehouse\" or could be a place name associated with storage facilities.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4245,
+          "output_tokens": 155
+        }
+      }
+    },
+    {
+      "sumerian": "mu ku guza enlila badim",
+      "reference": "year : “ The silver-chair of Enlil was fashioned . ”",
+      "prediction": "year: \"The golden throne of Enlil was fashioned.\"",
+      "metadata": {
+        "custom_id": "trans_4",
+        "translation": "year: \"The golden throne of Enlil was fashioned.\"",
+        "confidence": "high",
+        "notes": "This is a year name formula (mu = year). \"ku\" represents gold (kug), \"guza\" is throne, \"enlila\" is the genitive form of Enlil (the chief deity of Nippur), and \"badim\" (ba-dim2) means \"was fashioned/made.\" Year names commemorating the creation of divine furniture were common in Ur III administrative texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4248,
+          "output_tokens": 164
+        }
+      }
+    },
+    {
+      "sumerian": "ki ahunita bazi",
+      "reference": "booked out of ( the account of ) Ahuni ,",
+      "prediction": "from Ahuni, Bazi received",
+      "metadata": {
+        "custom_id": "trans_5",
+        "translation": "from Ahuni, Bazi received",
+        "confidence": "high",
+        "notes": "Standard Ur III administrative formula. \"ki ... -ta\" means \"from (a person)\", where Ahuni is the source/supplier. \"ba-zi\" is a common verbal form meaning \"was disbursed/expended\" or indicating the recipient who received the goods.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4246,
+          "output_tokens": 132
+        }
+      }
+    },
+    {
+      "sumerian": "u mucbian",
+      "reference": "and Mušbiana",
+      "prediction": "day: at night",
+      "metadata": {
+        "custom_id": "trans_6",
+        "translation": "day: at night",
+        "confidence": "medium",
+        "notes": "The term \"u\" typically means \"day\" in Sumerian administrative texts. \"muscbian\" or \"muš-bi-an\" likely refers to nighttime or \"at night\" (muš = night, bi = its, an = locative marker). This phrase appears to be a temporal marker indicating when something occurred.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4243,
+          "output_tokens": 137
+        }
+      }
+    },
+    {
+      "sumerian": "ki buduta",
+      "reference": "from Budu ;",
+      "prediction": "from Budu",
+      "metadata": {
+        "custom_id": "trans_7",
+        "translation": "from Budu",
+        "confidence": "high",
+        "notes": "This follows the standard Ur III administrative formula \"ki [personal name]-ta\" meaning \"from [personal name]\". The structure parallels examples like \"ki abasagata\" (from Abbasaga) and \"ki amarcubata\" (from Amar-šuba). Budu is a known Sumerian personal name.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4243,
+          "output_tokens": 142
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB GAN guruc ugula",
+      "reference": "total : NUMB aš-c- ( workers ) , ‘field’ corporate slaves , foremen ;",
+      "prediction": "total : NUMB GAN ( area ) , men , foreman :",
+      "metadata": {
+        "custom_id": "trans_8",
+        "translation": "total : NUMB GAN ( area ) , men , foreman :",
+        "confidence": "medium",
+        "notes": "cunigin = total/sum; NUMB GAN = number + area measure (GAN/iku); guruc = young man/worker; ugula = foreman/overseer. This appears to be an administrative summary line listing total area and workforce under a foreman.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4252,
+          "output_tokens": 140
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB kikken adabar saga",
+      "reference": "NUMB millstone of high-quality black basalt ( ? )",
+      "prediction": "NUMB millers of Adab, good quality,",
+      "metadata": {
+        "custom_id": "trans_9",
+        "translation": "NUMB millers of Adab, good quality,",
+        "confidence": "medium",
+        "notes": "kikken refers to millers/grinding workers; adabar likely refers to Adab (a Sumerian city); saga/sig means \"good quality\" in administrative contexts",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4249,
+          "output_tokens": 115
+        }
+      }
+    },
+    {
+      "sumerian": "gilgamese",
+      "reference": "May Gilgameš",
+      "prediction": "Gilgamesh",
+      "metadata": {
+        "custom_id": "trans_10",
+        "translation": "Gilgamesh",
+        "confidence": "high",
+        "notes": "This is the name of the famous legendary Sumerian king of Uruk, hero of the Epic of Gilgamesh. The name in Sumerian is written as \"Bilgames\" or \"Gilgamesh\" and means approximately \"the ancestor is a hero/young man.\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4243,
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB GAN ug urgigir",
+      "reference": "NUMB aš-c- ( worker ) , ‘field’ , porter : Ur-gigir ,",
+      "prediction": "NUMB (GAN field) death of Ur-gigir",
+      "metadata": {
+        "custom_id": "trans_11",
+        "translation": "NUMB (GAN field) death of Ur-gigir",
+        "confidence": "medium",
+        "notes": "GAN refers to a field measure (iku). \"ug\" means death/to die. \"urgigir\" is a personal name (Ur-gigir). This likely records a field allocation or transaction related to someone named Ur-gigir who has died, possibly indicating inheritance or reassignment of land.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4250,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB sila ce ziz gur",
+      "reference": "total : NUMB sila3 barley and emmer",
+      "prediction": "total : NUMB sila3 of barley ( and ) emmer wheat ,",
+      "metadata": {
+        "custom_id": "trans_12",
+        "translation": "total : NUMB sila3 of barley ( and ) emmer wheat ,",
+        "confidence": "high",
+        "notes": "cunigin = total/grand total; sila = sila3 (unit of capacity); ce = barley; ziz = emmer wheat; gur = gur (unit of capacity, though here following the items listed)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4253,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB tug cagadu sumun",
+      "reference": "NUMB old šagadu garments ,",
+      "prediction": "NUMB old šagadu garments",
+      "metadata": {
+        "custom_id": "trans_13",
+        "translation": "NUMB old šagadu garments",
+        "confidence": "high",
+        "notes": "tug = garment/textile; šagadu (cagadu) is a type of garment; sumun = old",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4250,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "sumerian": "tir ula idab",
+      "reference": "the Ula-woods took in charge ;",
+      "prediction": "forest of Ula, I-dab",
+      "metadata": {
+        "custom_id": "trans_14",
+        "translation": "forest of Ula, I-dab",
+        "confidence": "medium",
+        "notes": "The text appears to contain three elements: \"tir\" (forest/grove), \"ula\" (likely a place name or descriptor meaning \"ancient/primeval\"), and \"idab\" (possibly a personal name I-dab or a verbal form). This could be a geographical designation referring to a forest location, possibly in an administrative or economic context typical of Ur III period texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4246,
+          "output_tokens": 155
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB carazida",
+      "reference": "NUMB aš- ( worker ) : Šara-zida ,",
+      "prediction": "NUMB (for) Šara-zida,",
+      "metadata": {
+        "custom_id": "trans_15",
+        "translation": "NUMB (for) Šara-zida,",
+        "confidence": "medium",
+        "notes": "Šara-zida is a personal name meaning \"Šara is righteous.\" The pattern matches other entries where NUMB precedes a personal name, typically indicating an allocation or quantity for that person.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4246,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "X",
+      "reference": "for Ur-…-du",
+      "prediction": "…",
+      "metadata": {
+        "custom_id": "trans_16",
+        "translation": "…",
+        "confidence": "low",
+        "notes": "The text contains only \"X\" which represents a damaged or illegible portion of the original cuneiform tablet. This is a standard notation in Sumerian transliteration for unreadable signs.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4241,
+          "output_tokens": 106
+        }
+      }
+    },
+    {
+      "sumerian": "akala acgab",
+      "reference": "( for ) Akalla , the leatherworker ;",
+      "prediction": "Akala, the leather worker;",
+      "metadata": {
+        "custom_id": "trans_17",
+        "translation": "Akala, the leather worker;",
+        "confidence": "high",
+        "notes": "This is a personal name followed by a profession. \"Akala\" is a proper name, and \"ašgab\" (acgab) is the Sumerian term for leather worker/leatherworker. This follows the common Ur III administrative pattern of listing individuals with their professions.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4245,
+          "output_tokens": 135
+        }
+      }
+    },
+    {
+      "sumerian": "eta izi la",
+      "reference": "( and ? ) the NUMB who bears fire from the temple",
+      "prediction": "from the house, fire not (lit/burned)",
+      "metadata": {
+        "custom_id": "trans_18",
+        "translation": "from the house, fire not (lit/burned)",
+        "confidence": "low",
+        "notes": "This phrase is fragmentary. \"e-ta\" typically means \"from the house\" (e2 = house + -ta ablative). \"izi\" means \"fire\" and \"la\" could be a negation or part of a verbal form meaning \"not\" or possibly \"to weigh/hang.\" The context is unclear without surrounding text - could relate to fire not being applied or a house without fire.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 161
+        }
+      }
+    },
+    {
+      "sumerian": "giri cuecdar sagi",
+      "reference": "via Šu-Ešdar , the cupbearer ,",
+      "prediction": "via Šu-Ešdar, the cup-bearer",
+      "metadata": {
+        "custom_id": "trans_19",
+        "translation": "via Šu-Ešdar, the cup-bearer",
+        "confidence": "high",
+        "notes": "giri = \"via\" or \"conveyed by\" (indicates the intermediary/agent); cuecdar = personal name Šu-Ešdar (meaning \"Hand of Ešdar/Ištar\"); sagi = cup-bearer (a common profession in Ur III administrative texts)",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4247,
+          "output_tokens": 143
+        }
+      }
+    },
+    {
+      "sumerian": "lu e nanna",
+      "reference": "the man who the temple of Nanna",
+      "prediction": "Lu-E-Nanna (a personal name meaning \"man of the house of Nanna\")",
+      "metadata": {
+        "custom_id": "trans_20",
+        "translation": "Lu-E-Nanna (a personal name meaning \"man of the house of Nanna\")",
+        "confidence": "medium",
+        "notes": "This appears to be a personal name composed of three elements: \"lu\" (man), \"e\" (house/temple), and \"nanna\" (the moon god Nanna). Such theophoric names were common in Ur III period Mesopotamia. Alternative reading could be \"the man of the temple of Nanna\" if parsed as a title rather than a name.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 166
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB celu gaz",
+      "reference": "… crushed coriander ,",
+      "prediction": "NUMB slaughtered še-lú (a type of sheep/animal)",
+      "metadata": {
+        "custom_id": "trans_21",
+        "translation": "NUMB slaughtered še-lú (a type of sheep/animal)",
+        "confidence": "medium",
+        "notes": "The term \"še-lú\" appears to refer to a type of animal (possibly sheep or goat), and \"gaz\" is the Sumerian verb meaning \"to kill/slaughter.\" This is likely from an administrative text recording slaughtered animals.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4247,
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "sumerian": "tir balatimdurun idab",
+      "reference": "the Bala’atimdurun-woods took in charge ;",
+      "prediction": "forest of Balati-mudurun, the storage facility",
+      "metadata": {
+        "custom_id": "trans_22",
+        "translation": "forest of Balati-mudurun, the storage facility",
+        "confidence": "medium",
+        "notes": "This appears to be a location designation. \"tir\" means forest/grove, \"balatimdurun\" is likely a personal name (Balati-mudurun), and \"idab\" refers to a storage facility or granary (Sumerian i-dab5). The phrase likely indicates a forest area associated with or belonging to a person named Balati-mudurun, connected to a storage facility.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4249,
+          "output_tokens": 167
+        }
+      }
+    },
+    {
+      "sumerian": "e aca lugalmusa gaba agectinaka",
+      "reference": "The levee of the Lugal-mussa field that is in front of A-geštin field",
+      "prediction": "house (of the) field of Lugal-musa, opposite the vineyard",
+      "metadata": {
+        "custom_id": "trans_23",
+        "translation": "house (of the) field of Lugal-musa, opposite the vineyard",
+        "confidence": "medium",
+        "notes": "e = house/temple; aca = field; lugalmusa = personal name Lugal-musa; gaba = opposite/front; agectinaka = of the vineyard (a-geštin-ak-a). This appears to be a location description or property designation typical of Ur III administrative texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4252,
+          "output_tokens": 151
+        }
+      }
+    },
+    {
+      "sumerian": "igi dumu ursuen",
+      "reference": "before the son of Ur-Suen ,",
+      "prediction": "before the son of Ur-Suen",
+      "metadata": {
+        "custom_id": "trans_24",
+        "translation": "before the son of Ur-Suen",
+        "confidence": "high",
+        "notes": "\"igi\" means \"before/in the presence of\" (commonly used in witness clauses), \"dumu\" means \"son\", and \"ursuen\" is a personal name meaning \"servant of the moon god Suen\". This is likely part of a witness formula in an administrative or legal document.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4247,
+          "output_tokens": 139
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB udu ce NUMB sila ga",
+      "reference": "NUMB barley-fed sheep , a milk-fed lamb",
+      "prediction": "NUMB sheep , barley-fed , NUMB sila3 of milk",
+      "metadata": {
+        "custom_id": "trans_25",
+        "translation": "NUMB sheep , barley-fed , NUMB sila3 of milk",
+        "confidence": "high",
+        "notes": "Standard administrative text listing livestock and dairy products. \"udu\" = sheep, \"ce\" (še) = barley (indicating barley-fed), \"sila\" = a unit of liquid/dry measure (sila3), \"ga\" = milk.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4252,
+          "output_tokens": 138
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB ninda NUMB kuc gid NUMB kuc dagal NUMB kuc bur",
+      "reference": "NUMB ninda NUMB cubit the length , NUMB cubits the width , NUMB cubits the depth ,",
+      "prediction": "NUMB ninda NUMB kuš long, NUMB kuš wide, NUMB kuš deep",
+      "metadata": {
+        "custom_id": "trans_26",
+        "translation": "NUMB ninda NUMB kuš long, NUMB kuš wide, NUMB kuš deep",
+        "confidence": "medium",
+        "notes": "This appears to be a measurement text describing dimensions. \"ninda\" is a unit of length (about 6 meters), \"kuš\" (kuc) is a cubit measurement. \"gid\" means long/length, \"dagal\" means wide/width, and \"bur\" here likely refers to depth or thickness. This type of dimensional notation is common in Ur III administrative texts for describing fields, canals, or structures.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4266,
+          "output_tokens": 183
+        }
+      }
+    },
+    {
+      "sumerian": "ekibagara picahdingir",
+      "reference": "( for ) the replacement house of Pišah-ilim ,",
+      "prediction": "from E-kibaĝara, Pišaḫ-ilum",
+      "metadata": {
+        "custom_id": "trans_27",
+        "translation": "from E-kibaĝara, Pišaḫ-ilum",
+        "confidence": "medium",
+        "notes": "This appears to be two personal names or a location followed by a personal name. \"E-kibaĝara\" likely refers to a temple or building name (e- meaning \"house/temple\"), while \"pišaḫdingir\" (Pišaḫ-ilum) is a personal name meaning something like \"the god has anointed/selected.\" The construction suggests this is part of an administrative text indicating origin or responsibility.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4249,
+          "output_tokens": 180
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB ninda NUMB kuc gid NUMB kuc dagal NUMB kuc bur",
+      "reference": "NUMB ninda NUMB cubits the length , NUMB cubits the width , NUMB cubits the depth ,",
+      "prediction": "NUMB ninda NUMB kuš long, NUMB kuš wide, NUMB kuš deep",
+      "metadata": {
+        "custom_id": "trans_28",
+        "translation": "NUMB ninda NUMB kuš long, NUMB kuš wide, NUMB kuš deep",
+        "confidence": "medium",
+        "notes": "This is a standard Sumerian measurement description. 'ninda' is a unit of length (approximately 6 meters), 'kuš' (cubit, approximately 50 cm) is another length unit. 'gid' means 'long/length', 'dagal' means 'wide/width', and 'bur' typically means 'depth/deep' in dimensional contexts. This appears to be describing the dimensions of a field, canal, or structure.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4266,
+          "output_tokens": 194
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB sila dabin gur",
+      "reference": "NUMB sila3 dabin-flour ,",
+      "prediction": "NUMB sila3 of semolina, gur",
+      "metadata": {
+        "custom_id": "trans_29",
+        "translation": "NUMB sila3 of semolina, gur",
+        "confidence": "high",
+        "notes": "Standard Ur III administrative notation for measuring semolina (dabin). \"sila\" is a capacity measure, \"gur\" is a larger unit (approximately 300 liters). The pattern follows typical grain/flour measurement formulas found in economic texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4249,
+          "output_tokens": 133
+        }
+      }
+    },
+    {
+      "sumerian": "ceba gu i nigindu",
+      "reference": "barley rations of the bank of the waterway Nigin-du ,",
+      "prediction": "barley rations, oxen, oil of Nigindu",
+      "metadata": {
+        "custom_id": "trans_30",
+        "translation": "barley rations, oxen, oil of Nigindu",
+        "confidence": "medium",
+        "notes": "Breaking down the components: \"ceba\" (še-ba) = barley rations; \"gu\" likely refers to oxen (gu4); \"i\" = oil (ì); \"nigindu\" appears to be a personal name (Nigindu). This appears to be part of an administrative text listing commodities associated with or allocated to a person named Nigindu.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4248,
+          "output_tokens": 163
+        }
+      }
+    },
+    {
+      "sumerian": "mu usa e puzuricdagan badu",
+      "reference": "year after : “ The house Puzris-Dagan was erected . ”",
+      "prediction": "year following (the year): \"The house of Puzriš-Dagan was built.\"",
+      "metadata": {
+        "custom_id": "trans_31",
+        "translation": "year following (the year): \"The house of Puzriš-Dagan was built.\"",
+        "confidence": "high",
+        "notes": "This is a standard Ur III year name formula. \"mu us2-sa\" indicates \"year following\" a previous named year. \"e...ba-du3\" is the common construction for \"house/temple was built.\" Puzriš-Dagan (modern Drehem) was a major administrative center during the Ur III period.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4251,
+          "output_tokens": 161
+        }
+      }
+    },
+    {
+      "sumerian": "cenumun",
+      "reference": "seed grain",
+      "prediction": "barley seed",
+      "metadata": {
+        "custom_id": "trans_32",
+        "translation": "barley seed",
+        "confidence": "high",
+        "notes": "še-numun is a common Sumerian compound meaning \"seed barley\" or \"barley for sowing.\" It appears frequently in Ur III administrative texts recording agricultural allocations. The term combines še (barley) with numun (seed).",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4243,
+          "output_tokens": 121
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB luenkidu",
+      "reference": "NUMB diš- ( worker ) : Lu-Enkidu ,",
+      "prediction": "NUMB ( mana wool for ) Lu-Enkidu",
+      "metadata": {
+        "custom_id": "trans_33",
+        "translation": "NUMB ( mana wool for ) Lu-Enkidu",
+        "confidence": "high",
+        "notes": "This follows the common Ur III administrative pattern seen in similar entries (examples 35, 75, etc.) where a number precedes a personal name, typically indicating an allocation of wool measured in mana. Lu-Enkidu is a Sumerian personal name meaning \"Man of Enkidu.\"",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4246,
+          "output_tokens": 142
+        }
+      }
+    },
+    {
+      "sumerian": "u lugalbaba dumu urlamma",
+      "reference": "and Lugal-baba son of Ur-Lamma ;",
+      "prediction": "and Lugal-baba, son of Ur-Lamma",
+      "metadata": {
+        "custom_id": "trans_34",
+        "translation": "and Lugal-baba, son of Ur-Lamma",
+        "confidence": "high",
+        "notes": "Standard Ur III personal name formula. \"u\" functions as a conjunction \"and\"; \"Lugal-baba\" is a theophoric personal name meaning \"king is (my) father\"; \"dumu\" means \"son of\"; \"Ur-Lamma\" is another personal name meaning \"servant of Lamma (a protective deity)\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4248,
+          "output_tokens": 156
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB mana NUMB gin ku",
+      "reference": "NUMB mana NUMB shekels silver",
+      "prediction": "NUMB minas NUMB shekels of silver",
+      "metadata": {
+        "custom_id": "trans_35",
+        "translation": "NUMB minas NUMB shekels of silver",
+        "confidence": "high",
+        "notes": "Standard Ur III administrative weight measurement formula. \"mana\" = mina (unit of weight), \"gin\" = shekel (1/60 of a mina), \"ku\" = kù-babbar (silver). This is a typical notation for recording silver amounts in economic texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4250,
+          "output_tokens": 139
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB gamun",
+      "reference": "total : NUMB cumin ;",
+      "prediction": "total : NUMB cumin ,",
+      "metadata": {
+        "custom_id": "trans_36",
+        "translation": "total : NUMB cumin ,",
+        "confidence": "high",
+        "notes": "cunigin is the standard Sumerian term for \"total\" (šunigin), commonly used in administrative texts. gamun refers to cumin, a spice frequently mentioned in Ur III period economic documents.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4248,
+          "output_tokens": 118
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB GAN eurbidu ugula",
+      "reference": "NUMB aš-c- ( worker ) , ‘field’ : E-urbidu , a foreman ,",
+      "prediction": "NUMB (gan2) field of Ur-Bidu, the foreman",
+      "metadata": {
+        "custom_id": "trans_37",
+        "translation": "NUMB (gan2) field of Ur-Bidu, the foreman",
+        "confidence": "medium",
+        "notes": "GAN refers to a field measurement unit (gan2). \"e\" likely indicates possession or attribution. \"urbidu\" is a personal name (Ur-Bidu). \"ugula\" means foreman/overseer, a common administrative title in Ur III texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4250,
+          "output_tokens": 141
+        }
+      }
+    },
+    {
+      "sumerian": "mu en enki bahun",
+      "reference": "year : “ the lord of Enki was hired . ”",
+      "prediction": "year: \"The en-priest of Enki was installed.\"",
+      "metadata": {
+        "custom_id": "trans_38",
+        "translation": "year: \"The en-priest of Enki was installed.\"",
+        "confidence": "high",
+        "notes": "This is a year name formula (mu = year) recording the installation (bahun = ba-hun, \"was hired/installed\") of the en-priest (en) of the god Enki. Similar to example 85 \"mu enmahgalana bahun\" which follows the same pattern.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4246,
+          "output_tokens": 144
+        }
+      }
+    },
+    {
+      "sumerian": "kar magur nuzu",
+      "reference": "the harbor which knew ( ? ) no deep-going boats ,",
+      "prediction": "quay of the barge, unknown",
+      "metadata": {
+        "custom_id": "trans_39",
+        "translation": "quay of the barge, unknown",
+        "confidence": "medium",
+        "notes": "kar = quay/harbor; magur/ma-gur = barge/cargo boat; nu-zu = unknown/not known. This appears to be an administrative notation about a quay associated with a barge, with \"nuzu\" indicating something unknown or unidentified.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4245,
+          "output_tokens": 132
+        }
+      }
+    },
+    {
+      "sumerian": "lugalniglagare",
+      "reference": "Lugal-nig-lagare ,",
+      "prediction": "Lugal-nig-lagar-e",
+      "metadata": {
+        "custom_id": "trans_40",
+        "translation": "Lugal-nig-lagar-e",
+        "confidence": "high",
+        "notes": "This is a Sumerian personal name. The name can be analyzed as \"lugal\" (king) + \"nig\" (thing) + \"lagar\" (priest/cult servant) + \"e\" (ergative suffix or part of name). It appears as a proper noun, likely referring to a person in an administrative context.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4245,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "caga",
+      "reference": "into captivity",
+      "prediction": "heart",
+      "metadata": {
+        "custom_id": "trans_41",
+        "translation": "heart",
+        "confidence": "high",
+        "notes": "The Sumerian word \"šag\" (written as \"caga\" in transliteration, where \"c\" represents \"š\") means \"heart\" or \"interior/middle.\" It is a common noun in Sumerian texts appearing in various administrative and literary contexts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4242,
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "sumerian": "ma niginbarce deabi",
+      "reference": "for when the boat is taken to the outer district ,",
+      "prediction": "boat circled to Barše, its captain",
+      "metadata": {
+        "custom_id": "trans_42",
+        "translation": "boat circled to Barše, its captain",
+        "confidence": "medium",
+        "notes": "ma = boat; nigin = to circle/go around; barše = place name (Barše); de = captain/sailor; -a-bi = its/their. This appears to be an administrative text describing boat movement and personnel.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4247,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "sumerian": "NUMB lunanna dumuni",
+      "reference": "NUMB diš- ( worker ) : Lu-Nanna , his son ,",
+      "prediction": "NUMB ( for ) Lu-Nanna , his son ,",
+      "metadata": {
+        "custom_id": "trans_43",
+        "translation": "NUMB ( for ) Lu-Nanna , his son ,",
+        "confidence": "high",
+        "notes": "This follows common Ur III administrative text patterns. \"lunanna\" is a personal name (Lu-Nanna, meaning \"man of Nanna/the moon god\"), and \"dumuni\" is \"dumu\" (son) + possessive suffix \"-ani\" (his), indicating a kinship relationship.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4247,
+          "output_tokens": 145
+        }
+      }
+    },
+    {
+      "sumerian": "culgihazir",
+      "reference": "to Šulgi-ḫazir ,",
+      "prediction": "Šulgi-ḫazir",
+      "metadata": {
+        "custom_id": "trans_44",
+        "translation": "Šulgi-ḫazir",
+        "confidence": "high",
+        "notes": "This is a personal name composed of the divine king's name \"Šulgi\" (the second king of the Third Dynasty of Ur) combined with \"ḫazir\" (meaning \"overseer\" or \"inspector\"). The name translates roughly to \"Šulgi is my overseer\" or could simply be rendered as the proper name \"Šulgi-ḫazir\".",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4245,
+          "output_tokens": 161
+        }
+      }
+    },
+    {
+      "sumerian": "uc lucara",
+      "reference": "dead : Lu-Šara ,",
+      "prediction": "Ur-Šara",
+      "metadata": {
+        "custom_id": "trans_45",
+        "translation": "Ur-Šara",
+        "confidence": "medium",
+        "notes": "This appears to be a personal name. \"ur\" is a common Sumerian name element meaning \"man of\" or \"servant of\", and \"šara\" (written as \"cara/sara\") is a deity name. The initial \"uc\" may be a variant writing of \"ur\". The name Ur-Šara appears in other examples in the corpus (e.g., \"urcarake\" = \"Ur-Šara weighed\").",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 169
+        }
+      }
+    },
+    {
+      "sumerian": "ugILme",
+      "reference": "—they are porters— ;",
+      "prediction": "the ugula-IL workers",
+      "metadata": {
+        "custom_id": "trans_46",
+        "translation": "the ugula-IL workers",
+        "confidence": "low",
+        "notes": "The text appears to be a designation for a group of workers or personnel. The \"me\" suffix typically indicates plurality (\"they are\" or marking a group). \"ugIL\" is unclear - it may be a damaged or abbreviated form of a title or profession. It could potentially be related to \"ugula\" (foreman/overseer) combined with another element, or a personal/professional designation. The reading is uncertain due to the unusual orthography.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 164
+        }
+      }
+    },
+    {
+      "sumerian": "lugalitida",
+      "reference": "( for ) Lugal-itida",
+      "prediction": "Lugal-itida",
+      "metadata": {
+        "custom_id": "trans_47",
+        "translation": "Lugal-itida",
+        "confidence": "high",
+        "notes": "This is a Sumerian personal name meaning \"Lord of the month\" or \"King of the month\", composed of lugal (king/lord) + iti (month) + da (locative/genitive suffix). It appears as a proper noun/personal name in administrative texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 130
+        }
+      }
+    },
+    {
+      "sumerian": "cunigin NUMB sila mun gur",
+      "reference": "total : NUMB sila3 salt ;",
+      "prediction": "total : NUMB sila3 of salt , gur",
+      "metadata": {
+        "custom_id": "trans_48",
+        "translation": "total : NUMB sila3 of salt , gur",
+        "confidence": "high",
+        "notes": "cunigin = šunigin = \"total\"; NUMB = number placeholder; sila = sila3 (capacity measure); mun = salt; gur = gur (capacity measure, approximately 300 liters). This is a standard Ur III administrative formula for recording totals of commodities.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4252,
+          "output_tokens": 146
+        }
+      }
+    },
+    {
+      "sumerian": "igiza hensa",
+      "reference": "( so that ) in your eyes he indeed pleased .",
+      "prediction": "Igiza, the hyena",
+      "metadata": {
+        "custom_id": "trans_49",
+        "translation": "Igiza, the hyena",
+        "confidence": "medium",
+        "notes": "The term \"igiza\" appears to be a personal name, while \"hensa\" (sometimes written as \"ḫen-sa\") refers to a hyena in Sumerian. This could be a personal name followed by an epithet or description, or possibly a compound name. The translation follows the pattern of name + animal/descriptor seen in other Ur III administrative texts.",
+        "model": "claude-opus-4-5-20251101",
+        "usage": {
+          "input_tokens": 4244,
+          "output_tokens": 151
+        }
+      }
+    }
+  ]
+}
