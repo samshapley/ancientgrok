@@ -11,6 +11,7 @@ from rich.layout import Layout
 from rich.text import Text
 from rich.align import Align
 from rich.rule import Rule
+from rich.markup import escape
 
 
 console = Console()
@@ -22,8 +23,8 @@ STARTUP_ASCII = """
 ▐▛▀▜▌▐▌ ▝▜▌▐▌     █  ▐▛▀▀▘▐▌ ▝▜▌  █ ▐▌▝▜▌▐▛▀▚▖▐▌ ▐▌▐▛▚▖ 
 ▐▌ ▐▌▐▌  ▐▌▝▚▄▄▖▗▄█▄▖▐▙▄▄▖▐▌  ▐▌  █ ▝▚▄▞▘▐▌ ▐▌▝▚▄▞▘▐▌ ▐▌
 
-Ancient World Knowledge Agent
-Powered by Grok AI • 13 Agentic Tools • Research & Visualization
+@grok was this real?
+Powered by GrokAI.
 """
 
 
@@ -35,7 +36,7 @@ def show_startup():
     startup_text = Text(STARTUP_ASCII, style="bold bright_yellow")
     startup_panel = Panel(
         Align.center(startup_text),
-        border_style="bright_blue",  # Bright blue border
+        border_style="bright_yellow",  # Bright blue border
         padding=(1, 2)
     )
     
@@ -46,7 +47,7 @@ def show_startup():
         Text("Type 'help' for commands • 'tools' for capabilities • 'exit' to quit", style="dim white")
     ))
     console.print()
-    console.print(Rule(style="dim bright_blue"))
+    console.print(Rule(style="dim bright_yellow"))
     console.print()
 
 
@@ -55,8 +56,8 @@ def show_user_message(message: str):
     console.print()
     panel = Panel(
         message,
-        title="[bold bright_blue]You[/bold bright_blue]",
-        border_style="bright_blue",
+        title="[bold bright_yellow]You[/bold bright_yellow]",
+        border_style="bright_yellow",
         padding=(0, 1)
     )
     console.print(panel)
@@ -64,7 +65,7 @@ def show_user_message(message: str):
 
 def show_agent_thinking():
     """Show agent is thinking."""
-    console.print("[dim italic bright_blue]AncientGrok is thinking...[/dim italic bright_blue]")
+    console.print("[dim italic bright_yellow]AncientGrok is thinking...[/dim italic bright_yellow]")
 
 
 def show_tool_call(tool_name: str, arguments: str):
@@ -88,11 +89,11 @@ def show_tool_call(tool_name: str, arguments: str):
                 args_table.add_column("Value", style="dim white")
                 
                 for key, value in args_dict.items():
-                    # Truncate long values
+                    # Truncate long values and escape to prevent markup interpretation
                     value_str = str(value)
                     if len(value_str) > 80:
                         value_str = value_str[:77] + "..."
-                    args_table.add_row(key, value_str)
+                    args_table.add_row(escape(key), escape(value_str))
                 
                 content_text = args_table
         else:
@@ -117,6 +118,34 @@ def show_tool_call(tool_name: str, arguments: str):
     console.print(tool_panel)
 
 
+def show_tool_result(tool_name: str, result: dict):
+    """Display tool execution result."""
+    import json
+    
+    # Format result for display
+    if isinstance(result, dict):
+        if "error" in result:
+            # Error result
+            content_text = Text(f"Error: {result['error']}", style="red")
+        else:
+            # Success result - show summary
+            result_str = json.dumps(result, indent=2, default=str)
+            # Truncate if too long
+            if len(result_str) > 500:
+                result_str = result_str[:500] + "\n... (truncated)"
+            content_text = Text(result_str, style="dim white")
+    else:
+        content_text = Text(str(result)[:500], style="dim white")
+    
+    result_panel = Panel(
+        content_text,
+        title=f"[bold green]✓ {tool_name} result[/bold green]",
+        border_style="green",
+        padding=(0, 1)
+    )
+    console.print(result_panel)
+
+
 def show_agent_response(content: str, tool_usage: Optional[Dict[str, int]] = None):
     """Display agent response with optional tool usage stats."""
     # Render markdown content
@@ -126,7 +155,7 @@ def show_agent_response(content: str, tool_usage: Optional[Dict[str, int]] = Non
     footer = ""
     if tool_usage:
         tool_list = [f"{tool}: {count}x" for tool, count in tool_usage.items()]
-        footer = f"\n[dim bright_blue]Tools used: {', '.join(tool_list)}[/dim bright_blue]"
+        footer = f"\n[dim bright_yellow]Tools used: {', '.join(tool_list)}[/dim bright_yellow]"
     
     response_panel = Panel(
         md,
@@ -137,14 +166,15 @@ def show_agent_response(content: str, tool_usage: Optional[Dict[str, int]] = Non
     )
     console.print(response_panel)
     console.print()
-    console.print(Rule(style="dim bright_blue"))
+    console.print(Rule(style="dim bright_yellow"))
     console.print()
 
 
 def show_error(error_message: str):
     """Display an error."""
+    # Escape the message to prevent Rich markup interpretation (e.g., paths like [/tmp/...])
     error_panel = Panel(
-        f"[red]{error_message}[/red]",
+        Text(error_message, style="red"),
         title="[bold red]⚠ Error[/bold red]",
         border_style="red",
         padding=(0, 1)
@@ -184,7 +214,7 @@ AncientGrok can autonomously:
     console.print(Panel(
         Markdown(help_text),
         title="[bold bright_yellow]AncientGrok Help[/bold bright_yellow]",
-        border_style="bright_blue"
+        border_style="bright_yellow"
     ))
 
 
@@ -311,5 +341,5 @@ Tool calls display in real-time with:
     console.print(Panel(
         Markdown(tools_text),
         title="[bold bright_yellow]18 Agentic Research Tools[/bold bright_yellow]",
-        border_style="bright_blue"
+        border_style="bright_yellow"
     ))

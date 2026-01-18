@@ -14,6 +14,7 @@ from .display import (
     show_user_message,
     show_agent_thinking,
     show_tool_call,
+    show_tool_result,
     show_agent_response,
     show_error,
     show_help,
@@ -40,7 +41,7 @@ def run_chat_loop(agent: AncientGrokAgent):
     while True:
         try:
             # Get user input
-            user_input = Prompt.ask("[bold bright_blue]You[/bold bright_blue]")
+            user_input = Prompt.ask("[bold bright_yellow]You[/bold bright_yellow]")
             
             # Check for commands
             if user_input.lower() in ('exit', 'quit'):
@@ -51,9 +52,9 @@ def run_chat_loop(agent: AncientGrokAgent):
                         f"[bright_white]Session Summary[/bright_white]\n\n"
                         f"Input tokens:  {session_tokens['input']:,}\n"
                         f"Output tokens: {session_tokens['output']:,}\n"
-                        f"Total cost:    [bright_yellow]\${session_tokens['total_cost']:.4f}[/bright_yellow]",
-                        title="[bold bright_blue]💰 Cost Summary[/bold bright_blue]",
-                        border_style="bright_blue"
+                        f"Total cost:    [bright_yellow]${session_tokens['total_cost']:.4f}[/bright_yellow]",
+                        title="[bold bright_yellow]💰 Cost Summary[/bold bright_yellow]",
+                        border_style="bright_yellow"
                     ))
                 console.print("\n[bright_yellow]Farewell from the ancient world![/bright_yellow]\n")
                 break
@@ -98,13 +99,17 @@ def run_chat_loop(agent: AncientGrokAgent):
                         # Track tool usage
                         tool_usage[tool_name] = tool_usage.get(tool_name, 0) + 1
                     
+                    elif event_type == "tool_result":
+                        # Show tool result (client-side tools only)
+                        tool_name = event.get("tool", "unknown")
+                        result = event.get("result", {})
+                        show_tool_result(tool_name, result)
+                    
                     elif event_type == "text":
                         # Stream text chunks live as they arrive
                         chunk = event.get("content", "")
                         if chunk:
                             if not streaming_started:
-                                # Start streaming - clear the "thinking" line
-                                console.print("\r" + " " * 50 + "\r", end="")
                                 streaming_started = True
                             
                             # Print chunk immediately without newline
@@ -138,12 +143,12 @@ def run_chat_loop(agent: AncientGrokAgent):
                             footer_parts = []
                             if tool_usage:
                                 tool_list = [f"{tool}: {count}x" for tool, count in tool_usage.items()]
-                                footer_parts.append(f"[dim bright_blue]Tools: {', '.join(tool_list)}[/dim bright_blue]")
+                                footer_parts.append(f"[dim bright_yellow]Tools: {', '.join(tool_list)}[/dim bright_yellow]")
                             
                             if turn_cost > 0:
                                 footer_parts.append(
-                                    f"[dim bright_blue]Cost: \${turn_cost:.4f} | "
-                                    f"Session: \${session_tokens['total_cost']:.4f}[/dim bright_blue]"
+                                    f"[dim bright_yellow]Cost: ${turn_cost:.4f} | "
+                                    f"Session: ${session_tokens['total_cost']:.4f}[/dim bright_yellow]"
                                 )
                             
                             # Display footer
@@ -155,7 +160,7 @@ def run_chat_loop(agent: AncientGrokAgent):
                             # Now add divider for next turn
                             console.print()
                             from rich.rule import Rule
-                            console.print(Rule(style="dim bright_blue"))
+                            console.print(Rule(style="dim bright_yellow"))
                             console.print()
                         else:
                             # If no text was generated but tools were used,

@@ -116,13 +116,25 @@ def download_tablet_image(tablet_id: str, image_type: str = "photo") -> Dict[str
                 output_path=output_path
             )
             
+            # Auto-open the image
+            import subprocess
+            import platform
+            try:
+                if platform.system() == "Darwin":  # macOS
+                    subprocess.Popen(["open", str(result_path)])
+                elif platform.system() == "Linux":
+                    subprocess.Popen(["xdg-open", str(result_path)])
+                # Windows: subprocess.Popen(["start", str(result_path)], shell=True)
+            except Exception:
+                pass  # Don't fail if auto-open doesn't work
+            
             return {
                 "success": True,
                 "tablet_id": tablet_id,
                 "image_type": image_type,
                 "file_path": str(result_path),
                 "cdli_url": client.get_image_url(tablet_id, image_type),
-                "message": f"Downloaded {image_type} of {tablet_id} to {result_path}"
+                "message": f"Downloaded {image_type} of {tablet_id} to {result_path} (auto-opened)"
             }
     except Exception as e:
         return {
@@ -224,7 +236,7 @@ CDLI_TOOL_SCHEMAS = [
     },
     {
         "name": "download_tablet_image",
-        "description": "Download a high-resolution photograph or line-art tracing of a cuneiform tablet. Saves to /tmp/cdli_images/ and returns the file path and CDLI URL.",
+        "description": "Download a high-resolution photograph or line-art tracing of a cuneiform tablet. Saves to /tmp/cdli_images/, auto-opens in image viewer, and returns the file path and CDLI URL.",
         "parameters": {
             "type": "object",
             "properties": {

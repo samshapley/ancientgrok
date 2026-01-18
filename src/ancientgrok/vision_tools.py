@@ -1,6 +1,8 @@
 """Vision tools for AncientGrok - image viewing and analysis using Grok's vision capabilities."""
 
 import os
+import base64
+import mimetypes
 from pathlib import Path
 from typing import Dict, Any, Optional
 
@@ -30,7 +32,7 @@ def view_analyze_image(
         if image_source.startswith(("http://", "https://")):
             image_url = image_source
         else:
-            # Local file - need to convert to data URL
+            # Local file - convert to base64 data URL
             image_path = Path(image_source)
             if not image_path.exists():
                 return {
@@ -39,9 +41,18 @@ def view_analyze_image(
                     "message": f"Image not found at {image_source}"
                 }
             
-            # For now, just use the path - xai-sdk may handle local files
-            # If not, we'd need to convert to data URL
-            image_url = str(image_path.resolve())
+            # Read file and encode as base64
+            with open(image_path, "rb") as f:
+                image_data = f.read()
+            
+            # Detect MIME type
+            mime_type, _ = mimetypes.guess_type(str(image_path))
+            if mime_type is None:
+                mime_type = "image/jpeg"  # Default to JPEG
+            
+            # Create data URL
+            base64_data = base64.b64encode(image_data).decode("utf-8")
+            image_url = f"data:{mime_type};base64,{base64_data}"
         
         # Create vision chat
         chat = client.chat.create(

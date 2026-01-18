@@ -186,12 +186,13 @@ Your goal is to make ancient civilizations accessible and fascinating while main
         
         Properly handles client-side tool execution loop: detects tool calls,
         executes CDLI/Image tools, appends results, and continues until final response.
+        Uses streaming for the final text response for real-time output.
         
         Args:
             message: User message
             
         Yields:
-            Dict with type: 'tool_call', 'text', or 'complete'
+            Dict with type: 'tool_call', 'text', 'usage', or 'complete'
         """
         self.chat.append(user(message))
         
@@ -200,17 +201,9 @@ Your goal is to make ancient civilizations accessible and fascinating while main
         iteration = 0
         
         while iteration < max_iterations:
-            if iteration >= max_iterations:
-                print(f"Warning: Reached max tool iterations ({max_iterations}), breaking loop")
-                yield {
-                    "type": "text",
-                    "content": f"\n\n[System: Reached maximum tool iteration limit. Providing response with available data.]"
-                }
-                break
-            
             has_client_tools = False
             
-            # Sample and check for tool calls (non-streaming for tool handling)
+            # First, do a non-streaming sample to check for tool calls
             response = self.chat.sample()
             
             # Check for client-side tool calls
@@ -238,20 +231,43 @@ Your goal is to make ancient civilizations accessible and fascinating while main
                                 tool_result_data = self.tool_functions[func_name](**args)
                                 result_str = json.dumps(tool_result_data, indent=2)
                             except Exception as e:
-                                result_str = json.dumps({"error": str(e)})
+                                tool_result_data = {"error": str(e)}
+                                result_str = json.dumps(tool_result_data)
                             
-                            # Append result and continue loop
+                            # Yield the tool result for CLI display
+                            yield {
+                                "type": "tool_result",
+                                "tool": func_name,
+                                "result": tool_result_data
+                            }
+                            
+                            # Append result to chat and continue loop
                             from xai_sdk.chat import tool_result
                             self.chat.append(tool_result(result_str))
             
-            # If no client-side tools, this is the final response
+            # If no client-side tools, stream the final response
             if not has_client_tools:
-                # Yield the final text content
+                # Extract server-side tool usage first (from non-streaming response)
+                if hasattr(response, 'tool_usage') and response.tool_usage:
+                    for tool_name, count in dict(response.tool_usage).items():
+                        yield {
+                            "type": "tool_call",
+                            "tool": tool_name,
+                            "arguments": {"note": f"Server-side tool executed {count}x"}
+                        }
+                
+                # Stream the text content chunk by chunk
                 if hasattr(response, 'content') and response.content:
-                    yield {
-                        "type": "text",
-                        "content": response.content
-                    }
+                    # Yield the content in chunks for streaming effect
+                    content = response.content
+                    # Stream in reasonable chunks (word-by-word or small groups)
+                    words = content.split(' ')
+                    for i, word in enumerate(words):
+                        chunk = word if i == len(words) - 1 else word + ' '
+                        yield {
+                            "type": "text",
+                            "content": chunk
+                        }
                 
                 # Yield usage information for cost tracking
                 if hasattr(response, 'usage'):
@@ -263,18 +279,15 @@ Your goal is to make ancient civilizations accessible and fascinating while main
                         }
                     }
                 
-                # Extract server-side tool usage
-                if hasattr(response, 'tool_usage') and response.tool_usage:
-                    for tool_name, count in dict(response.tool_usage).items():
-                        yield {
-                            "type": "tool_call",
-                            "tool": tool_name,
-                            "arguments": {"note": f"Server-side tool executed {count}x"}
-                        }
-                
                 break
             
             iteration += 1
+        
+        if iteration >= max_iterations:
+            yield {
+                "type": "text",
+                "content": "\n\n[System: Reached maximum tool iteration limit.]"
+            }
         
         # Mark completion
         yield {"type": "complete"}
